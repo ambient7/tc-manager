@@ -2,25 +2,21 @@ package entidades;
 import java.util.*;
 import java.util.ArrayList;
 
-public abstract class Base {
+import interfaz.Interfaz;
 
-    protected Equipo organizacion;
-    protected int cicloActual = 1;
-    protected int totalCiclos;
+public class Base {
 
-    public void iniciar() {
-        configurarJuego();       // cada tema define esto
-        while (cicloActual <= totalCiclos) {
-            procesarCiclo();
-            mostrarEstado();
-            cicloActual++;
-        }
-        mostrarResultadoFinal();
+    int diasTotal;
+    
+    public static void main(String[] args)
+    {
+        Interfaz ui = new Interfaz();
     }
-
-    protected abstract void configurarJuego();
-    protected abstract void procesarCiclo();
-    protected abstract void mostrarEstado();
-    protected abstract void mostrarResultadoFinal();
+    
+    public void terminarDia() {
+    	
+    	
+    	
+    }
 
 }
