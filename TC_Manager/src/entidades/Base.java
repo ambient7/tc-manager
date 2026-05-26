@@ -15,7 +15,7 @@ public class Base {
     
     public void terminarDia() {
     	
-    	
+    	diasTotal += 1;
     	
     }
 

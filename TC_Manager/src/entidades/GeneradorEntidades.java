@@ -6,7 +6,7 @@ public class GeneradorEntidades {
     private static final String[] EQUIPOS = {"Red Bull", "Ferrari", "Mercedes"};
 	
 	
-	public Piloto generadorPiloto() {
+	public static Piloto generadorPiloto() {
 		
 		String nombre = NOMBRES[(int)(Math.random() * NOMBRES.length)];
         int id = (int)(Math.random() * 99) + 1;
