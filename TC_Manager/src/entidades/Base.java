@@ -1,22 +1,23 @@
 package entidades;
-import java.util.*;
-import java.util.ArrayList;
 
 import interfaz.Interfaz;
 
 public class Base {
 
-    int diasTotal;
-    
-    public static void main(String[] args)
-    {
-        Interfaz ui = new Interfaz();
+    static int diaActual;
+    static int dinero;
+    Piloto piloto;
+
+
+    public static void terminarDia() {diaActual += 1;}
+    public static void modDinero(int op, int cant) {
+        if(op == 1){dinero = dinero + cant;}
+        else{dinero = dinero - cant;}
     }
-    
-    public void terminarDia() {
-    	
-    	diasTotal += 1;
-    	
-    }
+
+    public void setPiloto(Piloto piloto) { this.piloto = piloto;};
+
+    public static int getDiaActual() {return diaActual;}
+    public static int getDinero() {return dinero;}
 
 }

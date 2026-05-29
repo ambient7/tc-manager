@@ -1,17 +1,17 @@
 package interfaz;
-import java.io.*;
 import javax.swing.*;
 
 import entidades.GeneradorEntidades;
 import entidades.Piloto;
+import entidades.Base;
 
-import java.awt.*;
 import java.awt.event.*;
 
 public class Interfaz implements ActionListener{
 	
-	JButton button;
-	JLabel textoPiloto;
+	JButton butTerminarDia;
+	JLabel labelDia;
+
 	
 	public Interfaz() {
 		
@@ -19,48 +19,46 @@ public class Interfaz implements ActionListener{
         JFrame frame = new JFrame();
 
         // Creating instance of JButton
-        button = new JButton(" Generar piloto");
-        button.setBounds(150, 200, 220, 50);
-        button.addActionListener(this);
+        butTerminarDia = new JButton(" Terminar dia");
+        butTerminarDia.setBounds(500, 20, 120, 32);
+        butTerminarDia.addActionListener(this);
         
-        textoPiloto = new JLabel("Nombre: \nExperiencia: \nID:");
-        textoPiloto.setBounds(150,60, 400, 100);
+        labelDia = new JLabel("Día: " + Base.getDiaActual());
+        labelDia.setBounds(20,20, 100, 32);
         
-        // adding button in JFrame
-        frame.add(button);
-        frame.add(textoPiloto);
+        // adding butTerminarDia in JFrame
+        frame.add(butTerminarDia);
+        frame.add(labelDia);
 
         // 400 width and 500 height
-        frame.setSize(500, 600);
+        frame.setSize(640, 480);
 
         // using no layout managers
         frame.setLayout(null);
 
         // making the frame visible
         frame.setVisible(true);
-		
-		
-		
+        //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
-	
+
+	public void actualizar() {
+
+		labelDia.setText("Día: " + Base.getDiaActual());
+
+	}
+
 	public void actionPerformed(ActionEvent e) { 
-	    if (e.getSource() == button) {
+	    if (e.getSource() == butTerminarDia) {
 	    	
-	    	String nombre;
-	    	int id;
-	    	int xp;
-	    	
-	    	Piloto piloto = GeneradorEntidades.generadorPiloto();
-	    	nombre = piloto.getNombre();
-	    	id = piloto.getID();
-	    	xp = piloto.getExperiencia();
-	    	textoPiloto.setText("Nombre: "+ nombre + " Experiencia: " + xp + " ID:" + id);
+	    	Base.terminarDia();
 	    	
 	    }
 	}
 	
     public static void main(String[] args) {
-        Interfaz interfaz = new Interfaz();
+
+		Interfaz interfaz = new Interfaz();
+
     }
-	
+
 }
