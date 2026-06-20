@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://cq7phlle4mkm6"]
+
+[ext_resource type="Script" uid="uid://ddv2yjorlaeij" path="res://scripts/ui/ventana_equipo.gd" id="1_3opnt"]
+
+[node name="VentanaEquipo" type="Control" unique_id=639364111]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3opnt")
+
+[node name="panDias" type="Panel" parent="." unique_id=104325850]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 120.0
+offset_bottom = 56.0
+
+[node name="labelDias" type="Label" parent="panDias" unique_id=1527154451]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 40.0
+text = "Dia 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="panDinero" type="Panel" parent="." unique_id=1638612395]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 56.0
+
+[node name="labDinero" type="Label" parent="panDinero" unique_id=941229551]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 40.0
+text = "$ 10999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="butTerminarDia" type="Button" parent="." unique_id=1642242314]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -184.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 56.0
+grow_horizontal = 0
+text = "Terminar día"
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=414446955]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+
+[node name="Noticias" type="Control" parent="TabContainer" unique_id=1418286884]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Panel" type="Panel" parent="TabContainer/Noticias" unique_id=301061043]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 616.0
+offset_bottom = 361.0
+
+[node name="Panel" type="Panel" parent="TabContainer/Noticias/Panel" unique_id=1526246081]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 576.0
+offset_bottom = 136.0
+
+[node name="Contratar" type="Control" parent="TabContainer" unique_id=1110931681]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Contratar" unique_id=661564847]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 25.0
+offset_right = -64.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="containerPilotosTienda" type="VBoxContainer" parent="TabContainer/Contratar/ScrollContainer" unique_id=1875692535]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="labContratar" type="Label" parent="TabContainer/Contratar/ScrollContainer/containerPilotosTienda" unique_id=1943769100]
+custom_minimum_size = Vector2(0, 40.605)
+layout_mode = 2
+text = "Pilotos disponibles:"
+
+[node name="Equipo" type="Control" parent="TabContainer" unique_id=1936524673]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="labPilotos" type="Label" parent="TabContainer/Equipo" unique_id=317177954]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 25.0
+offset_right = 264.0
+offset_bottom = 49.0
+text = "Pilotos:"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Equipo" unique_id=1079279917]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 57.0
+offset_right = -64.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="containerPilotosPersonal" type="VBoxContainer" parent="TabContainer/Equipo/ScrollContainer" unique_id=1601733055]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[connection signal="pressed" from="butTerminarDia" to="." method="_on_but_terminar_dia_pressed"]

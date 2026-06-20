@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://7r7id01wel28"]
+
+[ext_resource type="Script" uid="uid://cxf072a4wuvfv" path="res://scripts/master.gd" id="1_70kie"]
+[ext_resource type="PackedScene" uid="uid://cq7phlle4mkm6" path="res://scn/ventanas/ventana_equipo.tscn" id="2_7d2s6"]
+
+[node name="Master" type="Control" unique_id=1941678233]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_70kie")
+
+[node name="VentanaEquipo" parent="." unique_id=2053102584 instance=ExtResource("2_7d2s6")]
+layout_mode = 1
+
+[connection signal="terminar_dia" from="VentanaEquipo" to="." method="_on_ventana_equipo_terminar_dia"]
