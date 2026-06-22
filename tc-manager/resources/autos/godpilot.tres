@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Piloto" format=3 uid="uid://bkdmfe7dwaw4q"]
+
+[ext_resource type="Script" uid="uid://4naunmlj0tbp" path="res://scripts/piloto.gd" id="1_fgndc"]
+
+[resource]
+script = ExtResource("1_fgndc")
+metadata/_custom_type_script = "uid://4naunmlj0tbp"

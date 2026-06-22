@@ -15,4 +15,4 @@ script = ExtResource("1_70kie")
 [node name="VentanaEquipo" parent="." unique_id=2053102584 instance=ExtResource("2_7d2s6")]
 layout_mode = 1
 
-[connection signal="terminar_dia" from="VentanaEquipo" to="." method="_on_ventana_equipo_terminar_dia"]
+[connection signal="dia_terminado" from="VentanaEquipo" to="." method="_on_ventana_equipo_dia_terminado"]

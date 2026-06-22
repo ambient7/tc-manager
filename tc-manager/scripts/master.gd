@@ -5,7 +5,7 @@ extends Control
 var pilotos: Array[Piloto]
 
 func _ready() -> void:
-	stock_tienda(3)
+	stock_tienda(30)
 
 func _terminar_dia():
 	Juego.avanzar_dia()
@@ -14,7 +14,8 @@ func _terminar_dia():
 	ventana_equipo.actualizarUI()
 	if Juego.diaActual == 32:
 		Juego.diaActual = 1
-	
+	for p in Juego.equipo.pilotosContratados:
+		entrenamiento(p)
 
 func stock_tienda(cant) -> void:
 	for x in cant:
@@ -22,6 +23,13 @@ func stock_tienda(cant) -> void:
 		pilotos = Juego.pilotosDisponibles
 	ventana_equipo.stockearTienda(Juego.pilotosDisponibles)
 
+func entrenamiento(piloto: Piloto):
+	if piloto.entreno_restante > 0:
+		piloto.habilidad += 1
+		piloto.entreno_restante -= 1
+	if piloto.entreno_restante == 0:
+		piloto.estado = Piloto.ESTADO_PILOTO.DISPONIBLE
 
-func _on_ventana_equipo_terminar_dia() -> void:
+
+func _on_ventana_equipo_dia_terminado() -> void:
 	_terminar_dia()

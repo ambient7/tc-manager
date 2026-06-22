@@ -65,18 +65,24 @@ anchor_bottom = 1.0
 offset_top = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 0
+current_tab = 1
 
 [node name="Noticias" type="Control" parent="TabContainer" unique_id=1418286884]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
 [node name="Panel" type="Panel" parent="TabContainer/Noticias" unique_id=301061043]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 25.0
-offset_right = 616.0
-offset_bottom = 361.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 17.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="TabContainer/Noticias/Panel" unique_id=1526246081]
 layout_mode = 0
@@ -86,7 +92,6 @@ offset_right = 576.0
 offset_bottom = 136.0
 
 [node name="Contratar" type="Control" parent="TabContainer" unique_id=1110931681]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 

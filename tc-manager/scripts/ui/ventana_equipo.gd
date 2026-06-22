@@ -1,6 +1,6 @@
 extends Control
 
-signal terminar_dia
+signal dia_terminado
 
 #@onready var juego: Node = $"../Juego"
 @onready var labelDias = $panDias/labelDias
@@ -27,7 +27,7 @@ func stockearTienda(pilotos):
 			var itemInstancia = itemPilotoTienda.instantiate()
 			container_pilotos_tienda.add_child(itemInstancia)
 			itemInstancia.ingresarPiloto(p)
-			itemInstancia.actualizarUI.connect(_on_actualizar_ui)
+			itemInstancia.piloto_contratado.connect(_on_actualizar_ui)
 
 func cargarPersonal(pilotos):
 	for c in container_pilotos_personal.get_children():
@@ -36,16 +36,22 @@ func cargarPersonal(pilotos):
 			var itemInstancia = itemPilotoPersonal.instantiate()
 			container_pilotos_personal.add_child(itemInstancia)
 			itemInstancia.ingresarPiloto(p)
-			itemInstancia.actualizarUI.connect(_on_actualizar_ui)
+			itemInstancia.piloto_a_entrenar.connect(_on_piloto_entrenar)
 
 func actualizarUI(): 
 	labelDias.text = "Dia " + str(Juego.diaActual)
 	lab_dinero.text = "$" + str(Juego.get_dinero())
 	pilotosDisponibles = Juego.pilotosDisponibles
 	cargarPersonal(Juego.get_contratados())
+	for c in container_pilotos_tienda.get_children():
+		if c is Panel:
+			c.actualizar_ui()
 	
 func _on_but_terminar_dia_pressed() -> void:
-	emit_signal("terminar_dia")
+	emit_signal("dia_terminado")
 	
 func _on_actualizar_ui():
+	actualizarUI()
+
+func _on_piloto_entrenar(i,f):
 	actualizarUI()

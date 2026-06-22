@@ -4,9 +4,19 @@
 [ext_resource type="Script" uid="uid://ci5unwtgfm0wc" path="res://scripts/ui/elementos/item_piloto_personal.gd" id="2_pwugh"]
 
 [node name="ItemPilotoPersonal" unique_id=1667803817 instance=ExtResource("1_mkyos")]
+custom_minimum_size = Vector2(0, 87)
+offset_bottom = 160.0
 script = ExtResource("2_pwugh")
 
-[node name="butEntrenar" type="Button" parent="." index="3" unique_id=76597497]
+[node name="labelExperiencia" type="Label" parent="." index="3" unique_id=733695485]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 55.0
+offset_right = 151.0
+offset_bottom = 78.0
+text = "Experiencia: 9999"
+
+[node name="butEntrenar" type="Button" parent="." index="4" unique_id=76597497]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -21,7 +31,7 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "ENTRENAR"
 
-[node name="butDespedir" type="Button" parent="." index="4" unique_id=308368682]
+[node name="butDespedir" type="Button" parent="." index="5" unique_id=308368682]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -48,7 +58,7 @@ text = "[img]res://assets/godot_icons/Signal.svg[/img]"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="icoOcupado" type="RichTextLabel" parent="." index="5" unique_id=357383042]
+[node name="icoOcupado" type="RichTextLabel" parent="." index="6" unique_id=357383042]
 visible = false
 layout_mode = 1
 anchors_preset = 6
@@ -67,3 +77,60 @@ bbcode_enabled = true
 text = "[img]res://assets/godot_icons/VehicleBody3D.svg[/img]"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="WinEntrenar" type="Window" parent="." index="7" unique_id=1708643095]
+oversampling_override = 1.0
+title = "Entrenar..."
+initial_position = 4
+size = Vector2i(200, 134)
+visible = false
+unresizable = true
+minimize_disabled = true
+maximize_disabled = true
+
+[node name="Control" type="Control" parent="WinEntrenar" index="0" unique_id=1766118471]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NumeroDias" type="SpinBox" parent="WinEntrenar/Control" index="0" unique_id=1468690462]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 100.0
+offset_bottom = 74.0
+min_value = 1.0
+max_value = 7.0
+value = 1.0
+rounded = true
+alignment = 1
+
+[node name="LabelTiempo" type="Label" parent="WinEntrenar/Control" index="1" unique_id=915343076]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 124.0
+offset_bottom = 33.0
+text = "Tiempo (Dias):"
+
+[node name="ButWinEntrenar" type="Button" parent="WinEntrenar/Control" index="2" unique_id=1607670729]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -43.0
+offset_right = 40.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Entrenar"
+
+[connection signal="pressed" from="butEntrenar" to="." method="_on_but_entrenar_pressed"]
+[connection signal="close_requested" from="WinEntrenar" to="." method="_on_win_entrenar_close_requested"]
+[connection signal="pressed" from="WinEntrenar/Control/ButWinEntrenar" to="." method="_on_but_win_entrenar_pressed"]

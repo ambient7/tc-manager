@@ -7,7 +7,8 @@ extends Panel
 
 
 var piloto: Piloto
-signal actualizarUI
+signal piloto_contratado
+signal piloto_a_entrenar(inicio,fin)
 
 var nombre
 var habilidad
@@ -19,4 +20,6 @@ func ingresarPiloto(pilotoIngresado):
 	label_nombre.text = str(pilotoIngresado.nombre + " " + pilotoIngresado.apellido)
 	label_habilidad.text = "Habilidad: " + str(piloto.habilidad)
 	label_salario.text = "Salario: $" + str(piloto.salario)
-	
+
+func actualizar_ui():
+	pass
