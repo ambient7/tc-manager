@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://djeskgjksc266"]
+
+[node name="ItemNoticia" type="PanelContainer" unique_id=588988596]
+offset_left = 56.0
+offset_top = 64.0
+offset_right = 600.0
+offset_bottom = 144.0
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1749525919]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=243477747]
+layout_mode = 2
+
+[node name="LabelTitulo" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1900899471]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "Titulo"
+autowrap_mode = 3
+
+[node name="LabelCuerpo" type="Label" parent="MarginContainer/VBoxContainer" unique_id=44131907]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "n Label sin Autowrap siempre quiere ser tan ancho como su texto, y eso rompe el layout. Con Autowrap = Word, el Label le dice al motor \"necesito tanto ancho como me den, y mi alto depende de cuántas líneas me salgan\" — eso es exactamente el comportamiento de tamaño \"adaptable al contenido\" que buscás. Los contenedores (VBoxContainer, PanelContainer) en Godot 4 ya están diseñados para respetar ese tamaño mínimo calculado automáticamente, sin que vos tengas que tocar código."
+autowrap_mode = 3
