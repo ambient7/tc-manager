@@ -2,7 +2,6 @@ extends Control
 
 signal dia_terminado
 
-#@onready var juego: Node = $"../Juego"
 @onready var labelDias = $panDias/labelDias
 @onready var lab_dinero: Label = $panDinero/labDinero
 @onready var container_pilotos_tienda: VBoxContainer = $TabContainer/Contratar/ScrollContainer/containerPilotosTienda
