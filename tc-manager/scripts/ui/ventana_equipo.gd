@@ -7,6 +7,12 @@ signal dia_terminado
 @onready var lab_dinero: Label = $panDinero/labDinero
 @onready var container_pilotos_tienda: VBoxContainer = $TabContainer/Contratar/ScrollContainer/containerPilotosTienda
 @onready var container_pilotos_personal: VBoxContainer = $TabContainer/Equipo/ScrollContainer/containerPilotosPersonal
+@onready var noticia_container: VBoxContainer = $TabContainer/Noticias/Panel/ScrollContainer/NoticiaContainer
+
+
+const ITEM_NOTICIA = preload("uid://djeskgjksc266")
+const ITEM_EVENTO = preload("uid://bw020ca4arlcy")
+const SEPARADOR_DIA = preload("uid://bkfgpdps85n61")
 var itemPilotoTienda = preload("res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn")
 var itemPilotoPersonal = preload("res://scn/ventanas/elementos equipo/item_piloto_personal.tscn")
 var pilotosDisponibles: Array[Piloto]
@@ -46,6 +52,19 @@ func actualizarUI():
 	for c in container_pilotos_tienda.get_children():
 		if c is Panel:
 			c.actualizar_ui()
+
+func noticia_divisor():
+	var item = SEPARADOR_DIA.instantiate()
+	item.get_child(0).text = "Dia " + str(Juego.diaActual)
+	noticia_container.add_child(item)
+	noticia_container.move_child(item,0)
+
+
+func agregar_noticia(noticia: Noticia) -> void:
+	var item = ITEM_NOTICIA.instantiate()
+	noticia_container.add_child(item)
+	noticia_container.move_child(item,0)
+	item.importar_noticia(noticia)
 	
 func _on_but_terminar_dia_pressed() -> void:
 	emit_signal("dia_terminado")
@@ -53,5 +72,10 @@ func _on_but_terminar_dia_pressed() -> void:
 func _on_actualizar_ui():
 	actualizarUI()
 
-func _on_piloto_entrenar(i,f):
+func _on_piloto_entrenar(piloto):
 	actualizarUI()
+	var noticia = NoticiasBd.importar_plantilla(NoticiasBd.ENTRENAMIENTO_PROXIMO,
+	{ "piloto": piloto.nombre + " " + piloto.apellido }
+	)
+	
+	agregar_noticia(noticia)

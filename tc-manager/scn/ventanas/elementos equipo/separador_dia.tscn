@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bkfgpdps85n61"]
+
+[node name="SeparadorDia" type="HBoxContainer" unique_id=373058701]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="." unique_id=1060203014]
+layout_mode = 2
+text = "dia X"
+
+[node name="HSeparator" type="HSeparator" parent="." unique_id=2071537185]
+layout_mode = 2
+size_flags_horizontal = 3

@@ -39,6 +39,6 @@ func _on_but_win_entrenar_pressed() -> void:
 	piloto.comienzo_entreno = Juego.diaActual
 	piloto.fin_entreno = piloto.comienzo_entreno + int(numero_dias.value)
 	piloto.entreno_restante =  int(numero_dias.value)
-	emit_signal("piloto_a_entrenar", piloto.comienzo_entreno, piloto.fin_entreno)
+	emit_signal("piloto_a_entrenar", piloto)
 	
 	win_entrenar.hide()

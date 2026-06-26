@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Juego="*uid://dafwl810dhk7c"
+NoticiasBd="*uid://bg0omhlpwyfrh"
 
 [display]
 

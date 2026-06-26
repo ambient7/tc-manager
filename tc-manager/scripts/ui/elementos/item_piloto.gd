@@ -8,7 +8,7 @@ extends Panel
 
 var piloto: Piloto
 signal piloto_contratado
-signal piloto_a_entrenar(inicio,fin)
+signal piloto_a_entrenar(piloto)
 
 var nombre
 var habilidad

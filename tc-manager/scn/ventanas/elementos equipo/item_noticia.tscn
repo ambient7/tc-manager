@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://djeskgjksc266"]
 
+[ext_resource type="Script" uid="uid://cxb8y82s5f6wc" path="res://scn/ventanas/elementos equipo/item_noticia.gd" id="1_00jbq"]
+
 [node name="ItemNoticia" type="PanelContainer" unique_id=588988596]
 offset_left = 56.0
 offset_top = 64.0
 offset_right = 600.0
 offset_bottom = 144.0
 size_flags_horizontal = 3
+script = ExtResource("1_00jbq")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1749525919]
 layout_mode = 2

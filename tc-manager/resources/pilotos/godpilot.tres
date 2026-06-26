@@ -4,4 +4,9 @@
 
 [resource]
 script = ExtResource("1_fgndc")
+nombre = "Jesus"
+apellido = "Si ESE Jesus"
+experiencia = 800
+habilidad = 612
+agresividad = 1
 metadata/_custom_type_script = "uid://4naunmlj0tbp"

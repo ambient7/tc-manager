@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Noticia" format=3 uid="uid://l4pwrbko6klm"]
+
+[ext_resource type="Script" uid="uid://wbdxlb4uwitx" path="res://scripts/noticia.gd" id="1_ocjkl"]
+
+[resource]
+script = ExtResource("1_ocjkl")
+titulo = "{piloto} esta entrenando"
+cuerpo = "{piloto} esta entenando y ha mejorado su habilidad un poco. A {piloto} le quedan {dias_restantes} dias de entrenamiento"
+metadata/_custom_type_script = "uid://wbdxlb4uwitx"

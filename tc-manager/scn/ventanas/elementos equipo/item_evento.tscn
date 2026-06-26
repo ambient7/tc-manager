@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bw020ca4arlcy"]
+
+[ext_resource type="PackedScene" uid="uid://djeskgjksc266" path="res://scn/ventanas/elementos equipo/item_noticia.tscn" id="1_fua45"]
+
+[node name="ItemEvento" unique_id=588988596 instance=ExtResource("1_fua45")]
+
+[node name="LabelCuerpo" parent="MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(243477747) index="1" unique_id=44131907]
+text = "Ha pasado algo"
+
+[node name="ContainerOpciones" type="VBoxContainer" parent="MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(243477747) index="2" unique_id=183890176]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ContainerOpciones" index="0" unique_id=1593064804]
+layout_mode = 2
+text = "uh"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/ContainerOpciones" index="1" unique_id=1740083632]
+layout_mode = 2
+text = "ah"
