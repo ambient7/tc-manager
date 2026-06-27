@@ -66,9 +66,10 @@ anchor_bottom = 1.0
 offset_top = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 0
+current_tab = 2
 
 [node name="Noticias" type="Control" parent="TabContainer" unique_id=1418286884]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -133,7 +134,6 @@ layout_mode = 2
 text = "Pilotos disponibles:"
 
 [node name="Equipo" type="Control" parent="TabContainer" unique_id=1936524673]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 

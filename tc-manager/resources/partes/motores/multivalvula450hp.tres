@@ -4,4 +4,6 @@
 
 [resource]
 script = ExtResource("1_v5com")
+velocidad_maxima = 250
+aceleracion = 11
 metadata/_custom_type_script = "uid://b7vvtyortulwo"

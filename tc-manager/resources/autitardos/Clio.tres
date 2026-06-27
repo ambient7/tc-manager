@@ -1,7 +1,10 @@
 [gd_resource type="Resource" script_class="Auto" format=3 uid="uid://dn24e1vpgo35x"]
 
+[ext_resource type="Resource" uid="uid://bbhjg84ytpqwt" path="res://resources/partes/motores/multivalvula450hp.tres" id="1_deqrj"]
 [ext_resource type="Script" uid="uid://bemac4q5uo7wg" path="res://scripts/autos/auto.gd" id="1_offvj"]
 
 [resource]
 script = ExtResource("1_offvj")
+estado = 4
+motor = ExtResource("1_deqrj")
 metadata/_custom_type_script = "uid://bemac4q5uo7wg"
