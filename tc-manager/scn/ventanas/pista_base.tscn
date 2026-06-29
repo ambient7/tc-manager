@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bqo16qpj3um6f"]
+
+[ext_resource type="Script" uid="uid://q04mgxbrpcrq" path="res://scripts/carrera/pista_base.gd" id="1_cdajn"]
+[ext_resource type="Texture2D" uid="uid://dlkttduk6onlb" path="res://icon.svg" id="2_ev6bc"]
+[ext_resource type="Script" uid="uid://d4hrjks6xc051" path="res://scripts/carrera/segmento_pista.gd" id="2_if5lg"]
+
+[sub_resource type="Resource" id="Resource_yhlxf"]
+script = ExtResource("2_if5lg")
+longitud = 100
+velocidad_max = 300
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_if5lg"]
+script = ExtResource("2_if5lg")
+tipo = 1
+longitud = 150
+habilidad_requerida = 10
+aceleracion_requerida = 30
+velocidad_max = 100
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_moxts"]
+script = ExtResource("2_if5lg")
+longitud = 100
+velocidad_max = 300
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_2xhuj"]
+script = ExtResource("2_if5lg")
+tipo = 1
+longitud = 50
+habilidad_requerida = 50
+aceleracion_requerida = 70
+velocidad_max = 80
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Curve2D" id="Curve2D_yhlxf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 48, 96, 0, 0, 0, 0, 64, 216, -51.163914, 4.346447, 51.163914, -4.346447, 192, 272, 0, 0, 0, 0, 320, 232, 0, 0, 0, 0, 336, 96, 0, 0, 0, 0, 256, 32, 0, 0, 0, 0, 136, 32, 0, 0, 0, 0, 48, 96)
+}
+point_count = 8
+
+[node name="PistaBase" type="Node2D" unique_id=85885368 node_paths=PackedStringArray("path")]
+script = ExtResource("1_cdajn")
+segmentos = Array[ExtResource("2_if5lg")]([SubResource("Resource_yhlxf"), SubResource("Resource_if5lg"), SubResource("Resource_moxts"), SubResource("Resource_2xhuj")])
+path = NodePath("Path2D")
+metadata/_custom_type_script = "uid://q04mgxbrpcrq"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=551060779]
+position = Vector2(320, 240)
+scale = Vector2(3, 2.6250002)
+texture = ExtResource("2_ev6bc")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1335593787]
+position = Vector2(128, 96)
+curve = SubResource("Curve2D_yhlxf")

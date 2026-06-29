@@ -2,9 +2,11 @@
 
 [ext_resource type="Resource" uid="uid://bbhjg84ytpqwt" path="res://resources/partes/motores/multivalvula450hp.tres" id="1_deqrj"]
 [ext_resource type="Script" uid="uid://bemac4q5uo7wg" path="res://scripts/autos/auto.gd" id="1_offvj"]
+[ext_resource type="Resource" uid="uid://c4a87c8afk4fm" path="res://resources/partes/ruedas/ruedaspromax.tres" id="2_blwkw"]
 
 [resource]
 script = ExtResource("1_offvj")
 estado = 4
 motor = ExtResource("1_deqrj")
+ruedas = ExtResource("2_blwkw")
 metadata/_custom_type_script = "uid://bemac4q5uo7wg"

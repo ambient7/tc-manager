@@ -1,0 +1,3934 @@
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Layout")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[docks]
+
+dock_3_selected_tab_idx=0
+dock_4_selected_tab_idx=0
+dock_5_selected_tab_idx=0
+dock_floating={}
+dock_closed=[]
+dock_split_2=0
+dock_split_3=0
+dock_hsplit_1=0
+dock_hsplit_2=367
+dock_hsplit_3=-412
+dock_hsplit_4=0
+dock_9_selected_tab_idx=0
+dock_3="Scene,Import"
+dock_4="FileSystem,History"
+dock_5="Inspector,Signals,Groups"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,MeshLibrary,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_main_split=0
+dock_bottom_split=0
+
+[docks/FileSystem]
+
+h_split_offset=240
+v_split_offset=0
+display_mode=0
+file_sort=0
+file_list_display_mode=1
+selected_paths=PackedStringArray("res://scn/test/carrerucha.tscn")
+uncollapsed_paths=PackedStringArray("res://", "res://scripts/", "res://scripts/ui/elementos/", "res://scn/", "res://scn/ventanas/elementos equipo/", "res://scn/test/", "res://resources/", "res://resources/pilotos/", "res://resources/autitardos/")
+
+[docks/History]
+
+include_scene=true
+include_global=true
+
+[EditorNode]
+
+open_scenes=PackedStringArray("res://scn/master.tscn", "res://scn/ventanas/ventana_equipo.tscn", "res://scn/ventanas/elementos equipo/item_piloto.tscn", "res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_noticia.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/test/carrerucha.tscn")
+current_scene="res://scn/test/carrerucha.tscn"
+bottom_panel_offsets={
+"Animation": 0.0,
+"Audio": -450.0,
+"Debugger": -286.0,
+"Output": -270.0,
+"Search Results": 0.0,
+"Shader Editor": 0.0
+}
+selected_default_debugger_tab_idx=0
+selected_main_editor_idx=0
+
+[EditorWindow]
+
+screen=0
+mode="maximized"
+position=Vector2i(0, 142)
+
+[ScriptEditor]
+
+open_scripts=["res://scn/ventanas/elementos equipo/item_noticia.gd", "res://scripts/ui/elementos/item_piloto.gd", "res://scripts/ui/elementos/item_piloto_personal.gd", "res://scripts/ui/elementos/item_piloto_tienda.gd", "res://scripts/juego.gd", "res://scripts/master.gd", "res://scripts/noticia.gd", "res://scripts/noticias_bd.gd", "res://scripts/piloto.gd", "res://scripts/ui/ventana_equipo.gd"]
+selected_script="res://scripts/ui/ventana_equipo.gd"
+open_help=["Node"]
+script_split_offset=200
+list_split_offset=0
+zoom_factor=0.9285714
+
+[GameView]
+
+floating_window_rect=Rect2i(350, 257, 1146, 745)
+floating_window_screen=0
+
+[ShaderEditor]
+
+open_shaders=[]
+split_offset=200
+selected_shader=""
+text_shader_zoom_factor=1.0
+
+[docks/Theme]
+
+split_offset=520
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath(".")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-166, -111),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.0
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-180.8159, -20.63032),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.3310001
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Theme Overrides"), NodePath("MarginContainer"), PackedStringArray("Theme Overrides", "Theme Overrides/constants"), NodePath("MarginContainer/VBoxContainer"), PackedStringArray("Layout"), NodePath("MarginContainer/VBoxContainer/LabelTitulo"), PackedStringArray("Layout"), NodePath("MarginContainer/VBoxContainer/LabelCuerpo"), PackedStringArray("Layout")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath("MarginContainer/VBoxContainer/LabelCuerpo")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-205.87561, -66.8121),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.3310001
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath(".")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-166, -111),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.0
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Theme Overrides"), NodePath("MarginContainer"), PackedStringArray("Theme Overrides", "Theme Overrides/constants"), NodePath("MarginContainer/VBoxContainer"), PackedStringArray("Layout"), NodePath("MarginContainer/VBoxContainer/LabelTitulo"), PackedStringArray("Layout"), NodePath("MarginContainer/VBoxContainer/LabelCuerpo"), PackedStringArray("Layout")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath("WinEntrenar/Control/ButWinEntrenar")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-262.5441, -174.72014),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.1
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Layout", "Layout/Container Sizing", "Layout/Transform"), NodePath("icoOcupado"), PackedStringArray("Markup")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath("butTienda")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-57.319744, -152.80424),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.1
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[NodePath("butTienda"), PackedStringArray("Text Behavior")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[editor_states]
+
+$selected_nodes=Array[NodePath]([])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(35.517593, -53.36177),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 2.1435893
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-52.189026, -74.500854),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.6105102
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"translate_snap": 1.0,
+"viewport_mode": 1,
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/ItemPiloto")])
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": false,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-264.36362, -63.545475),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.1
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"translate_snap": 1.0,
+"viewport_mode": 1,
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 2.161075,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.24692717,
+"y_rotation": 0.22431155
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/VentanaEquipo/TabContainer/Contratar/Panel")])
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath("VentanaEquipo")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": false,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-197.2727, -46.272724),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.1
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": false,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Layout")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[game_view]
+
+select_mode=0
+camera_override_mode=2
+make_floating_on_play=true
+embed_size_mode=2
+embed_on_play=false
+
+[editor_metadata]
+
+executable_path="/app/bin/godot-bin"
+use_advanced_connections=false
+
+[dialog_bounds]
+
+project_settings=Rect2(360, 304, 1200, 700)
+create_new_node=Rect2(510, 304, 900, 731)
+export=Rect2(510, 404, 900, 500)
+search_help=Rect2(480, 384, 960, 540)
+
+[recent_files]
+
+scenes=["res://scn/ventanas/elementos equipo/separador_dia.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/ventanas/elementos equipo/item_noticia.tscn", "res://scripts/ui/elementos/item_noticia.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_piloto.tscn", "res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn", "res://scn/ventanas/tienda/item_piloto.tscn", "res://scn/ventanas/ventana_equipo.tscn", "res://scn/master.tscn"]
+scripts=["Node", "res://scripts/noticia.gd", "res://scripts/noticias_bd.gd", "res://scn/ventanas/elementos equipo/item_noticia.gd", "res://scripts/equipo.gd", "res://scripts/autos/auto.gd", "PackedStringArray", "res://scn/ventanas/elementos equipo/item_piloto_personal.gd", "Array", "res://scn/ventanas/elementos equipo/item_piloto_tienda.gd"]
+
+[script_setup]
+
+last_selected_language="GDScript"
+create_built_in_script=false
+
+[quick_open_dialog]
+
+last_mode=1
+
+[create_dialog]
+
+built_in_enabled=true
+[selected_history]
+
+PackedScene=PackedStringArray("uid://bkfgpdps85n61", "uid://bw020ca4arlcy", "uid://djeskgjksc266", "uid://cq7phlle4mkm6")
+[res://scripts/master.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 2,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 28,
+"scroll_position": 25.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/equipo.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 44,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 7,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/ui/ventana_equipo.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 80,
+"scroll_position": 56.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/piloto.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 33,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 26,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/juego.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 67,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 53,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/ui/elementos/item_piloto.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 31,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 10,
+"scroll_position": 1.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/ui/elementos/item_piloto_tienda.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 17,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 23,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/ui/elementos/item_piloto_personal.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 40,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 41,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/autos/auto.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 4,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scn/ventanas/elementos equipo/item_noticia.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 19,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/noticias_bd.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 5,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/noticia.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 5,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+[editor_states]
+
+$selected_nodes=Array[NodePath]([NodePath(".")])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-98.99613, -68.805595),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 2.8531175
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-94.96518, 17.901733),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.3310001
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-94.12385, 29.43788),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.4641001
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"translate_snap": 1.0,
+"viewport_mode": 1,
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@18069/@Panel@14/@VBoxContainer@15/DockHSplitMain/@VBoxContainer@28/DockVSplitCenter/@VSplitContainer@70/@VBoxContainer@71/@EditorMainScreen@125/MainScreen/@CanvasItemEditor@9322/@VSplitContainer@9105/@HSplitContainer@9107/@HSplitContainer@9109/@Control@9110/@SubViewportContainer@9111/@SubViewport@9112/VentanaEquipo/TabContainer/Contratar/Panel")])
+[folding]
+
+node_unfolds=[NodePath("TabContainer"), PackedStringArray("tab_2"), NodePath("TabContainer/Noticias/Panel/ScrollContainer/NoticiaContainer"), PackedStringArray("Theme Overrides"), NodePath("TabContainer/Contratar/ScrollContainer"), PackedStringArray("Theme Overrides", "Layout/Transform"), NodePath("TabContainer/Contratar/ScrollContainer/containerPilotosTienda"), PackedStringArray("Theme Overrides", "Theme Overrides/constants"), NodePath("TabContainer/Contratar/ScrollContainer/containerPilotosTienda/labContratar"), PackedStringArray("Layout")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+node_unfolds=[NodePath("TabContainer"), PackedStringArray("tab_0")]
+resource_unfolds=[]
+nodes_folded=[]
+list=[{
+"base": &"Resource",
+"class": &"Auto",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/autos/auto.gd"
+}, {
+"base": &"Resource",
+"class": &"Equipo",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/equipo.gd"
+}, {
+"base": &"PanelContainer",
+"class": &"ItemNoticia",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scn/ventanas/elementos equipo/item_noticia.gd"
+}, {
+"base": &"Resource",
+"class": &"Motor",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/partes/motor.gd"
+}, {
+"base": &"Resource",
+"class": &"Noticia",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/noticia.gd"
+}, {
+"base": &"Resource",
+"class": &"Piloto",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/piloto.gd"
+}, {
+"base": &"Resource",
+"class": &"Ruedas",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/partes/ruedas.gd"
+}]
+[gd_scene format=3 uid="uid://7r7id01wel28"]
+
+[ext_resource type="Script" uid="uid://cxf072a4wuvfv" path="res://scripts/master.gd" id="1_70kie"]
+[ext_resource type="PackedScene" uid="uid://cq7phlle4mkm6" path="res://scn/ventanas/ventana_equipo.tscn" id="2_7d2s6"]
+
+[node name="Master" type="Control" unique_id=1941678233]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_70kie")
+
+[node name="VentanaEquipo" parent="." unique_id=2053102584 instance=ExtResource("2_7d2s6")]
+layout_mode = 1
+
+[connection signal="dia_terminado" from="VentanaEquipo" to="." method="_on_ventana_equipo_dia_terminado"]
+[gd_scene format=3 uid="uid://t6bpejka8256"]
+
+[node name="Carrerucha" type="Control" unique_id=984095423]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+[gd_scene format=3 uid="uid://bw020ca4arlcy"]
+
+[ext_resource type="PackedScene" uid="uid://djeskgjksc266" path="res://scn/ventanas/elementos equipo/item_noticia.tscn" id="1_fua45"]
+
+[node name="ItemEvento" unique_id=588988596 instance=ExtResource("1_fua45")]
+
+[node name="LabelCuerpo" parent="MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(243477747) index="1" unique_id=44131907]
+text = "Ha pasado algo"
+
+[node name="ContainerOpciones" type="VBoxContainer" parent="MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(243477747) index="2" unique_id=183890176]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/ContainerOpciones" index="0" unique_id=1593064804]
+layout_mode = 2
+text = "uh"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/ContainerOpciones" index="1" unique_id=1740083632]
+layout_mode = 2
+text = "ah"
+extends PanelContainer
+class_name ItemNoticia
+
+@export var titulo: String
+@export var cuerpo: String
+
+@onready var label_titulo: Label = $MarginContainer/VBoxContainer/LabelTitulo
+@onready var label_cuerpo: Label = $MarginContainer/VBoxContainer/LabelCuerpo
+
+
+
+func actualizar_texto():
+	label_titulo.text = titulo
+	label_cuerpo.text = cuerpo
+
+
+func importar_noticia(noticia):
+	label_titulo.text = noticia.titulo
+	label_cuerpo.text = noticia.cuerpo
+[gd_scene format=3 uid="uid://djeskgjksc266"]
+
+[ext_resource type="Script" uid="uid://cxb8y82s5f6wc" path="res://scn/ventanas/elementos equipo/item_noticia.gd" id="1_00jbq"]
+
+[node name="ItemNoticia" type="PanelContainer" unique_id=588988596]
+offset_left = 56.0
+offset_top = 64.0
+offset_right = 600.0
+offset_bottom = 144.0
+size_flags_horizontal = 3
+script = ExtResource("1_00jbq")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1749525919]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=243477747]
+layout_mode = 2
+
+[node name="LabelTitulo" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1900899471]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "Titulo"
+autowrap_mode = 3
+
+[node name="LabelCuerpo" type="Label" parent="MarginContainer/VBoxContainer" unique_id=44131907]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "n Label sin Autowrap siempre quiere ser tan ancho como su texto, y eso rompe el layout. Con Autowrap = Word, el Label le dice al motor \"necesito tanto ancho como me den, y mi alto depende de cuántas líneas me salgan\" — eso es exactamente el comportamiento de tamaño \"adaptable al contenido\" que buscás. Los contenedores (VBoxContainer, PanelContainer) en Godot 4 ya están diseñados para respetar ese tamaño mínimo calculado automáticamente, sin que vos tengas que tocar código."
+autowrap_mode = 3
+[gd_scene format=3 uid="uid://cyjhuuo3gg4l1"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_mkyos"]
+[ext_resource type="Script" uid="uid://ci5unwtgfm0wc" path="res://scripts/ui/elementos/item_piloto_personal.gd" id="2_pwugh"]
+
+[node name="ItemPilotoPersonal" unique_id=1667803817 instance=ExtResource("1_mkyos")]
+custom_minimum_size = Vector2(0, 87)
+offset_bottom = 160.0
+script = ExtResource("2_pwugh")
+
+[node name="labelExperiencia" type="Label" parent="." index="3" unique_id=733695485]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 55.0
+offset_right = 151.0
+offset_bottom = 78.0
+text = "Experiencia: 9999"
+
+[node name="butEntrenar" type="Button" parent="." index="4" unique_id=76597497]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = -17.0
+offset_right = -16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "ENTRENAR"
+
+[node name="butDespedir" type="Button" parent="." index="5" unique_id=308368682]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -17.0
+offset_right = -160.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="butDespedir" index="0" unique_id=1403175885]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "[img]res://assets/godot_icons/Signal.svg[/img]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="icoOcupado" type="RichTextLabel" parent="." index="6" unique_id=357383042]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -248.0
+offset_top = -25.0
+offset_right = -200.0
+offset_bottom = 23.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(-184, 112)
+bbcode_enabled = true
+text = "[img]res://assets/godot_icons/VehicleBody3D.svg[/img]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WinEntrenar" type="Window" parent="." index="7" unique_id=1708643095]
+oversampling_override = 1.0
+title = "Entrenar..."
+initial_position = 4
+size = Vector2i(200, 134)
+visible = false
+unresizable = true
+minimize_disabled = true
+maximize_disabled = true
+
+[node name="Control" type="Control" parent="WinEntrenar" index="0" unique_id=1766118471]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NumeroDias" type="SpinBox" parent="WinEntrenar/Control" index="0" unique_id=1468690462]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 100.0
+offset_bottom = 74.0
+min_value = 1.0
+max_value = 7.0
+value = 1.0
+rounded = true
+alignment = 1
+
+[node name="LabelTiempo" type="Label" parent="WinEntrenar/Control" index="1" unique_id=915343076]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 124.0
+offset_bottom = 33.0
+text = "Tiempo (Dias):"
+
+[node name="ButWinEntrenar" type="Button" parent="WinEntrenar/Control" index="2" unique_id=1607670729]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -43.0
+offset_right = 40.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Entrenar"
+
+[connection signal="pressed" from="butEntrenar" to="." method="_on_but_entrenar_pressed"]
+[connection signal="close_requested" from="WinEntrenar" to="." method="_on_win_entrenar_close_requested"]
+[connection signal="pressed" from="WinEntrenar/Control/ButWinEntrenar" to="." method="_on_but_win_entrenar_pressed"]
+[gd_scene format=3 uid="uid://bbkcny6t7k7i0"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_xs1ce"]
+[ext_resource type="Script" uid="uid://lhdojctvad6k" path="res://scripts/ui/elementos/item_piloto_tienda.gd" id="2_3qv8d"]
+
+[node name="ItemPilotoTienda" unique_id=1667803817 instance=ExtResource("1_xs1ce")]
+offset_right = 608.0
+script = ExtResource("2_3qv8d")
+
+[node name="butTienda" type="Button" parent="." index="3" unique_id=23280327]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -17.0
+offset_right = -16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+disabled = true
+text = "CONTRATAR"
+
+[connection signal="pressed" from="butTienda" to="." method="_on_but_tienda_pressed"]
+[gd_scene format=3 uid="uid://b1u3krat6xuo5"]
+
+[ext_resource type="Script" uid="uid://bdib7crhfnlx" path="res://scripts/ui/elementos/item_piloto.gd" id="1_mnk55"]
+
+[node name="ItemPiloto" type="Panel" unique_id=1667803817]
+custom_minimum_size = Vector2(0, 64)
+offset_left = 32.0
+offset_top = 73.0
+offset_right = 576.0
+offset_bottom = 137.0
+size_flags_vertical = 0
+script = ExtResource("1_mnk55")
+
+[node name="labelNombre" type="Label" parent="." unique_id=1313045567]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 86.0
+offset_bottom = 31.0
+text = "NOMBRE"
+
+[node name="labelHabilidad" type="Label" parent="." unique_id=1718555061]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 136.0
+offset_bottom = 55.0
+text = "Habilidad: 9999"
+
+[node name="labelSalario" type="Label" parent="." unique_id=2069484852]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 32.0
+offset_right = 272.0
+offset_bottom = 55.0
+text = "Salario: 9999999$"
+[gd_scene format=3 uid="uid://bkfgpdps85n61"]
+
+[node name="SeparadorDia" type="HBoxContainer" unique_id=373058701]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="." unique_id=1060203014]
+layout_mode = 2
+text = "dia X"
+
+[node name="HSeparator" type="HSeparator" parent="." unique_id=2071537185]
+layout_mode = 2
+size_flags_horizontal = 3
+[gd_scene format=3 uid="uid://cq7phlle4mkm6"]
+
+[ext_resource type="Script" uid="uid://ddv2yjorlaeij" path="res://scripts/ui/ventana_equipo.gd" id="1_3opnt"]
+[ext_resource type="PackedScene" uid="uid://bw020ca4arlcy" path="res://scn/ventanas/elementos equipo/item_evento.tscn" id="2_uwoxf"]
+
+[node name="VentanaEquipo" type="Control" unique_id=639364111]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3opnt")
+
+[node name="panDias" type="Panel" parent="." unique_id=104325850]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 120.0
+offset_bottom = 56.0
+
+[node name="labelDias" type="Label" parent="panDias" unique_id=1527154451]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 40.0
+text = "Dia 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="panDinero" type="Panel" parent="." unique_id=1638612395]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 56.0
+
+[node name="labDinero" type="Label" parent="panDinero" unique_id=941229551]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 40.0
+text = "$ 10999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="butTerminarDia" type="Button" parent="." unique_id=1642242314]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -184.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 56.0
+grow_horizontal = 0
+text = "Terminar día"
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=414446955]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 2
+
+[node name="Noticias" type="Control" parent="TabContainer" unique_id=1418286884]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Panel" type="Panel" parent="TabContainer/Noticias" unique_id=301061043]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 17.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Noticias/Panel" unique_id=2035710220]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 8.0
+offset_right = -32.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NoticiaContainer" type="VBoxContainer" parent="TabContainer/Noticias/Panel/ScrollContainer" unique_id=1330970421]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ItemEvento" parent="TabContainer/Noticias/Panel/ScrollContainer/NoticiaContainer" unique_id=588988596 instance=ExtResource("2_uwoxf")]
+layout_mode = 2
+script = null
+
+[node name="Contratar" type="Control" parent="TabContainer" unique_id=1110931681]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Contratar" unique_id=661564847]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 25.0
+offset_right = -64.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="containerPilotosTienda" type="VBoxContainer" parent="TabContainer/Contratar/ScrollContainer" unique_id=1875692535]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="labContratar" type="Label" parent="TabContainer/Contratar/ScrollContainer/containerPilotosTienda" unique_id=1943769100]
+custom_minimum_size = Vector2(0, 40.605)
+layout_mode = 2
+text = "Pilotos disponibles:"
+
+[node name="Equipo" type="Control" parent="TabContainer" unique_id=1936524673]
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="labPilotos" type="Label" parent="TabContainer/Equipo" unique_id=317177954]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 25.0
+offset_right = 264.0
+offset_bottom = 49.0
+text = "Pilotos:"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Equipo" unique_id=1079279917]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 57.0
+offset_right = -64.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="containerPilotosPersonal" type="VBoxContainer" parent="TabContainer/Equipo/ScrollContainer" unique_id=1601733055]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[connection signal="pressed" from="butTerminarDia" to="." method="_on_but_terminar_dia_pressed"]
+extends Resource
+class_name Auto
+
+@export var estado: int
+
+@export var motor: Motor
+@export var ruedas: Ruedas
+extends Resource
+class_name Equipo
+
+@export var nombre: String
+@export var dinero: int
+@export var reputacion: int
+@export var calidad: int
+@export var pilotosContratados: Array[Piloto]
+extends Node
+
+var equipo: Equipo
+var diaActual: int = 1
+var pilotosDisponibles: Array[Piloto] = []
+
+const NOMBRES = [
+	"Alejandro", "Alejo", "Alfonso", "Angel", "Antonio", "Arturo", 
+	"Benjamin", "Bruno", "Carlos", "Cesar", "Cristian", 
+	"Daniel", "David", "Diego", "Eduardo", "Emiliano", 
+	"Emmanuel", "Enzo", "Elian", "Ernesto", "Felipe", "Fernando", 
+	"Francisco", "Gabriel", "Gael", "Gerardo", "Gonzalo", 
+	"Hector", "Hugo", "Ignacio", "Isaac", "Javier", 
+	"Jesus", "Joaquin", "Jorge", "Jose", "Juan", 
+	"Julian", "Leonardo", "Lorenzo", "Lucas", "Luis", 
+	"Manuel", "Marcelo", "Marco", "Mario", "Martin", 
+	"Mateo", "Miguel", "Nicolas", "Pablo", "Santiago", "Thiago" , "Vicente"
+  ];
+
+const APELLIDOS = [
+	"Aguirre", "Alvarez", "Benitez", "Blanco", "Cabrera", 
+	"Calderon", "Campos", "Castillo", "Castro", "Chavez", 
+	"Contreras", "Cruz", "Cueva", "Delgado", "Diaz", "Dominguez", "Espindola",
+	"Fernandez", "Flores", "Fuentes", "Garcia", "Gomez", 
+	"Gonzalez", "Gutierrez", "Hernandez", "Herrera", "Juarez", 
+	"Ledesma", "Lopez", "Luna", "Martinez", "Medina", 
+	"Molina", "Morales", "Muñoz", "Navarro", "Ortega", 
+	"Ortiz", "Peralta", "Pereyra", "Perez", "Ramirez", 
+	"Ramos", "Rivera", "Rodriguez", "Rojas", "Romero", 
+	"Ruiz", "Sanchez", "Silva", "Soto", "Vazquez"
+	];
+
+func _ready() -> void:
+	equipo = Equipo.new()
+	equipo.nombre = "Mi Equipo"
+	equipo.calidad = 5
+	equipo.reputacion = 100
+	equipo.dinero = 10000
+
+func avanzar_dia() -> void:
+	diaActual += 1
+
+func contratar_piloto(piloto: Piloto) -> bool: 
+	if equipo.dinero >= piloto.salario:
+		equipo.dinero -= piloto.salario
+		piloto.contratado = true
+		piloto.diaPago = diaActual
+		equipo.pilotosContratados.append(piloto)
+		pilotosDisponibles.erase(piloto)
+		return true
+	return false
+
+func generar_nombre() -> String:
+	var nomTemp = str( NOMBRES.get(randi_range( 0,len(NOMBRES)-1 )  )   )
+	return nomTemp
+	
+func generar_apellido() -> String:
+	var apeTemp = str( APELLIDOS.get(randi_range( 0,len(APELLIDOS)-1 )  )   )
+	return apeTemp
+
+func generar_piloto():
+	var p = Piloto.new()
+	var chanNom = randi_range(1,3)
+	var chanApe = randi_range(1,3)
+	
+	if int(chanNom) < 3:
+		p.nombre = generar_nombre()
+	else:
+		p.nombre = generar_nombre() + " " + generar_nombre()
+		
+	if int(chanApe) < 3:
+		p.apellido = generar_apellido()
+	else:
+		p.apellido = generar_apellido() + " " + generar_apellido()
+	
+	p.habilidad = randi_range(1, equipo.calidad)
+	p.agresividad = randi_range(20, 80)
+	p.salario = p.habilidad * 1000
+	p.contratado = true
+	p.estado = "DISPONIBLE"
+	pilotosDisponibles.append(p)
+
+func get_dinero(): return equipo.dinero
+func get_contratados(): return equipo.pilotosContratados
+extends Control
+
+@onready var ventana_equipo: Control = $VentanaEquipo
+
+var pilotos: Array[Piloto]
+
+func _ready() -> void:
+	stock_tienda(30)
+
+func _terminar_dia():
+	Juego.avanzar_dia()
+	Juego.pilotosDisponibles = []
+	stock_tienda(3)
+	if Juego.diaActual == 32:
+		Juego.diaActual = 1
+	ventana_equipo.actualizarUI()
+	ventana_equipo.noticia_divisor()
+	for p in Juego.equipo.pilotosContratados:
+		entrenamiento(p)
+	
+func stock_tienda(cant) -> void:
+	for x in cant:
+		Juego.generar_piloto()
+		pilotos = Juego.pilotosDisponibles
+	ventana_equipo.stockearTienda(Juego.pilotosDisponibles)
+
+func entrenamiento(piloto: Piloto):
+	if piloto.estado == Piloto.ESTADO_PILOTO.DISPONIBLE:
+		return  # no hace nada si no está entrenando
+	
+	if piloto.entreno_restante > 0:
+		piloto.habilidad += 1
+		piloto.entreno_restante -= 1
+		var noticia = NoticiasBd.importar_plantilla(
+			NoticiasBd.ENTRENAMIENTO_EXITO,
+			{"piloto": piloto.nombre + " " + piloto.apellido,
+			"dias_restantes": piloto.entreno_restante
+			}
+		)
+		ventana_equipo.agregar_noticia(noticia)
+	elif piloto.entreno_restante == 0:
+		piloto.estado = Piloto.ESTADO_PILOTO.DISPONIBLE
+		var noticia = NoticiasBd.importar_plantilla(
+			NoticiasBd.ENTRENAMIENTO_TERMINADO,
+			{"piloto": piloto.nombre + " " + piloto.apellido
+			}
+		)
+		ventana_equipo.agregar_noticia(noticia)
+
+
+func _on_ventana_equipo_dia_terminado() -> void:
+	_terminar_dia()
+extends Resource
+class_name Noticia
+
+@export var titulo: String
+@export var cuerpo: String
+extends Node
+
+const ENTRENAMIENTO_PROXIMO = preload("res://resources/noticias/ENTRENAMIENTO_PROXIMO.tres")
+const ENTRENAMIENTO_EXITO = preload("uid://l4pwrbko6klm")
+const ENTRENAMIENTO_TERMINADO = preload("uid://phvg0fq7tlgc")
+
+
+func importar_plantilla(plantilla: Noticia, valores: Dictionary) -> Noticia:
+	var noticia = Noticia.new()
+	noticia.titulo = plantilla.titulo.format(valores)
+	noticia.cuerpo = plantilla.cuerpo.format(valores)
+	return noticia
+extends Resource
+class_name Motor
+
+@export var velocidad_maxima: int
+@export var aceleracion: int
+extends Resource
+class_name Ruedas
+
+@export var grado_desgaste: int
+@export var bonus_aceleracion: int
+extends Resource
+class_name Piloto
+
+enum ESTADO_PILOTO {
+	
+	DISPONIBLE,
+	ENTRENARA,
+	ENTRENANDO,
+	PRACTICANDO
+	
+}
+
+@export var nombre: String
+@export var apellido: String
+
+@export var experiencia: int
+@export var habilidad: int
+@export var agresividad: int # variable secreta
+
+@export var salario: int
+@export var diaPago: int
+@export var contratado:bool
+
+@export var estado: ESTADO_PILOTO
+@export var comienzo_entreno: int
+@export var fin_entreno: int
+@export var entreno_restante: int
+extends Panel
+
+@onready var label_nombre: Label = $labelNombre
+@onready var label_habilidad: Label = $labelHabilidad
+@onready var label_salario: Label = $labelSalario
+@onready var ventana_equipo: Control = $"../../../../.."
+
+
+var piloto: Piloto
+signal piloto_contratado
+signal piloto_a_entrenar(piloto)
+
+var nombre
+var habilidad
+var salario
+
+
+func ingresarPiloto(pilotoIngresado):
+	piloto = pilotoIngresado
+	label_nombre.text = str(pilotoIngresado.nombre + " " + pilotoIngresado.apellido)
+	label_habilidad.text = "Habilidad: " + str(piloto.habilidad)
+	label_salario.text = "Salario: $" + str(piloto.salario)
+
+func actualizar_ui():
+	pass
+extends "res://scripts/ui/elementos/item_piloto.gd"
+
+@onready var ico_ocupado: RichTextLabel = $icoOcupado
+@onready var but_entrenar: Button = $butEntrenar
+@onready var but_despedir: Button = $butDespedir
+@onready var label_experiencia: Label = $labelExperiencia
+
+@onready var win_entrenar: Window = $WinEntrenar
+@onready var numero_dias: SpinBox = $WinEntrenar/Control/NumeroDias
+
+
+func ingresarPiloto(pilotoIngresado):
+	piloto = pilotoIngresado
+	label_nombre.text = str(pilotoIngresado.nombre + " " + pilotoIngresado.apellido)
+	label_habilidad.text = "Habilidad: " + str(piloto.habilidad)
+	label_salario.text = "Salario: $" + str(piloto.salario)
+	label_experiencia.text = "Experiencia: " + str(piloto.habilidad)
+	if piloto.estado != Piloto.ESTADO_PILOTO.DISPONIBLE:
+		ico_ocupado.visible = true
+		but_despedir.disabled = true
+		but_entrenar.disabled = true
+	else:
+		ico_ocupado.visible = false
+		but_despedir.disabled = false
+		but_entrenar.disabled = false
+
+
+
+func _on_but_entrenar_pressed() -> void:
+	win_entrenar.show()
+	
+	
+func _on_win_entrenar_close_requested() -> void:
+	win_entrenar.hide()
+
+
+func _on_but_win_entrenar_pressed() -> void:
+	piloto.estado = Piloto.ESTADO_PILOTO.ENTRENARA
+	piloto.comienzo_entreno = Juego.diaActual
+	piloto.fin_entreno = piloto.comienzo_entreno + int(numero_dias.value)
+	piloto.entreno_restante =  int(numero_dias.value)
+	emit_signal("piloto_a_entrenar", piloto)
+	
+	win_entrenar.hide()
+extends "res://scripts/ui/elementos/item_piloto.gd"
+
+@onready var but_tienda: Button = $butTienda
+
+
+func ingresarPiloto(pilotoIngresado):
+	piloto = pilotoIngresado
+	label_nombre.text = str(pilotoIngresado.nombre + " " + pilotoIngresado.apellido)
+	label_habilidad.text = "Habilidad: " + str(piloto.habilidad)
+	label_salario.text = "Salario: $" + str(piloto.salario)
+	if Juego.get_dinero() >= piloto.salario:
+		but_tienda.disabled = false
+	else:
+		but_tienda.disabled = true
+
+func actualizar_ui():
+	if Juego.get_dinero() >= piloto.salario:
+		but_tienda.disabled = false
+	else:
+		but_tienda.disabled = true
+
+func _on_but_tienda_pressed() -> void:
+	if Juego.contratar_piloto(piloto):
+		emit_signal("piloto_contratado")
+	queue_free()
+	
+extends Control
+
+signal dia_terminado
+
+@onready var labelDias = $panDias/labelDias
+@onready var lab_dinero: Label = $panDinero/labDinero
+@onready var container_pilotos_tienda: VBoxContainer = $TabContainer/Contratar/ScrollContainer/containerPilotosTienda
+@onready var container_pilotos_personal: VBoxContainer = $TabContainer/Equipo/ScrollContainer/containerPilotosPersonal
+@onready var noticia_container: VBoxContainer = $TabContainer/Noticias/Panel/ScrollContainer/NoticiaContainer
+
+
+const ITEM_NOTICIA = preload("uid://djeskgjksc266")
+const ITEM_EVENTO = preload("uid://bw020ca4arlcy")
+const SEPARADOR_DIA = preload("uid://bkfgpdps85n61")
+var itemPilotoTienda = preload("res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn")
+var itemPilotoPersonal = preload("res://scn/ventanas/elementos equipo/item_piloto_personal.tscn")
+var pilotosDisponibles: Array[Piloto]
+
+func _ready() -> void:
+	actualizarUI()
+
+func stockearTienda(pilotos):
+	pilotosDisponibles = pilotos
+	for c in container_pilotos_tienda.get_children():
+		c.queue_free()
+	var labPilotos = Label.new()
+	labPilotos.text = "Pilotos disponibles:"
+	labPilotos.custom_minimum_size.y = 32
+	labPilotos.vertical_alignment = VERTICAL_ALIGNMENT_TOP
+	container_pilotos_tienda.add_child(labPilotos)
+	for p in pilotos:
+			var itemInstancia = itemPilotoTienda.instantiate()
+			container_pilotos_tienda.add_child(itemInstancia)
+			itemInstancia.ingresarPiloto(p)
+			itemInstancia.piloto_contratado.connect(_on_actualizar_ui)
+
+func cargarPersonal(pilotos):
+	for c in container_pilotos_personal.get_children():
+		c.queue_free()
+	for p in pilotos:
+			var itemInstancia = itemPilotoPersonal.instantiate()
+			container_pilotos_personal.add_child(itemInstancia)
+			itemInstancia.ingresarPiloto(p)
+			itemInstancia.piloto_a_entrenar.connect(_on_piloto_entrenar)
+
+func actualizarUI(): 
+	labelDias.text = "Dia " + str(Juego.diaActual)
+	lab_dinero.text = "$" + str(Juego.get_dinero())
+	pilotosDisponibles = Juego.pilotosDisponibles
+	cargarPersonal(Juego.get_contratados())
+	for c in container_pilotos_tienda.get_children():
+		if c is Panel:
+			c.actualizar_ui()
+
+func noticia_divisor():
+	var item = SEPARADOR_DIA.instantiate()
+	item.get_child(0).text = "Dia " + str(Juego.diaActual)
+	noticia_container.add_child(item)
+	noticia_container.move_child(item,0)
+
+
+func agregar_noticia(noticia: Noticia) -> void:
+	var item = ITEM_NOTICIA.instantiate()
+	noticia_container.add_child(item)
+	noticia_container.move_child(item,0)
+	item.importar_noticia(noticia)
+	
+func _on_but_terminar_dia_pressed() -> void:
+	emit_signal("dia_terminado")
+	
+func _on_actualizar_ui():
+	actualizarUI()
+
+func _on_piloto_entrenar(piloto):
+	actualizarUI()
+	var noticia = NoticiasBd.importar_plantilla(NoticiasBd.ENTRENAMIENTO_PROXIMO,
+	{ "piloto": piloto.nombre + " " + piloto.apellido }
+	)
+	
+	agregar_noticia(noticia)

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Ruedas" format=3 uid="uid://c4a87c8afk4fm"]
+
+[ext_resource type="Script" uid="uid://5s77pjwxqrgv" path="res://scripts/partes/ruedas.gd" id="1_gbelo"]
+
+[resource]
+script = ExtResource("1_gbelo")
+nombre = "promax"
+metadata/_custom_type_script = "uid://5s77pjwxqrgv"

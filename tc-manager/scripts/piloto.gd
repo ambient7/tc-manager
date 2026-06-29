@@ -1,5 +1,7 @@
+@icon("res://addons/at-icons/node/steering_wheel.svg")
 extends Resource
 class_name Piloto
+
 
 enum ESTADO_PILOTO {
 	
