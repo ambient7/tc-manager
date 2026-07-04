@@ -2,12 +2,10 @@
 
 [ext_resource type="Resource" uid="uid://cqd4q343tqwu7" path="res://resources/partes/motores/motor_whatsapp.tres" id="1_1hpdd"]
 [ext_resource type="Script" uid="uid://bemac4q5uo7wg" path="res://scripts/autos/auto.gd" id="1_fgy5n"]
-[ext_resource type="Texture2D" uid="uid://ct87hn3e3eofk" path="res://assets/autos/whatsappcar.jpg" id="1_mqp73"]
 [ext_resource type="Resource" uid="uid://c4a87c8afk4fm" path="res://resources/partes/ruedas/ruedaspromax.tres" id="2_mqp73"]
 
 [resource]
 script = ExtResource("1_fgy5n")
-imagen = ExtResource("1_mqp73")
 estado = 100
 motor = ExtResource("1_1hpdd")
 ruedas = ExtResource("2_mqp73")

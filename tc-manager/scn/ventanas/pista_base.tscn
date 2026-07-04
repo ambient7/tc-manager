@@ -51,7 +51,7 @@ point_count = 8
 [node name="PistaBase" type="Node2D" unique_id=85885368 node_paths=PackedStringArray("path")]
 script = ExtResource("1_cdajn")
 segmentos = Array[ExtResource("2_if5lg")]([SubResource("Resource_yhlxf"), SubResource("Resource_if5lg"), SubResource("Resource_moxts"), SubResource("Resource_2xhuj"), SubResource("Resource_ofkpr")])
-path = NodePath("Sprite2D/Path2D")
+path = NodePath("PathEjemplo")
 metadata/_custom_type_script = "uid://q04mgxbrpcrq"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=551060779]
@@ -59,14 +59,19 @@ position = Vector2(320, 240)
 scale = Vector2(2.5, 2.125)
 texture = ExtResource("2_ev6bc")
 
-[node name="Path2D" type="Path2D" parent="Sprite2D" unique_id=1335593787]
-position = Vector2(-63.999992, -54.857132)
-scale = Vector2(0.3333333, 0.3809523)
+[node name="PathEjemplo" type="Path2D" parent="." unique_id=1335593787]
+position = Vector2(160.00002, 123.4286)
+scale = Vector2(0.83333325, 0.80952364)
 curve = SubResource("Curve2D_yhlxf")
 
 [node name="Guia" type="ReferenceRect" parent="." unique_id=794545045]
-visible = false
-offset_left = 128.0
-offset_top = 72.0
-offset_right = 512.0
-offset_bottom = 408.0
+offset_left = 160.0
+offset_top = 104.0
+offset_right = 480.0
+offset_bottom = 376.0
+
+[node name="Guia2" type="ReferenceRect" parent="." unique_id=2091796354]
+offset_left = 144.0
+offset_right = 496.0
+offset_bottom = 480.0
+border_color = Color(0.33956805, 0.6155458, 0.2296943, 1)

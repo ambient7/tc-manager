@@ -119,7 +119,7 @@ func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: flo
 	estado.tiempo_total += dt
 
 	_aplicar_potencial(estado, segmento, dt)
-	_aplicar_desgaste(estado, segmento, metros_recorridos)
+	#_aplicar_desgaste(estado, segmento, metros_recorridos)
 	_chequear_nueva_vuelta(estado, longitud_pista)
 
 func _calcular_velocidad(estado: EstadoPilotoCarrera, segmento: SegmentoPista) -> float:

@@ -1,0 +1,166 @@
+[gd_scene format=3 uid="uid://bsit7ymvkqkwk"]
+
+[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="1_pdc0i"]
+[ext_resource type="Script" uid="uid://d4hrjks6xc051" path="res://scripts/carrera/segmento_pista.gd" id="2_661nm"]
+[ext_resource type="Texture2D" uid="uid://bmvqwdryf0c6v" path="res://assets/pistas/Obligado.png" id="2_tvk3g"]
+
+[sub_resource type="Resource" id="Resource_661nm"]
+script = ExtResource("2_661nm")
+longitud = 300
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_7jkxs"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_0mhj8"]
+script = ExtResource("2_661nm")
+longitud = 300
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_hqgwp"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_laasx"]
+script = ExtResource("2_661nm")
+longitud = 225
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_u0v5f"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_aq6li"]
+script = ExtResource("2_661nm")
+longitud = 400
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_ktpdl"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_458a0"]
+script = ExtResource("2_661nm")
+longitud = 225
+velocidad_max = 180
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_yvj30"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 180
+velocidad_max = 80
+habilidad_requerida = 15
+angulo = 3
+aceleracion_requerida = 20
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_b44ep"]
+script = ExtResource("2_661nm")
+longitud = 120
+velocidad_max = 180
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_w85cv"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_1pnxf"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 575
+velocidad_max = 180
+habilidad_requerida = 50
+angulo = 3
+aceleracion_requerida = 30
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_gtkdn"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 180
+velocidad_max = 50
+habilidad_requerida = 75
+angulo = 2
+aceleracion_requerida = 80
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_ta1e7"]
+script = ExtResource("2_661nm")
+longitud = 230
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_p3c2g"]
+script = ExtResource("2_661nm")
+tipo = 1
+longitud = 100
+velocidad_max = 60
+habilidad_requerida = 20
+angulo = 2
+aceleracion_requerida = 60
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_cx421"]
+script = ExtResource("2_661nm")
+longitud = 275
+velocidad_max = 200
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Curve2D" id="Curve2D_tvk3g"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 272, 81, 0, 0, 0, 0, 179.99998, 81, 0, 0, 0, 0, 178.99998, 190, 0, 0, 0, 0, 251.99998, 190, 0, 0, 0, 0, 252.99998, 322, 0, 0, 0, 0, 305, 324, 0, 0, 0, 0, 320, 336, 0, 0, 0, 0, 344, 336, 0, 0, 0, 0, 388, 336, 0, 0, 0, 0, 387, 312, 0, 0, 0, 0, 371, 281, 0, 0, 0, 0, 377, 231, 0, 0, 0, 0, 358, 191, -0.59457433, 20.512814, 0.59457433, -20.512814, 336, 177, 0, 0, 0, 0, 351, 162, 0, 0, 0, 0, 353, 116, 0, 0, 0, 0, 354, 81, 0, 0, 0, 0, 272, 81)
+}
+point_count = 18
+
+[node name="PistaObligado" unique_id=85885368 node_paths=PackedStringArray("path") instance=ExtResource("1_pdc0i")]
+nombre_pista = "Obligado"
+segmentos = Array[ExtResource("2_661nm")]([SubResource("Resource_661nm"), SubResource("Resource_7jkxs"), SubResource("Resource_0mhj8"), SubResource("Resource_hqgwp"), SubResource("Resource_laasx"), SubResource("Resource_u0v5f"), SubResource("Resource_aq6li"), SubResource("Resource_ktpdl"), SubResource("Resource_458a0"), SubResource("Resource_yvj30"), SubResource("Resource_b44ep"), SubResource("Resource_w85cv"), SubResource("Resource_1pnxf"), SubResource("Resource_gtkdn"), SubResource("Resource_ta1e7"), SubResource("Resource_p3c2g"), SubResource("Resource_cx421")])
+path = NodePath("Path2D")
+
+[node name="Sprite2D" parent="." index="0" unique_id=551060779]
+visible = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="2" unique_id=1918826065]
+position = Vector2(320, 272)
+scale = Vector2(0.5465839, 0.6068268)
+texture = ExtResource("2_tvk3g")
+
+[node name="Path2D" type="Path2D" parent="." index="3" unique_id=1245575078]
+position = Vector2(1.5258789e-05, 32)
+curve = SubResource("Curve2D_tvk3g")
