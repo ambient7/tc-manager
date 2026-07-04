@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Piloto" format=3 uid="uid://dfni46jgakjn1"]
+
+[ext_resource type="Script" uid="uid://4naunmlj0tbp" path="res://scripts/piloto.gd" id="1_c5il8"]
+
+[resource]
+script = ExtResource("1_c5il8")
+nombre = "Cristian"
+apellido = "Romero"
+experiencia = 1
+habilidad = 1
+agresividad = 50
+salario = 1000
+metadata/_custom_type_script = "uid://4naunmlj0tbp"

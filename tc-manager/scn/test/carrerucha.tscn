@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://t6bpejka8256"]
 
+[ext_resource type="Script" uid="uid://cc224ao5s6yp4" path="res://scn/test/carrerucha.gd" id="1_2qrnr"]
+[ext_resource type="PackedScene" uid="uid://cpd3nsmd5jp87" path="res://scn/ventanas/carrera.tscn" id="1_3hybk"]
+[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="2_kxu7p"]
+
 [node name="Carrerucha" type="Control" unique_id=984095423]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2qrnr")
+pista = ExtResource("2_kxu7p")
+
+[node name="Carrera" parent="." unique_id=1902980008 instance=ExtResource("1_3hybk")]

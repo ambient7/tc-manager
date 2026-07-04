@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Motor" format=3 uid="uid://cqd4q343tqwu7"]
+
+[ext_resource type="Script" uid="uid://b7vvtyortulwo" path="res://scripts/partes/motor.gd" id="1_cajqq"]
+
+[resource]
+script = ExtResource("1_cajqq")
+velocidad_maxima = 350
+aceleracion = 60
+metadata/_custom_type_script = "uid://b7vvtyortulwo"

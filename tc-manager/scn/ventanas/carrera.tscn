@@ -1,17 +1,13 @@
 [gd_scene format=3 uid="uid://cpd3nsmd5jp87"]
 
 [ext_resource type="Script" uid="uid://byn2axian4av0" path="res://scripts/carrera/carrera.gd" id="1_dtn54"]
-[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="1_qpy08"]
 [ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
 
 [node name="Carrera" type="Node2D" unique_id=1902980008]
 script = ExtResource("1_dtn54")
 
-[node name="Pista" parent="." unique_id=1902024440 instance=ExtResource("1_qpy08")]
-
-[node name="Simulador" type="Node" parent="." unique_id=1089032895 node_paths=PackedStringArray("pista")]
+[node name="Simulador" type="Node" parent="." unique_id=1089032895]
 script = ExtResource("3_dcy3v")
-pista = NodePath("../Pista")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2098692618]
 
@@ -20,7 +16,7 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 192.0
+offset_left = 168.0
 grow_horizontal = 0
 grow_vertical = 2
 
@@ -65,12 +61,34 @@ text = "x2"
 anchors_preset = -1
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_right = -192.0
+offset_right = -168.0
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Posiciones" unique_id=1688764303]
 layout_mode = 0
-offset_right = 128.0
+offset_right = 152.0
 offset_bottom = 480.0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=985423259]
+[node name="Label" type="Label" parent="CanvasLayer/Posiciones/VBoxContainer" unique_id=1197331768]
+layout_mode = 2
+text = "Molina Ramirez"
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1135514213]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_right = 160.0
+offset_bottom = 72.0
+grow_horizontal = 2
+
+[node name="Panel2" type="Panel" parent="CanvasLayer" unique_id=1218560391]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -72.0
+offset_right = 160.0

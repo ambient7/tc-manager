@@ -80,5 +80,28 @@ func generar_piloto():
 	p.estado = "DISPONIBLE"
 	pilotosDisponibles.append(p)
 
+func generar_piloto_simple():
+	var p = Piloto.new()
+	var chanNom = randi_range(1,3)
+	var chanApe = randi_range(1,3)
+	
+	if int(chanNom) < 3:
+		p.nombre = generar_nombre()
+	else:
+		p.nombre = generar_nombre() + " " + generar_nombre()
+		
+	if int(chanApe) < 3:
+		p.apellido = generar_apellido()
+	else:
+		p.apellido = generar_apellido() + " " + generar_apellido()
+	
+	p.habilidad = randi_range(1, 100)
+	p.experiencia = randi_range(1, 100)
+	p.agresividad = randi_range(20, 80)
+	p.salario = p.habilidad * 1000
+	p.contratado = true
+	p.estado = "DISPONIBLE"
+	return p
+
 func get_dinero(): return equipo.dinero
 func get_contratados(): return equipo.pilotosContratados

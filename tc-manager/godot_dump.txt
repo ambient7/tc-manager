@@ -1,105 +1,50 @@
+@tool
+extends EditorPlugin
+
+
+func _enable_plugin() -> void:
+	# Add autoloads here.
+	pass
+
+
+func _disable_plugin() -> void:
+	# Remove autoloads here.
+	pass
+
+
+func _enter_tree() -> void:
+	# Initialization of the plugin goes here.
+	pass
+
+
+func _exit_tree() -> void:
+	# Clean-up of the plugin goes here.
+	pass
+[plugin]
+
+name="@icons"
+description="Open source icons for custom Godot nodes."
+author="Voxy"
+version="1.2.1"
+script="at-icons.gd"
 [folding]
 
 sections_unfolded=PackedStringArray()
 [folding]
 
-node_unfolds=[NodePath("."), PackedStringArray("Layout")]
-resource_unfolds=[]
-nodes_folded=[]
-animation_groups_folded=[]
-[docks]
-
-dock_3_selected_tab_idx=0
-dock_4_selected_tab_idx=0
-dock_5_selected_tab_idx=0
-dock_floating={}
-dock_closed=[]
-dock_split_2=0
-dock_split_3=0
-dock_hsplit_1=0
-dock_hsplit_2=367
-dock_hsplit_3=-412
-dock_hsplit_4=0
-dock_9_selected_tab_idx=0
-dock_3="Scene,Import"
-dock_4="FileSystem,History"
-dock_5="Inspector,Signals,Groups"
-dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,MeshLibrary,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
-dock_main_split=0
-dock_bottom_split=0
-
-[docks/FileSystem]
-
-h_split_offset=240
-v_split_offset=0
-display_mode=0
-file_sort=0
-file_list_display_mode=1
-selected_paths=PackedStringArray("res://scn/test/carrerucha.tscn")
-uncollapsed_paths=PackedStringArray("res://", "res://scripts/", "res://scripts/ui/elementos/", "res://scn/", "res://scn/ventanas/elementos equipo/", "res://scn/test/", "res://resources/", "res://resources/pilotos/", "res://resources/autitardos/")
-
-[docks/History]
-
-include_scene=true
-include_global=true
-
-[EditorNode]
-
-open_scenes=PackedStringArray("res://scn/master.tscn", "res://scn/ventanas/ventana_equipo.tscn", "res://scn/ventanas/elementos equipo/item_piloto.tscn", "res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_noticia.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/test/carrerucha.tscn")
-current_scene="res://scn/test/carrerucha.tscn"
-bottom_panel_offsets={
-"Animation": 0.0,
-"Audio": -450.0,
-"Debugger": -286.0,
-"Output": -270.0,
-"Search Results": 0.0,
-"Shader Editor": 0.0
-}
-selected_default_debugger_tab_idx=0
-selected_main_editor_idx=0
-
-[EditorWindow]
-
-screen=0
-mode="maximized"
-position=Vector2i(0, 142)
-
-[ScriptEditor]
-
-open_scripts=["res://scn/ventanas/elementos equipo/item_noticia.gd", "res://scripts/ui/elementos/item_piloto.gd", "res://scripts/ui/elementos/item_piloto_personal.gd", "res://scripts/ui/elementos/item_piloto_tienda.gd", "res://scripts/juego.gd", "res://scripts/master.gd", "res://scripts/noticia.gd", "res://scripts/noticias_bd.gd", "res://scripts/piloto.gd", "res://scripts/ui/ventana_equipo.gd"]
-selected_script="res://scripts/ui/ventana_equipo.gd"
-open_help=["Node"]
-script_split_offset=200
-list_split_offset=0
-zoom_factor=0.9285714
-
-[GameView]
-
-floating_window_rect=Rect2i(350, 257, 1146, 745)
-floating_window_screen=0
-
-[ShaderEditor]
-
-open_shaders=[]
-split_offset=200
-selected_shader=""
-text_shader_zoom_factor=1.0
-
-[docks/Theme]
-
-split_offset=520
+sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
 [editor_states]
 
-$selected_nodes=Array[NodePath]([NodePath(".")])
+$selected_nodes=Array[NodePath]([NodePath("Simulador")])
 2D={
 "grid_offset": Vector2(0, 0),
 "grid_snap_active": true,
 "grid_step": Vector2(8, 8),
 "grid_visibility": 1,
-"ofs": Vector2(-166, -111),
+"ofs": Vector2(-204.95865, 83.10507),
 "primary_grid_step": Vector2i(8, 8),
 "show_group_gizmos": true,
 "show_guides": true,
@@ -125,7 +70,7 @@ $selected_nodes=Array[NodePath]([NodePath(".")])
 "snap_rotation_step": 0.2617994,
 "snap_scale": false,
 "snap_scale_step": 0.1,
-"zoom": 1.0
+"zoom": 1.6105102
 }
 3D={
 "fov": 70.01,
@@ -292,6 +237,516 @@ $selected_nodes=Array[NodePath]([NodePath(".")])
 Anim={
 "visible": false
 }
+[folding]
+
+node_unfolds=[]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+$selected_nodes=Array[NodePath]([])
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-396.94006, -44.66403),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 0.75131476
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 6.347503,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.6832599,
+"y_rotation": 0.35521168
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Layout", "pista")]
+resource_unfolds=[]
+nodes_folded=[]
+animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray("ruedas", "motor")
+[docks]
+
+dock_3_selected_tab_idx=0
+dock_4_selected_tab_idx=0
+dock_5_selected_tab_idx=0
+dock_floating={}
+dock_closed=[]
+dock_split_2=-10
+dock_split_3=0
+dock_hsplit_1=0
+dock_hsplit_2=400
+dock_hsplit_3=-346
+dock_hsplit_4=0
+dock_9_selected_tab_idx=0
+dock_3="Scene,Import"
+dock_4="FileSystem,History"
+dock_5="Inspector,Signals,Groups"
+dock_9="Output,Debugger,Audio,Animation,Shader Editor,Search Results,AnimationTree,MeshLibrary,ResourcePreloader,ShaderFile,SpriteFrames,Theme,Polygon,TileSet,TileMap,Replication,GridMap"
+dock_main_split=0
+dock_bottom_split=0
+
+[docks/FileSystem]
+
+h_split_offset=240
+v_split_offset=0
+display_mode=1
+file_sort=0
+file_list_display_mode=1
+selected_paths=PackedStringArray("res://scripts/autos/", "res://scripts/autos/auto.gd")
+uncollapsed_paths=PackedStringArray("res://", "res://scripts/", "res://scn/", "res://scn/ventanas/", "res://resources/", "res://resources/partes/", "res://assets/", "res://addons/", "res://addons/at-icons/")
+
+[docks/History]
+
+include_scene=true
+include_global=true
+
+[EditorNode]
+
+open_scenes=PackedStringArray("res://scn/master.tscn", "res://scn/ventanas/ventana_equipo.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/ventanas/carrera.tscn", "res://scn/ventanas/pista_base.tscn", "res://scn/test/carrerucha.tscn")
+current_scene="res://scn/test/carrerucha.tscn"
+bottom_panel_offsets={
+"Animation": 0.0,
+"Audio": -450.0,
+"Debugger": -382.0,
+"Output": -270.0,
+"Search Results": 0.0,
+"Shader Editor": 0.0
+}
+selected_default_debugger_tab_idx=0
+selected_main_editor_idx=2
+
+[EditorWindow]
+
+screen=0
+mode="maximized"
+position=Vector2i(0, 142)
+
+[ScriptEditor]
+
+open_scripts=["res://scripts/autos/auto.gd", "res://scripts/carrera/carrera.gd", "res://scn/test/carrerucha.gd", "res://scripts/carrera/estado_carrera_piloto.gd", "res://scripts/carrera/estrategia_ia.gd", "res://scn/ventanas/elementos equipo/item_noticia.gd", "res://scripts/ui/elementos/item_piloto_personal.gd", "res://scripts/juego.gd", "res://scripts/master.gd", "res://scripts/noticias_bd.gd", "res://scripts/piloto.gd", "res://scripts/carrera/pista_base.gd", "res://scripts/partes/ruedas.gd", "res://scripts/carrera/segmento_pista.gd", "res://scripts/carrera/simulador_carrera.gd", "res://scripts/ui/ventana_equipo.gd"]
+selected_script="res://scripts/carrera/carrera.gd"
+open_help=["@GlobalScope", "Curve2D"]
+script_split_offset=218
+list_split_offset=19
+zoom_factor=1.0
+
+[GameView]
+
+floating_window_rect=Rect2i(634, 352, 750, 529)
+floating_window_screen=0
+
+[ShaderEditor]
+
+open_shaders=[]
+split_offset=200
+selected_shader=""
+text_shader_zoom_factor=1.0
+
+[docks/Theme]
+
+split_offset=520
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-180.30588, -20.775795),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.21
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+$selected_nodes=Array[NodePath]([NodePath("Sprite2D")])
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
@@ -1377,7 +1832,7 @@ $selected_nodes=Array[NodePath]([])
 "grid_snap_active": true,
 "grid_step": Vector2(8, 8),
 "grid_visibility": 1,
-"ofs": Vector2(35.517593, -53.36177),
+"ofs": Vector2(-53.457275, -113.913925),
 "primary_grid_step": Vector2i(8, 8),
 "show_group_gizmos": true,
 "show_guides": true,
@@ -1403,7 +1858,7 @@ $selected_nodes=Array[NodePath]([])
 "snap_rotation_step": 0.2617994,
 "snap_scale": false,
 "snap_scale_step": 0.1,
-"zoom": 2.1435893
+"zoom": 1.3310001
 }
 3D={
 "fov": 70.01,
@@ -2195,11 +2650,221 @@ sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
+[editor_states]
+
+2D={
+"grid_offset": Vector2(0, 0),
+"grid_snap_active": true,
+"grid_step": Vector2(8, 8),
+"grid_visibility": 1,
+"ofs": Vector2(-66.8595, 1.1074351),
+"primary_grid_step": Vector2i(8, 8),
+"show_group_gizmos": true,
+"show_guides": true,
+"show_helpers": false,
+"show_lock_gizmos": true,
+"show_origin": true,
+"show_position_gizmos": true,
+"show_rulers": true,
+"show_transformation_gizmos": true,
+"show_viewport": true,
+"show_zoom_control": true,
+"smart_snap_active": false,
+"snap_guides": true,
+"snap_node_anchors": true,
+"snap_node_center": true,
+"snap_node_parent": true,
+"snap_node_sides": true,
+"snap_other_nodes": true,
+"snap_pixel": true,
+"snap_relative": false,
+"snap_rotation": false,
+"snap_rotation_offset": 0.0,
+"snap_rotation_step": 0.2617994,
+"snap_scale": false,
+"snap_scale_step": 0.1,
+"zoom": 1.21
+}
+3D={
+"fov": 70.01,
+"gizmos_status": {
+"AudioListener3D": 0,
+"AudioStreamPlayer3D": 0,
+"CPUParticles3D": 0,
+"CSGShape3D": 0,
+"Camera3D": 0,
+"ChainIK3D": 0,
+"CollisionObject3D": 0,
+"CollisionPolygon3D": 0,
+"CollisionShape3D": 0,
+"Decal": 0,
+"FogVolume": 0,
+"GPUParticles3D": 0,
+"GPUParticlesCollision3D": 0,
+"Joint3D": 0,
+"Light3D": 0,
+"LightmapGI": 0,
+"LightmapProbe": 0,
+"Marker3D": 0,
+"MeshInstance3DCustomAABB": 0,
+"NavigationLink3D": 0,
+"NavigationObstacle3D": 0,
+"NavigationRegion3D": 0,
+"OccluderInstance3D": 0,
+"Particles3DEmissionShape": 0,
+"Path3D": 0,
+"PhysicalBone3D": 0,
+"RayCast3D": 0,
+"ReflectionProbe": 0,
+"ShapeCast3D": 0,
+"Skeleton3D": 0,
+"SoftBody3D": 0,
+"SpringArm3D": 0,
+"SpringBoneCollision3D": 0,
+"SpringBoneSimulator3D": 0,
+"TwoBoneIK3D": 0,
+"VehicleWheel3D": 0,
+"VisibleOnScreenNotifier3D": 0,
+"VoxelGI": 0
+},
+"local_coords": false,
+"preserve_children_transform": false,
+"preview_sun_env": {
+"environ_ao_enabled": false,
+"environ_enabled": true,
+"environ_energy": 1.0,
+"environ_gi_enabled": false,
+"environ_glow_enabled": false,
+"environ_ground_color": Color(0.2, 0.169, 0.133, 1),
+"environ_sky_color": Color(0.385, 0.454, 0.55, 1),
+"environ_tonemap_enabled": true,
+"sun_color": Color(1, 1, 1, 1),
+"sun_enabled": true,
+"sun_energy": 1.0,
+"sun_rotation": Vector2(-1.0471976, 2.6179938),
+"sun_shadow_max_distance": 100.0
+},
+"rotate_snap": 15.0,
+"scale_snap": 10.0,
+"show_grid": true,
+"show_origin": true,
+"snap_enabled": false,
+"trackball_enabled": false,
+"translate_snap": 1.0,
+"vertex_snap_origin_mode": false,
+"vertex_snap_use_collision": false,
+"viewport_mode": 1,
+"viewport_splits": {
+"first": 0.0,
+"main": 0.0,
+"second": 0.0
+},
+"viewports": [{
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": true,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}, {
+"auto_orthogonal": false,
+"auto_orthogonal_enabled": true,
+"cinematic_preview": false,
+"display_mode": 22,
+"distance": 4.0,
+"doppler": false,
+"frame_time": false,
+"gizmos": true,
+"grid": true,
+"half_res": false,
+"information": false,
+"listener": false,
+"lock_rotation": false,
+"orthogonal": false,
+"position": Vector3(0, 0, 0),
+"transform_gizmo": true,
+"use_environment": false,
+"view_type": 0,
+"x_rotation": 0.5,
+"y_rotation": -0.5
+}],
+"zfar": 4000.01,
+"znear": 0.05
+}
+Anim={
+"visible": false
+}
+$selected_nodes=Array[NodePath]([NodePath("Sprite2D")])
+[folding]
+
+node_unfolds=[NodePath("."), PackedStringArray("Transform", "segmentos"), NodePath("Path2D"), PackedStringArray("curve")]
+resource_unfolds=["res://scn/ventanas/pista_base.tscn::Curve2D_yhlxf", PackedStringArray()]
+nodes_folded=[]
+animation_groups_folded=[]
 [game_view]
 
 select_mode=0
 camera_override_mode=2
-make_floating_on_play=true
+make_floating_on_play=false
 embed_size_mode=2
 embed_on_play=false
 
@@ -2207,18 +2872,19 @@ embed_on_play=false
 
 executable_path="/app/bin/godot-bin"
 use_advanced_connections=false
+show_all_nodes_for_node_selection=false
 
 [dialog_bounds]
 
 project_settings=Rect2(360, 304, 1200, 700)
-create_new_node=Rect2(510, 304, 900, 731)
+create_new_node=Rect2(435, 224, 900, 795)
 export=Rect2(510, 404, 900, 500)
 search_help=Rect2(480, 384, 960, 540)
 
 [recent_files]
 
-scenes=["res://scn/ventanas/elementos equipo/separador_dia.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/ventanas/elementos equipo/item_noticia.tscn", "res://scripts/ui/elementos/item_noticia.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_piloto.tscn", "res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn", "res://scn/ventanas/tienda/item_piloto.tscn", "res://scn/ventanas/ventana_equipo.tscn", "res://scn/master.tscn"]
-scripts=["Node", "res://scripts/noticia.gd", "res://scripts/noticias_bd.gd", "res://scn/ventanas/elementos equipo/item_noticia.gd", "res://scripts/equipo.gd", "res://scripts/autos/auto.gd", "PackedStringArray", "res://scn/ventanas/elementos equipo/item_piloto_personal.gd", "Array", "res://scn/ventanas/elementos equipo/item_piloto_tienda.gd"]
+scenes=["res://scn/ventanas/pista_base.tscn", "res://scn/test/carrerucha.tscn", "res://scn/ventanas/carrera.tscn", "res://scn/ventanas/elementos equipo/separador_dia.tscn", "res://scn/ventanas/elementos equipo/item_evento.tscn", "res://scn/ventanas/elementos equipo/item_noticia.tscn", "res://scripts/ui/elementos/item_noticia.tscn", "res://scn/ventanas/elementos equipo/item_piloto_personal.tscn", "res://scn/ventanas/elementos equipo/item_piloto.tscn", "res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn"]
+scripts=["res://scripts/autos/auto.gd", "res://scn/test/carrerucha.gd", "Array", "res://scripts/carrera/estrategia_ia.gd", "Curve2D", "@GlobalScope", "res://scripts/partes/ruedas.gd", "RefCounted", "res://scripts/carrera/estado_carrera_piloto.gd", "res://scripts/carrera/simulador_carrera.gd"]
 
 [script_setup]
 
@@ -2232,9 +2898,21 @@ last_mode=1
 [create_dialog]
 
 built_in_enabled=true
+custom_enabled=true
+
+[files_panel]
+
+show_files_panel=true
 [selected_history]
 
-PackedScene=PackedStringArray("uid://bkfgpdps85n61", "uid://bw020ca4arlcy", "uid://djeskgjksc266", "uid://cq7phlle4mkm6")
+PackedScene=PackedStringArray("uid://bqo16qpj3um6f", "uid://cpd3nsmd5jp87", "uid://bkfgpdps85n61", "uid://bw020ca4arlcy", "uid://djeskgjksc266", "uid://cq7phlle4mkm6")
+Ruedas=PackedStringArray("uid://c4a87c8afk4fm")
+[folding]
+
+sections_unfolded=PackedStringArray()
+[folding]
+
+sections_unfolded=PackedStringArray()
 [res://scripts/master.gd]
 
 state={
@@ -2244,7 +2922,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 28,
-"scroll_position": 25.0,
+"scroll_position": 28.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2272,7 +2950,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 80,
-"scroll_position": 56.0,
+"scroll_position": 45.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2282,11 +2960,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 33,
+"column": 17,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 26,
-"scroll_position": 0.0,
+"row": 2,
+"scroll_position": 2.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2296,11 +2974,11 @@ state={
 state={
 "bookmarks": PackedInt32Array(),
 "breakpoints": PackedInt32Array(),
-"column": 67,
+"column": 14,
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
-"row": 53,
-"scroll_position": 0.0,
+"row": 98,
+"scroll_position": 64.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2328,7 +3006,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 23,
-"scroll_position": 0.0,
+"scroll_position": 2.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2342,7 +3020,7 @@ state={
 "folded_lines": PackedInt32Array(),
 "h_scroll_position": 0,
 "row": 41,
-"scroll_position": 0.0,
+"scroll_position": 20.0,
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
@@ -2402,6 +3080,121 @@ state={
 "selection": false,
 "syntax_highlighter": "GDScript"
 }
+
+[res://scripts/carrera/segmento_pista.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 52,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 11,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/carrera/pista_base.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 7,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 8,
+"scroll_position": 36.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/carrera/carrera.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 35,
+"scroll_position": 14.64,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/carrera/simulador_carrera.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 78,
+"scroll_position": 70.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/carrera/estado_carrera_piloto.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 0,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/partes/ruedas.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 10,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scripts/carrera/estrategia_ia.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 0,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 23,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+
+[res://scn/test/carrerucha.gd]
+
+state={
+"bookmarks": PackedInt32Array(),
+"breakpoints": PackedInt32Array(),
+"column": 23,
+"folded_lines": PackedInt32Array(),
+"h_scroll_position": 0,
+"row": 10,
+"scroll_position": 0.0,
+"selection": false,
+"syntax_highlighter": "GDScript"
+}
+[folding]
+
+sections_unfolded=PackedStringArray()
 [editor_states]
 
 $selected_nodes=Array[NodePath]([NodePath(".")])
@@ -2609,6 +3402,9 @@ node_unfolds=[]
 resource_unfolds=[]
 nodes_folded=[]
 animation_groups_folded=[]
+[folding]
+
+sections_unfolded=PackedStringArray()
 [folding]
 
 sections_unfolded=PackedStringArray()
@@ -3033,6 +3829,22 @@ list=[{
 "language": &"GDScript",
 "path": "res://scripts/equipo.gd"
 }, {
+"base": &"RefCounted",
+"class": &"EstadoPilotoCarrera",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/carrera/estado_carrera_piloto.gd"
+}, {
+"base": &"RefCounted",
+"class": &"EstrategiaIA",
+"icon": "",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/carrera/estrategia_ia.gd"
+}, {
 "base": &"PanelContainer",
 "class": &"ItemNoticia",
 "icon": "",
@@ -3059,19 +3871,43 @@ list=[{
 }, {
 "base": &"Resource",
 "class": &"Piloto",
-"icon": "",
+"icon": "res://addons/at-icons/node/steering_wheel.svg",
 "is_abstract": false,
 "is_tool": false,
 "language": &"GDScript",
 "path": "res://scripts/piloto.gd"
 }, {
+"base": &"Node2D",
+"class": &"PistaBase",
+"icon": "res://addons/at-icons/node2d/racing_circuit.svg",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/carrera/pista_base.gd"
+}, {
 "base": &"Resource",
 "class": &"Ruedas",
-"icon": "",
+"icon": "res://addons/at-icons/node/wheel.svg",
 "is_abstract": false,
 "is_tool": false,
 "language": &"GDScript",
 "path": "res://scripts/partes/ruedas.gd"
+}, {
+"base": &"Resource",
+"class": &"SegmentoPista",
+"icon": "res://addons/at-icons/node/road.svg",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/carrera/segmento_pista.gd"
+}, {
+"base": &"Node",
+"class": &"SimuladorCarrera",
+"icon": "res://addons/at-icons/node/brain.svg",
+"is_abstract": false,
+"is_tool": false,
+"language": &"GDScript",
+"path": "res://scripts/carrera/simulador_carrera.gd"
 }]
 [gd_scene format=3 uid="uid://7r7id01wel28"]
 
@@ -3091,7 +3927,28 @@ script = ExtResource("1_70kie")
 layout_mode = 1
 
 [connection signal="dia_terminado" from="VentanaEquipo" to="." method="_on_ventana_equipo_dia_terminado"]
+extends Control
+
+@export var pista: PackedScene
+
+@onready var carrera: Node2D = $Carrera
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	carrera.pista = pista.instantiate()
+	carrera.preparaciones()
+	carrera.carrera_ejemplo()
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
 [gd_scene format=3 uid="uid://t6bpejka8256"]
+
+[ext_resource type="Script" uid="uid://cc224ao5s6yp4" path="res://scn/test/carrerucha.gd" id="1_2qrnr"]
+[ext_resource type="PackedScene" uid="uid://cpd3nsmd5jp87" path="res://scn/ventanas/carrera.tscn" id="1_3hybk"]
+[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="2_kxu7p"]
 
 [node name="Carrerucha" type="Control" unique_id=984095423]
 layout_mode = 3
@@ -3100,6 +3957,83 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2qrnr")
+pista = ExtResource("2_kxu7p")
+
+[node name="Carrera" parent="." unique_id=1902980008 instance=ExtResource("1_3hybk")]
+[gd_scene format=3 uid="uid://cpd3nsmd5jp87"]
+
+[ext_resource type="Script" uid="uid://byn2axian4av0" path="res://scripts/carrera/carrera.gd" id="1_dtn54"]
+[ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
+
+[node name="Carrera" type="Node2D" unique_id=1902980008]
+script = ExtResource("1_dtn54")
+
+[node name="Simulador" type="Node" parent="." unique_id=1089032895 node_paths=PackedStringArray("pista")]
+script = ExtResource("3_dcy3v")
+pista = NodePath("")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2098692618]
+
+[node name="Controles" type="Panel" parent="CanvasLayer" unique_id=1513898459]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 192.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/Controles" unique_id=1509135605]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37500003
+anchor_top = 0.017
+anchor_right = 0.625
+anchor_bottom = 0.083000004
+offset_top = -0.1600008
+offset_bottom = 0.15999603
+text = "x1"
+
+[node name="Button2" type="Button" parent="CanvasLayer/Controles" unique_id=2040392476]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.062000003
+anchor_top = 0.017
+anchor_right = 0.312
+anchor_bottom = 0.083000004
+offset_left = 0.06399965
+offset_top = -0.1600008
+offset_right = 0.063999176
+offset_bottom = 0.15999603
+text = "x0"
+
+[node name="Button3" type="Button" parent="CanvasLayer/Controles" unique_id=2108009548]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.68700004
+anchor_top = 0.017
+anchor_right = 0.93700004
+anchor_bottom = 0.083000004
+offset_left = 0.06399536
+offset_top = -0.1600008
+offset_right = 0.06399536
+offset_bottom = 0.15999603
+text = "x2"
+
+[node name="Posiciones" type="Panel" parent="CanvasLayer" unique_id=1320115093]
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_right = -192.0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Posiciones" unique_id=1688764303]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 480.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=985423259]
 [gd_scene format=3 uid="uid://bw020ca4arlcy"]
 
 [ext_resource type="PackedScene" uid="uid://djeskgjksc266" path="res://scn/ventanas/elementos equipo/item_noticia.tscn" id="1_fua45"]
@@ -3387,6 +4321,63 @@ text = "dia X"
 [node name="HSeparator" type="HSeparator" parent="." unique_id=2071537185]
 layout_mode = 2
 size_flags_horizontal = 3
+[gd_scene format=3 uid="uid://bqo16qpj3um6f"]
+
+[ext_resource type="Script" uid="uid://q04mgxbrpcrq" path="res://scripts/carrera/pista_base.gd" id="1_cdajn"]
+[ext_resource type="Texture2D" uid="uid://dlkttduk6onlb" path="res://icon.svg" id="2_ev6bc"]
+[ext_resource type="Script" uid="uid://d4hrjks6xc051" path="res://scripts/carrera/segmento_pista.gd" id="2_if5lg"]
+
+[sub_resource type="Resource" id="Resource_yhlxf"]
+script = ExtResource("2_if5lg")
+longitud = 100
+velocidad_max = 300
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_if5lg"]
+script = ExtResource("2_if5lg")
+tipo = 1
+longitud = 150
+velocidad_max = 300
+habilidad_requerida = 10
+aceleracion_requerida = 30
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_moxts"]
+script = ExtResource("2_if5lg")
+longitud = 100
+velocidad_max = 300
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_2xhuj"]
+script = ExtResource("2_if5lg")
+tipo = 1
+longitud = 50
+velocidad_max = 400
+habilidad_requerida = 50
+aceleracion_requerida = 5
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Curve2D" id="Curve2D_yhlxf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 48, 96, 0, 0, 0, 0, 64, 216, -51.163914, 4.346447, 51.163914, -4.346447, 192, 272, 0, 0, 0, 0, 320, 232, 0, 0, 0, 0, 336, 96, 0, 0, 0, 0, 256, 32, 0, 0, 0, 0, 136, 32, 0, 0, 0, 0, 48, 96)
+}
+point_count = 8
+
+[node name="PistaBase" type="Node2D" unique_id=85885368 node_paths=PackedStringArray("path")]
+script = ExtResource("1_cdajn")
+segmentos = Array[ExtResource("2_if5lg")]([SubResource("Resource_yhlxf"), SubResource("Resource_if5lg"), SubResource("Resource_moxts"), SubResource("Resource_2xhuj")])
+path = NodePath("Path2D")
+debug = true
+metadata/_custom_type_script = "uid://q04mgxbrpcrq"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=551060779]
+position = Vector2(320, 240)
+scale = Vector2(3, 2.6250002)
+texture = ExtResource("2_ev6bc")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1335593787]
+position = Vector2(128, 96)
+curve = SubResource("Curve2D_yhlxf")
 [gd_scene format=3 uid="uid://cq7phlle4mkm6"]
 
 [ext_resource type="Script" uid="uid://ddv2yjorlaeij" path="res://scripts/ui/ventana_equipo.gd" id="1_3opnt"]
@@ -3559,6 +4550,354 @@ class_name Auto
 
 @export var motor: Motor
 @export var ruedas: Ruedas
+extends Node2D
+
+const CAR = preload("uid://bfk75obdq66j6")
+const MCQUEEN = preload("res://assets/311-3115851_rayo-mcqueen-wallpaper-disney-cars-lightning-mcqueen_13percent.png")
+
+
+@onready var simulador = $Simulador
+var pista: PistaBase
+
+var sprites: Dictionary = {}  # piloto → Sprite2D
+
+
+func _ready() -> void:
+	pass
+
+func preparaciones():
+	simulador.progreso_actualizado.connect(_actualizar_sprites)
+	add_child(pista)
+	# Crear un sprite por cada piloto
+	for estado in simulador.estados:
+		var sprite = Sprite2D.new()
+		sprite.texture = CAR
+		add_child(sprite)
+		sprites[estado.piloto] = sprite
+
+func carrera_ejemplo():
+	simulador.carrera_ejemplo(pista)
+
+func _actualizar_sprites() -> void:
+
+	for estado in simulador.estados:
+		print(estado.piloto)
+		print(sprites.keys())
+		print(sprites.has(estado.piloto))
+		var pos = simulador.pista.progreso_a_posicion(estado.progreso_metros)
+		sprites[estado.piloto].position = pos
+extends RefCounted
+class_name EstadoPilotoCarrera
+
+
+var piloto: Piloto
+var auto_data: Auto
+
+# Posición en la carrera
+var progreso_metros: float = 0.0    # metros totales recorridos (incluye vueltas)
+var vuelta_actual: int = 1
+var lugar: int = 0
+
+# Física de simulación
+var velocidad_actual: float = 0.0   # km/h actual
+var potencial: float = 0.0          # acumulado en rectas, consumido en curvas
+
+# Tiempo
+var tiempo_total: float = 0.0       # segundos
+
+# Boxes
+var en_boxes: bool = false
+var tiempo_restante_boxes: float = 0.0
+
+# Carrera terminada
+var termino: bool = false
+
+func progreso_en_vuelta_actual(longitud_pista: float) -> float:
+	return fmod(progreso_metros, longitud_pista)
+class_name EstrategiaIA
+extends RefCounted
+
+const UMBRAL_VIDA_CRITICA = 0.25
+const UMBRAL_RENDIMIENTO_MINIMO = 0.7
+
+func debe_entrar_boxes(estado: EstadoPilotoCarrera, vueltas_restantes: int) -> bool:
+	if estado.en_boxes:
+		return false
+
+	var vida = estado.auto_data.ruedas.porcentaje_vida()
+
+	# No vale la pena entrar si es la última vuelta
+	if vueltas_restantes <= 0:
+		return false
+
+	if vida < UMBRAL_VIDA_CRITICA:
+		return true
+
+	if estado.auto_data.ruedas.modificador_rendimiento() < UMBRAL_RENDIMIENTO_MINIMO:
+		return true
+
+	return false
+@icon("res://addons/at-icons/node2d/racing_circuit.svg")
+extends Node2D
+class_name PistaBase
+
+const CIRCLE = preload("uid://b3gglwjddwpfl")
+const CIRCLE_RED = preload("uid://k7yaqg7tt7b4")
+
+
+@export var nombre_pista: String = ""
+@export var vueltas: int = 3
+@export var segmentos: Array[SegmentoPista] = []
+@export var path: Path2D
+@export var debug: bool = false
+
+func _ready() -> void:
+	if debug:
+		var metro = 0
+		var longitud_path = path.curve.get_baked_length()
+		var longitud_sim = longitud_total_metros()
+		for m in longitud_sim:
+			var ratio = fmod(metro, longitud_sim) / longitud_sim
+			var posicion_local = path.curve.sample_baked(ratio * longitud_path)
+			var sprite = Sprite2D.new()
+			var segmento = get_segmento_en(metro)
+			if segmento.tipo == segmento.TIPO.RECTA:
+				sprite.texture = CIRCLE
+			elif segmento.tipo == segmento.TIPO.CURVA:
+				sprite.texture = CIRCLE_RED
+			add_child(sprite)
+			sprite.position = path.to_global(posicion_local)
+			metro += 1
+
+func longitud_total_metros() -> float:
+	var total = 0.0
+	for s in segmentos: 
+		total += s.longitud
+	return total
+
+func get_segmento_en(ubicacion_metros: float) -> SegmentoPista:
+	var acumulado = 0.0
+	for s in segmentos:
+		acumulado += s.longitud
+		if ubicacion_metros <= acumulado:
+			return s
+	return segmentos[-1]  # fallback al último
+
+func progreso_a_posicion(metros: float) -> Vector2:
+	var longitud_path = path.curve.get_baked_length()
+	var longitud_sim = longitud_total_metros()
+
+	var ratio = fmod(metros, longitud_sim) / longitud_sim
+	var posicion_local = path.curve.sample_baked(ratio * longitud_path)
+
+	return path.to_global(posicion_local)
+@icon("res://addons/at-icons/node/road.svg")
+extends Resource
+class_name SegmentoPista
+
+enum TIPO { RECTA, CURVA }
+
+@export var tipo: TIPO
+@export var longitud: int          # metros
+@export var velocidad_max: int         # límite del segmento
+@export_group("Curvas")
+@export_range(0,100,1.0) var habilidad_requerida: int   # para curvas
+@export var aceleracion_requerida: int # para curvas
+@icon("res://addons/at-icons/node/brain.svg")
+extends Node
+class_name SimuladorCarrera
+
+const GODPILOT = preload("uid://bkdmfe7dwaw4q")
+const CLIO = preload("uid://dn24e1vpgo35x")
+
+const TIEMPO_PIT_STOP = 28.0           # segundos fijos
+const DISTANCIA_REBASE_METROS = 15.0   # qué tan cerca deben estar para intentar rebase
+const FACTOR_DESGASTE_CURVA = 2.5
+const FACTOR_DESGASTE_RECTA = 1.0
+
+@export var pista: PistaBase
+
+var estados: Array[EstadoPilotoCarrera] = []
+var estrategia_ia: EstrategiaIA
+var velocidad_sim: float = 1.0
+var corriendo: bool = false
+var index_jugador: int = -1  # índice en `estados` que controla el jugador
+
+signal vuelta_completada(estado: EstadoPilotoCarrera)
+signal pit_stop_realizado(estado: EstadoPilotoCarrera, es_jugador: bool)
+signal rebase_ocurrido(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarrera, exito: bool)
+signal carrera_terminada(resultados: Array)
+
+signal progreso_actualizado  # la UI escucha esto
+
+func carrera_ejemplo(p) -> void:
+	var cantidad_corredores = 20
+	var participantes: Array[Dictionary]
+	for c in cantidad_corredores:
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": CLIO})
+	iniciar(p,participantes,1)
+
+func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
+	pista = p
+	estados.clear()
+	estrategia_ia = EstrategiaIA.new()
+	index_jugador = idx_jugador
+
+	for i in participantes.size():
+		var e = EstadoPilotoCarrera.new()
+		e.piloto = participantes[i].piloto
+		e.auto_data = participantes[i].auto
+		e.lugar = i + 1
+		estados.append(e)
+
+	corriendo = true
+
+
+func _process(delta: float) -> void:
+	if not corriendo: 
+		return
+	
+	var delta_time = delta * velocidad_sim
+	var longitud_pista = pista.longitud_total_metros()
+	var longitud_carrera = longitud_pista * pista.vueltas
+	
+	for i in estados.size():
+		var estado = estados[i]
+		if estado.termino:
+			continue
+			
+		if estado.en_boxes:
+			_procesar_boxes(estado, delta_time)
+			continue
+			
+		if i != index_jugador:
+			_evaluar_pit_ia(estado, longitud_pista, longitud_carrera)
+			
+		_avanzar_estado(estado, delta_time, longitud_pista)
+
+		if estado.progreso_metros >= longitud_carrera:
+			estado.termino = true
+			estado.progreso_metros = longitud_carrera
+		
+	_chequear_rebases()
+	_actualizar_lugares()
+	emit_signal("progreso_actualizado")
+
+func _procesar_boxes(estado: EstadoPilotoCarrera, dt: float) -> void:
+	estado.tiempo_restante_boxes -= dt
+	if estado.tiempo_restante_boxes <= 0.0:
+		estado.en_boxes = false
+		estado.auto_data.ruedas.restaurar()
+		var es_jugador = estados.find(estado) == index_jugador
+		pit_stop_realizado.emit(estado, es_jugador)
+
+func _evaluar_pit_ia(estado: EstadoPilotoCarrera, longitud_pista: float, longitud_carrera: float) -> void:
+	var vueltas_restantes = pista.vueltas - estado.vuelta_actual
+	if estrategia_ia.debe_entrar_boxes(estado, vueltas_restantes):
+		entrar_boxes(estado)
+
+func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
+	estado.en_boxes = true
+	estado.tiempo_restante_boxes = TIEMPO_PIT_STOP
+
+func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: float) -> void:
+	var metros_en_vuelta = estado.progreso_en_vuelta_actual(longitud_pista)
+	var segmento = pista.get_segmento_en(metros_en_vuelta)
+
+	var velocidad = _calcular_velocidad(estado, segmento)
+	estado.velocidad_actual = velocidad
+
+	var metros_recorridos = (velocidad / 3.6) * dt
+	estado.progreso_metros += metros_recorridos
+	estado.tiempo_total += dt
+
+	_aplicar_potencial(estado, segmento, dt)
+	_aplicar_desgaste(estado, segmento, metros_recorridos)
+	_chequear_nueva_vuelta(estado, longitud_pista)
+
+func _calcular_velocidad(estado: EstadoPilotoCarrera, segmento: SegmentoPista) -> float:
+	var motor = estado.auto_data.motor
+	var ruedas = estado.auto_data.ruedas
+
+	if segmento.tipo == SegmentoPista.TIPO.RECTA:
+		return min(motor.velocidad_maxima, segmento.velocidad_max)
+	else:
+		var eficiencia = clamp(
+			float(estado.piloto.habilidad) / float(segmento.habilidad_requerida),
+			0.5, 1.0
+		)
+		return float(motor.aceleracion) * eficiencia * ruedas.modificador_rendimiento()
+
+func _aplicar_potencial(estado: EstadoPilotoCarrera, segmento: SegmentoPista, dt: float) -> void:
+	if segmento.tipo == SegmentoPista.TIPO.RECTA:
+		estado.potencial += float(estado.piloto.experiencia) * 0.1 * dt
+	else:
+		estado.potencial = 0.0
+
+func _aplicar_desgaste(estado: EstadoPilotoCarrera, segmento: SegmentoPista, metros: float) -> void:
+	var km = metros / 1000.0
+	var factor = FACTOR_DESGASTE_CURVA if segmento.tipo == SegmentoPista.TIPO.CURVA else FACTOR_DESGASTE_RECTA
+	estado.auto_data.ruedas.aplicar_desgaste(km, factor)
+
+func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) -> void:
+	var vuelta_calculada = int(estado.progreso_metros / longitud_pista) + 1
+	if vuelta_calculada > estado.vuelta_actual:
+		estado.vuelta_actual = vuelta_calculada
+		vuelta_completada.emit(estado)
+
+func _chequear_rebases() -> void:
+	for i in estados.size():
+		for j in estados.size():
+			if i == j:
+				continue
+			var a = estados[i]
+			var b = estados[j]
+			if a.en_boxes or b.en_boxes or a.termino or b.termino:
+				continue
+
+			var distancia = a.progreso_metros - b.progreso_metros
+			# Solo el que va detrás puede intentar rebasar al que va adelante
+			if distancia < 0 and abs(distancia) < DISTANCIA_REBASE_METROS:
+				_intentar_rebase(a, b)
+
+func _intentar_rebase(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarrera) -> void:
+	var longitud_pista = pista.longitud_total_metros()
+	var metros_en_vuelta = atacante.progreso_en_vuelta_actual(longitud_pista)
+	var segmento = pista.get_segmento_en(metros_en_vuelta)
+
+	if segmento.tipo != SegmentoPista.TIPO.RECTA:
+		return  # rebases solo en recta por ahora
+
+	var ventaja = atacante.potencial - defensor.potencial
+	var defensa = float(defensor.piloto.agresividad) * randf_range(0.8, 1.2)
+
+	if ventaja > defensa:
+		var temp = atacante.progreso_metros
+		atacante.progreso_metros = defensor.progreso_metros + 0.5
+		defensor.progreso_metros = temp - 0.5
+		atacante.potencial = 0.0
+		rebase_ocurrido.emit(atacante, defensor, true)
+	elif ventaja > defensa * 0.7:
+		atacante.potencial *= 0.5
+		defensor.potencial *= 0.5
+		rebase_ocurrido.emit(atacante, defensor, false)
+
+func _actualizar_lugares() -> void:
+	var ordenados = estados.duplicate()
+	ordenados.sort_custom(func(a, b): return a.progreso_metros > b.progreso_metros)
+	for i in ordenados.size():
+		ordenados[i].lugar = i + 1
+
+func _todos_terminaron() -> bool:
+	for e in estados:
+		if not e.termino:
+			return false
+	return true
+
+func get_estado_jugador() -> EstadoPilotoCarrera:
+	if index_jugador < 0 or index_jugador >= estados.size():
+		return null
+	return estados[index_jugador]
 extends Resource
 class_name Equipo
 
@@ -3649,6 +4988,29 @@ func generar_piloto():
 	p.estado = "DISPONIBLE"
 	pilotosDisponibles.append(p)
 
+func generar_piloto_simple():
+	var p = Piloto.new()
+	var chanNom = randi_range(1,3)
+	var chanApe = randi_range(1,3)
+	
+	if int(chanNom) < 3:
+		p.nombre = generar_nombre()
+	else:
+		p.nombre = generar_nombre() + " " + generar_nombre()
+		
+	if int(chanApe) < 3:
+		p.apellido = generar_apellido()
+	else:
+		p.apellido = generar_apellido() + " " + generar_apellido()
+	
+	p.habilidad = randi_range(1, 100)
+	p.experiencia = randi_range(1, 100)
+	p.agresividad = randi_range(20, 80)
+	p.salario = p.habilidad * 1000
+	p.contratado = true
+	p.estado = "DISPONIBLE"
+	return p
+
 func get_dinero(): return equipo.dinero
 func get_contratados(): return equipo.pilotosContratados
 extends Control
@@ -3725,13 +5087,37 @@ class_name Motor
 
 @export var velocidad_maxima: int
 @export var aceleracion: int
+@icon("res://addons/at-icons/node/wheel.svg")
 extends Resource
 class_name Ruedas
 
-@export var grado_desgaste: int
-@export var bonus_aceleracion: int
+@export var nombre: String = ""
+@export var nivel: int = 1
+
+@export var vida_max: float = 100.0
+@export var vida_actual: float = 100.0
+@export var desgaste_por_km: float = 2.0  # % por km — blandas ~4.0, duras ~1.5
+
+func porcentaje_vida() -> float:
+	return vida_actual / vida_max
+
+func modificador_rendimiento() -> float:
+	# Sin penalización hasta el 50% de vida
+	var p = porcentaje_vida()
+	if p > 0.5:
+		return 1.0
+	return 0.5 + p   # cae de 1.0 a 0.5 linealmente
+
+func aplicar_desgaste(km: float, factor: float = 1.0) -> void:
+	vida_actual -= desgaste_por_km * km * factor
+	vida_actual = max(vida_actual, 0.0)
+
+func restaurar() -> void:
+	vida_actual = vida_max
+@icon("res://addons/at-icons/node/steering_wheel.svg")
 extends Resource
 class_name Piloto
+
 
 enum ESTADO_PILOTO {
 	

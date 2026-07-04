@@ -6,32 +6,40 @@
 
 [sub_resource type="Resource" id="Resource_yhlxf"]
 script = ExtResource("2_if5lg")
-longitud = 100
+longitud = 120
 velocidad_max = 300
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_if5lg"]
 script = ExtResource("2_if5lg")
 tipo = 1
-longitud = 150
+longitud = 280
+velocidad_max = 300
 habilidad_requerida = 10
-aceleracion_requerida = 30
-velocidad_max = 100
+angulo = 3
+aceleracion_requerida = 5
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_moxts"]
 script = ExtResource("2_if5lg")
-longitud = 100
+longitud = 206
 velocidad_max = 300
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_2xhuj"]
 script = ExtResource("2_if5lg")
 tipo = 1
-longitud = 50
+longitud = 60
+velocidad_max = 400
 habilidad_requerida = 50
-aceleracion_requerida = 70
-velocidad_max = 80
+angulo = 1
+aceleracion_requerida = 30
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_ofkpr"]
+script = ExtResource("2_if5lg")
+longitud = 196
+velocidad_max = 300
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Curve2D" id="Curve2D_yhlxf"]
@@ -42,15 +50,23 @@ point_count = 8
 
 [node name="PistaBase" type="Node2D" unique_id=85885368 node_paths=PackedStringArray("path")]
 script = ExtResource("1_cdajn")
-segmentos = Array[ExtResource("2_if5lg")]([SubResource("Resource_yhlxf"), SubResource("Resource_if5lg"), SubResource("Resource_moxts"), SubResource("Resource_2xhuj")])
-path = NodePath("Path2D")
+segmentos = Array[ExtResource("2_if5lg")]([SubResource("Resource_yhlxf"), SubResource("Resource_if5lg"), SubResource("Resource_moxts"), SubResource("Resource_2xhuj"), SubResource("Resource_ofkpr")])
+path = NodePath("Sprite2D/Path2D")
 metadata/_custom_type_script = "uid://q04mgxbrpcrq"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=551060779]
 position = Vector2(320, 240)
-scale = Vector2(3, 2.6250002)
+scale = Vector2(2.5, 2.125)
 texture = ExtResource("2_ev6bc")
 
-[node name="Path2D" type="Path2D" parent="." unique_id=1335593787]
-position = Vector2(128, 96)
+[node name="Path2D" type="Path2D" parent="Sprite2D" unique_id=1335593787]
+position = Vector2(-63.999992, -54.857132)
+scale = Vector2(0.3333333, 0.3809523)
 curve = SubResource("Curve2D_yhlxf")
+
+[node name="Guia" type="ReferenceRect" parent="." unique_id=794545045]
+visible = false
+offset_left = 128.0
+offset_top = 72.0
+offset_right = 512.0
+offset_bottom = 408.0

@@ -25,7 +25,6 @@ NoticiasBd="*uid://bg0omhlpwyfrh"
 window/size/viewport_width=640
 window/size/viewport_height=480
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [physics]
 

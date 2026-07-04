@@ -4,12 +4,18 @@ const CAR = preload("uid://bfk75obdq66j6")
 const MCQUEEN = preload("res://assets/311-3115851_rayo-mcqueen-wallpaper-disney-cars-lightning-mcqueen_13percent.png")
 
 
-@onready var simulador: SimuladorCarrera = $Simulador
+@onready var simulador = $Simulador
+var pista: PistaBase
+
 var sprites: Dictionary = {}  # piloto → Sprite2D
 
+
 func _ready() -> void:
+	pass
+
+func preparaciones():
 	simulador.progreso_actualizado.connect(_actualizar_sprites)
-	
+	add_child(pista)
 	# Crear un sprite por cada piloto
 	for estado in simulador.estados:
 		var sprite = Sprite2D.new()
@@ -17,7 +23,11 @@ func _ready() -> void:
 		add_child(sprite)
 		sprites[estado.piloto] = sprite
 
+func carrera_ejemplo():
+	simulador.carrera_ejemplo(pista)
+
 func _actualizar_sprites() -> void:
+
 	for estado in simulador.estados:
 		var pos = simulador.pista.progreso_a_posicion(estado.progreso_metros)
 		sprites[estado.piloto].position = pos
