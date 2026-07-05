@@ -5,6 +5,8 @@ const MCQUEEN = preload("res://assets/311-3115851_rayo-mcqueen-wallpaper-disney-
 
 
 @onready var simulador = $Simulador
+@onready var label_vueltas: Label = $CanvasLayer/PanelSup/LabelVueltas
+
 var pista: PistaBase
 
 var sprites: Dictionary = {}  # piloto → Sprite2D
@@ -27,7 +29,24 @@ func carrera_ejemplo():
 	simulador.carrera_ejemplo(pista)
 
 func _actualizar_sprites() -> void:
+	
+	var ordenados = simulador.actualizar_lugares() # ya ordena por 'lugar', devolvé el array ordenado
+	var lider = ordenados[0]
 
+	label_vueltas.text = "Vuelta %d/%d" % [min(lider.vuelta_actual, pista.vueltas), pista.vueltas]
+	
 	for estado in simulador.estados:
 		var pos = simulador.pista.progreso_a_posicion(estado.progreso_metros)
 		sprites[estado.piloto].position = pos
+
+
+func _on_but_vel_0_pressed() -> void:
+	simulador.velocidad_sim = 0
+
+
+func _on_but_vel_1_pressed() -> void:
+	simulador.velocidad_sim = 1
+
+
+func _on_but_vel_2_pressed() -> void:
+	simulador.velocidad_sim = 4

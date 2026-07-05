@@ -3,6 +3,12 @@
 [ext_resource type="Script" uid="uid://byn2axian4av0" path="res://scripts/carrera/carrera.gd" id="1_dtn54"]
 [ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6xcf"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxu7p"]
+bg_color = Color(0, 0, 0, 1)
+
 [node name="Carrera" type="Node2D" unique_id=1902980008]
 script = ExtResource("1_dtn54")
 
@@ -19,8 +25,9 @@ anchor_bottom = 1.0
 offset_left = 168.0
 grow_horizontal = 0
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v6xcf")
 
-[node name="Button" type="Button" parent="CanvasLayer/Controles" unique_id=1509135605]
+[node name="ButVel1" type="Button" parent="CanvasLayer/Controles" unique_id=1509135605]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.37500003
@@ -31,7 +38,7 @@ offset_top = -0.1600008
 offset_bottom = 0.15999603
 text = "x1"
 
-[node name="Button2" type="Button" parent="CanvasLayer/Controles" unique_id=2040392476]
+[node name="ButVel0" type="Button" parent="CanvasLayer/Controles" unique_id=2040392476]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.062000003
@@ -44,7 +51,7 @@ offset_right = 0.063999176
 offset_bottom = 0.15999603
 text = "x0"
 
-[node name="Button3" type="Button" parent="CanvasLayer/Controles" unique_id=2108009548]
+[node name="ButVel2" type="Button" parent="CanvasLayer/Controles" unique_id=2108009548]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.68700004
@@ -63,6 +70,7 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 offset_right = -168.0
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kxu7p")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Posiciones" unique_id=1688764303]
 layout_mode = 0
@@ -74,7 +82,7 @@ layout_mode = 2
 text = "Molina Ramirez"
 autowrap_mode = 2
 
-[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1135514213]
+[node name="PanelSup" type="Panel" parent="CanvasLayer" unique_id=1135514213]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -83,7 +91,15 @@ offset_right = 160.0
 offset_bottom = 72.0
 grow_horizontal = 2
 
-[node name="Panel2" type="Panel" parent="CanvasLayer" unique_id=1218560391]
+[node name="LabelVueltas" type="Label" parent="CanvasLayer/PanelSup" unique_id=1848752920]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 31.0
+text = "Vuelta 1/33"
+
+[node name="PanelInf" type="Panel" parent="CanvasLayer" unique_id=1218560391]
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.0
@@ -92,3 +108,7 @@ anchor_bottom = 1.0
 offset_left = -160.0
 offset_top = -72.0
 offset_right = 160.0
+
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel2" to="." method="_on_but_vel_2_pressed"]

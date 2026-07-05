@@ -87,7 +87,7 @@ func _process(delta: float) -> void:
 			estado.progreso_metros = longitud_carrera
 		
 	_chequear_rebases()
-	_actualizar_lugares()
+	actualizar_lugares()
 	emit_signal("progreso_actualizado")
 
 func _procesar_boxes(estado: EstadoPilotoCarrera, dt: float) -> void:
@@ -151,7 +151,11 @@ func _aplicar_potencial(estado: EstadoPilotoCarrera, segmento: SegmentoPista, dt
 
 func _aplicar_desgaste(estado: EstadoPilotoCarrera, segmento: SegmentoPista, metros: float) -> void:
 	var km = metros / 1000.0
-	var factor = FACTOR_DESGASTE_CURVA if segmento.tipo == SegmentoPista.TIPO.CURVA else FACTOR_DESGASTE_RECTA
+	var factor: float
+	if segmento.tipo == SegmentoPista.TIPO.CURVA:
+		factor = FACTOR_DESGASTE_CURVA
+	else:
+		factor = FACTOR_DESGASTE_RECTA
 	estado.auto_data.ruedas.aplicar_desgaste(km, factor)
 
 func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) -> void:
@@ -197,11 +201,12 @@ func _intentar_rebase(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarre
 		defensor.potencial *= 0.5
 		rebase_ocurrido.emit(atacante, defensor, false)
 
-func _actualizar_lugares() -> void:
+func actualizar_lugares():
 	var ordenados = estados.duplicate()
 	ordenados.sort_custom(func(a, b): return a.progreso_metros > b.progreso_metros)
 	for i in ordenados.size():
 		ordenados[i].lugar = i + 1
+	return ordenados
 
 func _todos_terminaron() -> bool:
 	for e in estados:
