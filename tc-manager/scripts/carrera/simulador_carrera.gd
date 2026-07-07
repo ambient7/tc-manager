@@ -17,6 +17,8 @@ const FACTOR_DESGASTE_RECTA = 1.0
 @export var pista: PistaBase
 
 var estados: Array[EstadoPilotoCarrera] = []
+var pilotos_terminados: Array[EstadoPilotoCarrera] = [] # orden de llegada
+var estados_ordenados: Array[EstadoPilotoCarrera] = []
 var estrategia_ia: EstrategiaIA
 var velocidad_sim: float = 1.0
 var corriendo: bool = false
@@ -30,14 +32,12 @@ signal carrera_terminada(resultados: Array)
 signal progreso_actualizado  # la UI escucha esto
 
 func carrera_ejemplo(p) -> void:
-	var cantidad_corredores = 20
+	var cantidad_corredores = 15
 	var participantes: Array[Dictionary]
 	for c in cantidad_corredores:
-		var autorand = randi_range(0,1)
-		if autorand == 0:
-			participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": WHATSAPP_CAR})
-		elif autorand == 1:
-			participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": CLIO})
+		#var autorand = randi_range(0,1)
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": WHATSAPP_CAR})
+
 	iniciar(p,participantes,1)
 
 func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
@@ -54,7 +54,8 @@ func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
 		e.progreso_metros += e.lugar * 16
 		estados.append(e)
 	
-	emit_signal("progreso_actualizado")
+	estados_ordenados = _actualizar_lugares()
+	progreso_actualizado.emit(estados_ordenados)
 	await get_tree().create_timer(3).timeout
 
 	corriendo = true
@@ -82,13 +83,13 @@ func _process(delta: float) -> void:
 			
 		_avanzar_estado(estado, delta_time, longitud_pista)
 
-		if estado.progreso_metros >= longitud_carrera:
-			estado.termino = true
-			estado.progreso_metros = longitud_carrera
+		_verificar_llegada(estado,pista)
+			
+		
 		
 	_chequear_rebases()
-	actualizar_lugares()
-	emit_signal("progreso_actualizado")
+	estados_ordenados = _actualizar_lugares()
+	progreso_actualizado.emit(estados_ordenados)
 
 func _procesar_boxes(estado: EstadoPilotoCarrera, dt: float) -> void:
 	estado.tiempo_restante_boxes -= dt
@@ -201,12 +202,42 @@ func _intentar_rebase(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarre
 		defensor.potencial *= 0.5
 		rebase_ocurrido.emit(atacante, defensor, false)
 
-func actualizar_lugares():
-	var ordenados = estados.duplicate()
-	ordenados.sort_custom(func(a, b): return a.progreso_metros > b.progreso_metros)
-	for i in ordenados.size():
-		ordenados[i].lugar = i + 1
-	return ordenados
+func _actualizar_lugares():
+	# separar quiénes siguen en carrera
+	var en_pista: Array[EstadoPilotoCarrera] = []
+	
+	for estado in estados:
+		if not estado.termino:
+			en_pista.append(estado)
+
+	en_pista.sort_custom(_comparar_progreso)
+
+	var lugar_actual = 1
+	for estado in pilotos_terminados:
+		estado.lugar = lugar_actual
+		lugar_actual += 1
+	for estado in en_pista:
+		estado.lugar = lugar_actual
+		lugar_actual += 1
+
+	var orden_completo: Array[EstadoPilotoCarrera] = []
+	orden_completo.append_array(pilotos_terminados)
+	orden_completo.append_array(en_pista)
+	return orden_completo
+
+func _comparar_progreso(a: EstadoPilotoCarrera, b: EstadoPilotoCarrera) -> bool:
+	# tu criterio actual: más vueltas + más progreso_metros primero
+	if a.vuelta_actual != b.vuelta_actual:
+		return a.vuelta_actual > b.vuelta_actual
+	return a.progreso_metros > b.progreso_metros
+
+func _verificar_llegada(estado: EstadoPilotoCarrera, pista: PistaBase):
+	if estado.termino:
+		return # ya está registrado, no lo toques de nuevo
+
+	if estado.vuelta_actual > pista.vueltas:
+		estado.termino = true
+		pilotos_terminados.append(estado) # se registra en orden de llegada, para siempre
 
 func _todos_terminaron() -> bool:
 	for e in estados:

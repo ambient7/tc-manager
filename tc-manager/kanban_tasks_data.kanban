@@ -1,0 +1,99 @@
+{
+	"categories": [
+		{
+			"uuid": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"title": "Task",
+			"color": "569eff"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "01f41b11-79e4-467e-938a-64f4fa2b781a",
+			"title": "Todo",
+			"tasks": [
+				"4fb78b89-02ef-4921-9da0-e68133775711",
+				"ef19f99e-21cc-4493-ac03-91ceb6eb76df",
+				"123e8b45-1988-4aa6-8f51-36d3a8f84100",
+				"5722f017-f9cf-4e8a-b0fe-4d7ba3d2582b",
+				"3f76ee7b-f76f-4936-9a65-8215f50ecc8b",
+				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2"
+			]
+		},
+		{
+			"uuid": "edd3ac38-c4cf-4eb6-b948-426196dd3bc6",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "1c590cf3-aaa4-4cf7-9328-9459224175f3",
+			"title": "Done",
+			"tasks": [
+				"6f5c4d62-3908-4fb1-8137-81d9b38d85dc"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "6f5c4d62-3908-4fb1-8137-81d9b38d85dc",
+			"title": "Lista de corredores",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "4fb78b89-02ef-4921-9da0-e68133775711",
+			"title": "Controles de jugador",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "ef19f99e-21cc-4493-ac03-91ceb6eb76df",
+			"title": "Boxes",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "123e8b45-1988-4aa6-8f51-36d3a8f84100",
+			"title": "Mecanicos y relacion a boxes",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "5722f017-f9cf-4e8a-b0fe-4d7ba3d2582b",
+			"title": "Progresion de fechas y carreras",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "3f76ee7b-f76f-4936-9a65-8215f50ecc8b",
+			"title": "Eventos",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
+			"title": "Compra de autos",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"01f41b11-79e4-467e-938a-64f4fa2b781a"
+			],
+			[
+				"edd3ac38-c4cf-4eb6-b948-426196dd3bc6"
+			],
+			[
+				"1c590cf3-aaa4-4cf7-9328-9459224175f3"
+			]
+		]
+	}
+}

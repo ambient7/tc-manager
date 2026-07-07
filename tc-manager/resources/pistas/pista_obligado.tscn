@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bsit7ymvkqkwk"]
 
-[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="1_pdc0i"]
+[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/carrera/pista_base.tscn" id="1_pdc0i"]
 [ext_resource type="Script" uid="uid://d4hrjks6xc051" path="res://scripts/carrera/segmento_pista.gd" id="2_661nm"]
 [ext_resource type="Texture2D" uid="uid://bmvqwdryf0c6v" path="res://assets/pistas/Obligado.png" id="2_tvk3g"]
 
@@ -144,23 +144,28 @@ metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Curve2D" id="Curve2D_tvk3g"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 272, 81, 0, 0, 0, 0, 179.99998, 81, 0, 0, 0, 0, 178.99998, 190, 0, 0, 0, 0, 251.99998, 190, 0, 0, 0, 0, 252.99998, 322, 0, 0, 0, 0, 305, 324, 0, 0, 0, 0, 320, 336, 0, 0, 0, 0, 344, 336, 0, 0, 0, 0, 388, 336, 0, 0, 0, 0, 387, 312, 0, 0, 0, 0, 371, 281, 0, 0, 0, 0, 377, 231, 0, 0, 0, 0, 358, 191, -0.59457433, 20.512814, 0.59457433, -20.512814, 336, 177, 0, 0, 0, 0, 351, 162, 0, 0, 0, 0, 353, 116, 0, 0, 0, 0, 354, 81, 0, 0, 0, 0, 272, 81)
+"points": PackedVector2Array(0, 0, 0, 0, 272.68964, 93.01149, 0, 0, 0, 0, 183.00381, 93.01149, 0, 0, 0, 0, 183.00381, 195.50958, 0, 0, 0, 0, 253.47124, 195.50958, 0, 0, 0, 0, 252.99998, 322, 0, 0, 0, 0, 304.72028, 322.83142, 0, 0, 0, 0, 319.93484, 334.04214, 0, 0, 0, 0, 343.15707, 334.04214, 0, 0, 0, 0, 381.59384, 334.04214, 0, 0, 0, 0, 380.7931, 312.42145, 0, 0, 0, 0, 365.57852, 282.7931, 0, 0, 0, 0, 370.38312, 233.94637, 0, 0, 0, 0, 353.56702, 197.11111, -0.59457433, 20.512814, 0.59457433, -20.512814, 332.7471, 183.4981, 0, 0, 0, 0, 347.1609, 168.28352, 0, 0, 0, 0, 349.5632, 118.63601, 0, 0, 0, 0, 349.5632, 93.01149, 0, 0, 0, 0, 272.68964, 93.01149)
 }
 point_count = 18
 
 [node name="PistaObligado" unique_id=85885368 node_paths=PackedStringArray("path") instance=ExtResource("1_pdc0i")]
 nombre_pista = "Obligado"
+vueltas = 1
 segmentos = Array[ExtResource("2_661nm")]([SubResource("Resource_661nm"), SubResource("Resource_7jkxs"), SubResource("Resource_0mhj8"), SubResource("Resource_hqgwp"), SubResource("Resource_laasx"), SubResource("Resource_u0v5f"), SubResource("Resource_aq6li"), SubResource("Resource_ktpdl"), SubResource("Resource_458a0"), SubResource("Resource_yvj30"), SubResource("Resource_b44ep"), SubResource("Resource_w85cv"), SubResource("Resource_1pnxf"), SubResource("Resource_gtkdn"), SubResource("Resource_ta1e7"), SubResource("Resource_p3c2g"), SubResource("Resource_cx421")])
 path = NodePath("Path2D")
 
-[node name="Sprite2D" parent="." index="0" unique_id=551060779]
+[node name="SpriteEjemplo" parent="." index="0" unique_id=551060779]
 visible = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="." index="2" unique_id=1918826065]
-position = Vector2(320, 272)
-scale = Vector2(0.5465839, 0.6068268)
+position = Vector2(400, 315.6363)
+scale = Vector2(0.6459627, 0.7171588)
 texture = ExtResource("2_tvk3g")
 
 [node name="Path2D" type="Path2D" parent="." index="3" unique_id=1245575078]
-position = Vector2(1.5258789e-05, 32)
+position = Vector2(3.464168, 11.846863)
+scale = Vector2(1.2488037, 1.2488037)
 curve = SubResource("Curve2D_tvk3g")
+
+[node name="Guia2" parent="Control" parent_id_path=PackedInt32Array(418685216) index="1" unique_id=2091796354]
+size_flags_horizontal = 4

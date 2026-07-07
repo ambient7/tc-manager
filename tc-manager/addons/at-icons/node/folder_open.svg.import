@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/folder_open.svg-5019dc020de8574adb6e13ca366c8
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -39,6 +39,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
+svg/scale=1.5
 editor/scale_with_editor_scale=true
 editor/convert_colors_with_editor_theme=true

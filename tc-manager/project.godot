@@ -22,9 +22,13 @@ NoticiasBd="*uid://bg0omhlpwyfrh"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=480
+window/size/viewport_width=800
+window/size/viewport_height=600
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/at-icons/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg")
 
 [physics]
 

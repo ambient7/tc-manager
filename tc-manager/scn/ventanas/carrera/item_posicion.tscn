@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cot5eqgor4siu"]
+
+[ext_resource type="Script" uid="uid://ch6hilawp8dbn" path="res://scn/ventanas/carrera/item_posicion.gd" id="1_vi4on"]
+[ext_resource type="Texture2D" uid="uid://p5s3nsi4vfff" path="res://addons/at-icons/node/flag_checkered.svg" id="2_mxofk"]
+
+[node name="ItemPosicion" type="PanelContainer" unique_id=348647315]
+offset_right = 168.0
+offset_bottom = 24.0
+size_flags_vertical = 0
+script = ExtResource("1_vi4on")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1821506502]
+layout_mode = 2
+
+[node name="Posición" type="Panel" parent="HBoxContainer" unique_id=1541746959]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="LabelPosicion" type="Label" parent="HBoxContainer/Posición" unique_id=313586979]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelNombre" type="Label" parent="HBoxContainer" unique_id=1924240216]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "M. Martinez"
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1514423280]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+texture = ExtResource("2_mxofk")
+expand_mode = 2

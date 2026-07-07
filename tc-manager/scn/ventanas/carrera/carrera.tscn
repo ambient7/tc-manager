@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://cpd3nsmd5jp87"]
+
+[ext_resource type="Script" uid="uid://byn2axian4av0" path="res://scripts/carrera/carrera.gd" id="1_dtn54"]
+[ext_resource type="PackedScene" uid="uid://cot5eqgor4siu" path="res://scn/ventanas/carrera/item_posicion.tscn" id="3_01c5b"]
+[ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
+
+[node name="Carrera" type="Node2D" unique_id=1902980008]
+script = ExtResource("1_dtn54")
+
+[node name="Simulador" type="Node" parent="." unique_id=1089032895]
+script = ExtResource("3_dcy3v")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2098692618]
+
+[node name="Controles" type="Panel" parent="CanvasLayer" unique_id=1513898459]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 208.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ButVel1" type="Button" parent="CanvasLayer/Controles" unique_id=1509135605]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37500003
+anchor_top = 0.017
+anchor_right = 0.625
+anchor_bottom = 0.083000004
+offset_top = -0.1600008
+offset_bottom = 0.15999603
+text = "x1"
+
+[node name="ButVel0" type="Button" parent="CanvasLayer/Controles" unique_id=2040392476]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.062000003
+anchor_top = 0.017
+anchor_right = 0.312
+anchor_bottom = 0.083000004
+offset_left = 0.06399965
+offset_top = -0.1600008
+offset_right = 0.063999176
+offset_bottom = 0.15999603
+text = "x0"
+
+[node name="ButVel2" type="Button" parent="CanvasLayer/Controles" unique_id=2108009548]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.68700004
+anchor_top = 0.017
+anchor_right = 0.93700004
+anchor_bottom = 0.083000004
+offset_left = 0.06399536
+offset_top = -0.1600008
+offset_right = 0.06399536
+offset_bottom = 0.15999603
+text = "x2"
+
+[node name="Posiciones" type="Panel" parent="CanvasLayer" unique_id=1320115093]
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_right = -208.0
+grow_vertical = 2
+
+[node name="ContainerPosiciones" type="VBoxContainer" parent="CanvasLayer/Posiciones" unique_id=1688764303]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.083000004
+anchor_bottom = 0.083000004
+offset_top = -1.800003
+offset_right = 192.0
+offset_bottom = 534.2
+theme_override_constants/separation = 0
+
+[node name="ItemPosicion" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=348647315 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion2" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=161570462 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion3" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1109199912 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion4" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1208973993 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion5" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=253737541 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion6" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=923555876 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion7" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1571658404 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion8" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=144472606 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion9" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=444668643 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion10" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=2044714415 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion11" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1859340929 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion12" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=840724333 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion13" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=525008369 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion14" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1864659379 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion15" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1251096133 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion16" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1893702216 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion17" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=368246435 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion18" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1860692681 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion19" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=934627837 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="ItemPosicion20" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=1541906838 instance=ExtResource("3_01c5b")]
+layout_mode = 2
+
+[node name="PanelSup" type="Panel" parent="CanvasLayer" unique_id=1135514213]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_right = 160.0
+offset_bottom = 72.0
+grow_horizontal = 2
+
+[node name="LabelVueltas" type="Label" parent="CanvasLayer/PanelSup" unique_id=1848752920]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 31.0
+text = "Vuelta 1/33"
+
+[node name="PanelInf" type="Panel" parent="CanvasLayer" unique_id=1218560391]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -72.0
+offset_right = 160.0
+
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]
+[connection signal="pressed" from="CanvasLayer/Controles/ButVel2" to="." method="_on_but_vel_2_pressed"]

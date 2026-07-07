@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://t6bpejka8256"]
 
 [ext_resource type="Script" uid="uid://cc224ao5s6yp4" path="res://scn/test/carrerucha.gd" id="1_2qrnr"]
-[ext_resource type="PackedScene" uid="uid://cpd3nsmd5jp87" path="res://scn/ventanas/carrera.tscn" id="1_3hybk"]
-[ext_resource type="PackedScene" uid="uid://bqo16qpj3um6f" path="res://scn/ventanas/pista_base.tscn" id="2_kxu7p"]
+[ext_resource type="PackedScene" uid="uid://cpd3nsmd5jp87" path="res://scn/ventanas/carrera/carrera.tscn" id="1_3hybk"]
+[ext_resource type="PackedScene" uid="uid://bsit7ymvkqkwk" path="res://resources/pistas/pista_obligado.tscn" id="2_kxu7p"]
 
 [node name="Carrerucha" type="Control" unique_id=984095423]
 layout_mode = 3
