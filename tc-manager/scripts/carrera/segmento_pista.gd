@@ -9,5 +9,5 @@ enum TIPO { RECTA, CURVA }
 @export var velocidad_max: int         # límite del segmento
 @export_group("Curvas")
 @export_range(0,100,1.0) var habilidad_requerida: int   # para curvas
-@export_range(0,3,1.0) var angulo: int
+@export_range(0,3,1) var angulo: int
 @export var aceleracion_requerida: int # para curvas

@@ -73,6 +73,17 @@ offset_right = 800.0
 offset_bottom = 600.0
 grow_horizontal = 2
 
+[node name="Guia2" type="ReferenceRect" parent="Control" unique_id=2091796354]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -208.0
+offset_right = 208.0
+offset_bottom = 600.0
+grow_horizontal = 2
+border_color = Color(0.33956805, 0.6155458, 0.2296943, 1)
+
 [node name="Guia" type="ReferenceRect" parent="Control" unique_id=794545045]
 layout_mode = 1
 anchors_preset = 8
@@ -87,13 +98,6 @@ offset_bottom = 172.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Guia2" type="ReferenceRect" parent="Control" unique_id=2091796354]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -208.0
-offset_right = 208.0
-offset_bottom = 600.0
-grow_horizontal = 2
-border_color = Color(0.33956805, 0.6155458, 0.2296943, 1)
+[node name="SpritesSegmentos" type="Node2D" parent="." unique_id=2052837564]
+
+[node name="SpritesPuntos" type="Node2D" parent="." unique_id=1266512010]

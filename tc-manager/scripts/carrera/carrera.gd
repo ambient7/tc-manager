@@ -1,6 +1,7 @@
 extends Node2D
 
 const CAR = preload("uid://bfk75obdq66j6")
+const WRENCH = preload("uid://csi6ucctnlhaf")
 const MCQUEEN = preload("res://assets/311-3115851_rayo-mcqueen-wallpaper-disney-cars-lightning-mcqueen_13percent.png")
 
 const ITEM_POSICION = preload("uid://cot5eqgor4siu")
@@ -38,8 +39,6 @@ func _on_progreso_actualizado(estados):
 	_lista_posiciones(estados)
 
 func _actualizar_sprites(ordenados) -> void:
-	
-	
 	var lider = ordenados[0]
 	
 	label_vueltas.text = "Vuelta %d/%d" % [min(lider.vuelta_actual, pista.vueltas), pista.vueltas]
@@ -59,6 +58,8 @@ func _lista_posiciones(posiciones):
 		var estado: int
 		if p.termino == true:
 			estado = 1
+		elif p.en_boxes:
+			estado = 2
 		else:
 			estado = 0
 		container_posiciones.add_child(item_posicion)
@@ -74,4 +75,4 @@ func _on_but_vel_1_pressed() -> void:
 
 
 func _on_but_vel_2_pressed() -> void:
-	simulador.velocidad_sim = 4
+	simulador.velocidad_sim = 10

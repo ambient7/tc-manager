@@ -11,6 +11,7 @@ const MEDAL_2_ND = preload("uid://bt8vcyd61xn5y")
 const MEDAL_3_RD = preload("uid://dkcofp44rvygq")
 const NODE_WARNING = preload("uid://dgjmtspryavlb")
 const SKULL = preload("uid://bkutygbxro7yf")
+const WRENCH = preload("uid://csi6ucctnlhaf")
 
 
 var posicion
@@ -33,7 +34,8 @@ func actualizar_datos(pos,nom,estado,lugar):
 					texture_rect.texture = MEDAL_3_RD
 				_:
 					texture_rect.texture = FLAG_CHECKERED
-			
+		2:
+			texture_rect.texture = WRENCH
 	
 func _formatear_apellido(apellido):
 # Split the string by spaces and remove any extra empty spaces

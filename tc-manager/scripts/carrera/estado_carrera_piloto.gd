@@ -18,6 +18,7 @@ var potencial: float = 0.0          # acumulado en rectas, consumido en curvas
 var tiempo_total: float = 0.0       # segundos
 
 # Boxes
+var entrar_a_boxes = false
 var en_boxes: bool = false
 var tiempo_restante_boxes: float = 0.0
 

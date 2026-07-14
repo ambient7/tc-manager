@@ -148,11 +148,20 @@ _data = {
 }
 point_count = 18
 
-[node name="PistaObligado" unique_id=85885368 node_paths=PackedStringArray("path") instance=ExtResource("1_pdc0i")]
+[sub_resource type="Curve2D" id="Curve2D_661nm"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 321, 128, 0, 0, 0, 0, 304, 136, 0, 0, 0, 0, 280, 136, 0, 0, 0, 0, 268, 128)
+}
+point_count = 4
+
+[node name="PistaObligado" unique_id=85885368 node_paths=PackedStringArray("path", "path_boxes") instance=ExtResource("1_pdc0i")]
 nombre_pista = "Obligado"
-vueltas = 1
+vueltas = 5
+boxes = 75
+boxes_salida = 250
 segmentos = Array[ExtResource("2_661nm")]([SubResource("Resource_661nm"), SubResource("Resource_7jkxs"), SubResource("Resource_0mhj8"), SubResource("Resource_hqgwp"), SubResource("Resource_laasx"), SubResource("Resource_u0v5f"), SubResource("Resource_aq6li"), SubResource("Resource_ktpdl"), SubResource("Resource_458a0"), SubResource("Resource_yvj30"), SubResource("Resource_b44ep"), SubResource("Resource_w85cv"), SubResource("Resource_1pnxf"), SubResource("Resource_gtkdn"), SubResource("Resource_ta1e7"), SubResource("Resource_p3c2g"), SubResource("Resource_cx421")])
 path = NodePath("Path2D")
+path_boxes = NodePath("PathBoxes")
 
 [node name="SpriteEjemplo" parent="." index="0" unique_id=551060779]
 visible = false
@@ -167,5 +176,8 @@ position = Vector2(3.464168, 11.846863)
 scale = Vector2(1.2488037, 1.2488037)
 curve = SubResource("Curve2D_tvk3g")
 
-[node name="Guia2" parent="Control" parent_id_path=PackedInt32Array(418685216) index="1" unique_id=2091796354]
+[node name="Guia2" parent="Control" parent_id_path=PackedInt32Array(418685216) index="0" unique_id=2091796354]
 size_flags_horizontal = 4
+
+[node name="PathBoxes" type="Path2D" parent="." index="7" unique_id=749481532]
+curve = SubResource("Curve2D_661nm")

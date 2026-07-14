@@ -36,7 +36,8 @@ func carrera_ejemplo(p) -> void:
 	var participantes: Array[Dictionary]
 	for c in cantidad_corredores:
 		#var autorand = randi_range(0,1)
-		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": WHATSAPP_CAR})
+		var auto_instancia = WHATSAPP_CAR.duplicate(true)
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia})
 
 	iniciar(p,participantes,1)
 
@@ -77,15 +78,19 @@ func _process(delta: float) -> void:
 		if estado.en_boxes:
 			_procesar_boxes(estado, delta_time)
 			continue
-			
+		
+		if estado.entrar_a_boxes:
+			var boxes_min: int = pista.boxes - 5
+			var boxes_max: int = pista.boxes + 10
+			var posicion = estado.progreso_en_vuelta_actual(longitud_pista)
+			if posicion >= boxes_min and posicion <= boxes_max:
+				entrar_boxes(estado)
+		
 		if i != index_jugador:
 			_evaluar_pit_ia(estado, longitud_pista, longitud_carrera)
 			
 		_avanzar_estado(estado, delta_time, longitud_pista)
-
 		_verificar_llegada(estado,pista)
-			
-		
 		
 	_chequear_rebases()
 	estados_ordenados = _actualizar_lugares()
@@ -102,10 +107,11 @@ func _procesar_boxes(estado: EstadoPilotoCarrera, dt: float) -> void:
 func _evaluar_pit_ia(estado: EstadoPilotoCarrera, longitud_pista: float, longitud_carrera: float) -> void:
 	var vueltas_restantes = pista.vueltas - estado.vuelta_actual
 	if estrategia_ia.debe_entrar_boxes(estado, vueltas_restantes):
-		entrar_boxes(estado)
+		estado.entrar_a_boxes = true
 
 func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
 	estado.en_boxes = true
+	estado.entrar_a_boxes = false 
 	estado.tiempo_restante_boxes = TIEMPO_PIT_STOP
 
 func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: float) -> void:
@@ -120,7 +126,7 @@ func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: flo
 	estado.tiempo_total += dt
 
 	_aplicar_potencial(estado, segmento, dt)
-	#_aplicar_desgaste(estado, segmento, metros_recorridos)
+	_aplicar_desgaste(estado, segmento, metros_recorridos)
 	_chequear_nueva_vuelta(estado, longitud_pista)
 
 func _calcular_velocidad(estado: EstadoPilotoCarrera, segmento: SegmentoPista) -> float:
@@ -156,7 +162,14 @@ func _aplicar_desgaste(estado: EstadoPilotoCarrera, segmento: SegmentoPista, met
 	if segmento.tipo == SegmentoPista.TIPO.CURVA:
 		factor = FACTOR_DESGASTE_CURVA
 	else:
-		factor = FACTOR_DESGASTE_RECTA
+		match segmento.angulo:
+			1:
+				factor = FACTOR_DESGASTE_RECTA
+			2:
+				factor = FACTOR_DESGASTE_RECTA - 0.5
+			3:
+				factor = FACTOR_DESGASTE_RECTA - 0.10
+		
 	estado.auto_data.ruedas.aplicar_desgaste(km, factor)
 
 func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) -> void:
@@ -164,6 +177,11 @@ func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) 
 	if vuelta_calculada > estado.vuelta_actual:
 		estado.vuelta_actual = vuelta_calculada
 		vuelta_completada.emit(estado)
+	print("%s - vuelta %d - vida ruedas: %.1f%%" % [
+			estado.piloto.apellido, 
+			estado.vuelta_actual, 
+			estado.auto_data.ruedas.porcentaje_vida()
+		])
 
 func _chequear_rebases() -> void:
 	for i in estados.size():
