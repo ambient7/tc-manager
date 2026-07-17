@@ -10,9 +10,9 @@ script = ExtResource("2_pwugh")
 
 [node name="labelExperiencia" type="Label" parent="." index="3" unique_id=733695485]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 40.0
 offset_top = 55.0
-offset_right = 151.0
+offset_right = 175.0
 offset_bottom = 78.0
 text = "Experiencia: 9999"
 

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b1u3krat6xuo5"]
 
 [ext_resource type="Script" uid="uid://bdib7crhfnlx" path="res://scripts/ui/elementos/item_piloto.gd" id="1_mnk55"]
+[ext_resource type="Texture2D" uid="uid://bdtpjdtqo1qch" path="res://addons/at-icons/node/steering_wheel.svg" id="2_8tkfm"]
 
 [node name="ItemPiloto" type="Panel" unique_id=1667803817]
 custom_minimum_size = Vector2(0, 64)
@@ -13,24 +14,32 @@ script = ExtResource("1_mnk55")
 
 [node name="labelNombre" type="Label" parent="." unique_id=1313045567]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 8.0
-offset_right = 86.0
-offset_bottom = 31.0
+offset_left = 40.0
+offset_top = 7.0
+offset_right = 110.0
+offset_bottom = 30.0
 text = "NOMBRE"
 
 [node name="labelHabilidad" type="Label" parent="." unique_id=1718555061]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 32.0
-offset_right = 136.0
-offset_bottom = 55.0
+offset_left = 40.0
+offset_top = 31.0
+offset_right = 160.0
+offset_bottom = 54.0
 text = "Habilidad: 9999"
 
 [node name="labelSalario" type="Label" parent="." unique_id=2069484852]
 layout_mode = 0
-offset_left = 152.0
-offset_top = 32.0
-offset_right = 272.0
-offset_bottom = 55.0
+offset_left = 176.0
+offset_top = 31.0
+offset_right = 311.0
+offset_bottom = 54.0
 text = "Salario: 9999999$"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=649072123]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 32.0
+offset_bottom = 31.0
+texture = ExtResource("2_8tkfm")

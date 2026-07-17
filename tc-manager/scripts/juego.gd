@@ -3,9 +3,10 @@ extends Node
 var equipo: Equipo
 var diaActual: int = 1
 var pilotosDisponibles: Array[Piloto] = []
+var mecanicos_disponibles: Array[Mecanico] = []
 
 const NOMBRES = [
-	"Alejandro", "Alejo", "Alfonso", "Angel", "Antonio", "Arturo", 
+	"Adamo","Alejandro", "Alejo", "Alfonso", "Angel", "Antonio", "Arturo", 
 	"Benjamin", "Bruno", "Carlos", "Cesar", "Cristian", 
 	"Daniel", "David", "Diego", "Eduardo", "Emiliano", 
 	"Emmanuel", "Enzo", "Elian", "Ernesto", "Felipe", "Fernando", 
@@ -27,7 +28,7 @@ const APELLIDOS = [
 	"Molina", "Morales", "Muñoz", "Navarro", "Ortega", 
 	"Ortiz", "Peralta", "Pereyra", "Perez", "Ramirez", 
 	"Ramos", "Rivera", "Rodriguez", "Rojas", "Romero", 
-	"Ruiz", "Sanchez", "Silva", "Soto", "Vazquez"
+	"Ruiz", "Sanchez", "Silva", "Soto", "Vazquez", "Villalba"
 	];
 
 func _ready() -> void:
@@ -47,6 +48,16 @@ func contratar_piloto(piloto: Piloto) -> bool:
 		piloto.diaPago = diaActual
 		equipo.pilotosContratados.append(piloto)
 		pilotosDisponibles.erase(piloto)
+		return true
+	return false
+
+func contratar_mecanico(mecanico: Mecanico) -> bool: 
+	if equipo.dinero >= mecanico.salario:
+		equipo.dinero -= mecanico.salario
+		mecanico.contratado = true
+		mecanico.diaPago = diaActual
+		equipo.mecanicos_contratados.append(mecanico)
+		mecanicos_disponibles.erase(mecanico)
 		return true
 	return false
 
@@ -102,6 +113,27 @@ func generar_piloto_simple():
 	p.contratado = true
 	p.estado = "DISPONIBLE"
 	return p
+	
+func generar_mecanico():
+	var mecanico = Mecanico.new()
+	var chanNom = randi_range(1,3)
+	var chanApe = randi_range(1,3)
+	
+	if int(chanNom) < 3:
+		mecanico.nombre = generar_nombre()
+	else:
+		mecanico.nombre = generar_nombre() + " " + generar_nombre()
+		
+	if int(chanApe) < 3:
+		mecanico.apellido = generar_apellido()
+	else:
+		mecanico.apellido = generar_apellido() + " " + generar_apellido()
+	
+	mecanico.habilidad = randi_range(1, 100)
+	mecanico.salario = mecanico.habilidad * 500
+	mecanico.contratado = true
+	return mecanico
 
 func get_dinero(): return equipo.dinero
 func get_contratados(): return equipo.pilotosContratados
+func get_mecanicos(): return equipo.mecanicos_contratados

@@ -113,6 +113,11 @@ func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
 	estado.en_boxes = true
 	estado.entrar_a_boxes = false 
 	estado.tiempo_restante_boxes = TIEMPO_PIT_STOP
+	print("%s - vuelta %d - vida ruedas: %.1f%% EN BOXES" % [
+			estado.piloto.apellido, 
+			estado.vuelta_actual, 
+			estado.auto_data.ruedas.porcentaje_vida()
+		])
 
 func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: float) -> void:
 	var metros_en_vuelta = estado.progreso_en_vuelta_actual(longitud_pista)
@@ -159,16 +164,16 @@ func _aplicar_potencial(estado: EstadoPilotoCarrera, segmento: SegmentoPista, dt
 func _aplicar_desgaste(estado: EstadoPilotoCarrera, segmento: SegmentoPista, metros: float) -> void:
 	var km = metros / 1000.0
 	var factor: float
-	if segmento.tipo == SegmentoPista.TIPO.CURVA:
-		factor = FACTOR_DESGASTE_CURVA
+	if segmento.tipo == SegmentoPista.TIPO.RECTA:
+		factor = FACTOR_DESGASTE_RECTA
 	else:
 		match segmento.angulo:
 			1:
-				factor = FACTOR_DESGASTE_RECTA
+				factor = FACTOR_DESGASTE_CURVA
 			2:
-				factor = FACTOR_DESGASTE_RECTA - 0.5
+				factor = FACTOR_DESGASTE_CURVA - 0.5
 			3:
-				factor = FACTOR_DESGASTE_RECTA - 0.10
+				factor = FACTOR_DESGASTE_CURVA - 0.10
 		
 	estado.auto_data.ruedas.aplicar_desgaste(km, factor)
 
@@ -177,11 +182,11 @@ func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) 
 	if vuelta_calculada > estado.vuelta_actual:
 		estado.vuelta_actual = vuelta_calculada
 		vuelta_completada.emit(estado)
-	print("%s - vuelta %d - vida ruedas: %.1f%%" % [
-			estado.piloto.apellido, 
-			estado.vuelta_actual, 
-			estado.auto_data.ruedas.porcentaje_vida()
-		])
+		print("%s - vuelta %d - vida ruedas: %.1f%%" % [
+				estado.piloto.apellido, 
+				estado.vuelta_actual, 
+				estado.auto_data.ruedas.porcentaje_vida()
+			])
 
 func _chequear_rebases() -> void:
 	for i in estados.size():

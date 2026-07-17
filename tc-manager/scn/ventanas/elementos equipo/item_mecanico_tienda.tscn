@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dveh6dl5vl442"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_f5jgq"]
+[ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="2_c64gg"]
+[ext_resource type="Script" uid="uid://b4xbf20lci2jg" path="res://scn/ventanas/elementos equipo/item_mecanico_tienda.gd" id="2_x10ll"]
+
+[node name="ItemMecanicoTienda" unique_id=1667803817 instance=ExtResource("1_f5jgq")]
+offset_top = 72.0
+offset_bottom = 136.0
+script = ExtResource("2_x10ll")
+
+[node name="Button" type="Button" parent="." index="3" unique_id=235728697]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -16.0
+offset_right = -16.0
+offset_bottom = 16.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "CONTRATAR"
+
+[node name="TextureRect" parent="." index="4" unique_id=649072123]
+offset_top = 8.0
+offset_bottom = 32.0
+texture = ExtResource("2_c64gg")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

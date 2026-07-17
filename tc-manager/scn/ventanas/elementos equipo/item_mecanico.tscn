@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://oy6qfcljq85r"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_ovm0i"]
+[ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="2_yyij8"]
+
+[node name="ItemMecanico" unique_id=1667803817 instance=ExtResource("1_ovm0i")]
+
+[node name="TextureRect" parent="." index="3" unique_id=649072123]
+texture = ExtResource("2_yyij8")

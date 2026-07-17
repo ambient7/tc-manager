@@ -3,13 +3,15 @@ extends Control
 @onready var ventana_equipo: Control = $VentanaEquipo
 
 var pilotos: Array[Piloto]
+var mecanicos : Array[Mecanico]
 
 func _ready() -> void:
-	stock_tienda(30)
+	stock_tienda(3)
 
 func _terminar_dia():
 	Juego.avanzar_dia()
 	Juego.pilotosDisponibles = []
+	Juego.mecanicos_disponibles = []
 	stock_tienda(3)
 	if Juego.diaActual == 32:
 		Juego.diaActual = 1
@@ -22,7 +24,11 @@ func stock_tienda(cant) -> void:
 	for x in cant:
 		Juego.generar_piloto()
 		pilotos = Juego.pilotosDisponibles
-	ventana_equipo.stockearTienda(Juego.pilotosDisponibles)
+		var mec = Juego.generar_mecanico()
+		Juego.mecanicos_disponibles.append(mec)
+		mecanicos = Juego.mecanicos_disponibles
+		
+	ventana_equipo.stockearTienda(Juego.pilotosDisponibles,Juego.mecanicos_disponibles)
 
 func entrenamiento(piloto: Piloto):
 	if piloto.estado == Piloto.ESTADO_PILOTO.DISPONIBLE:

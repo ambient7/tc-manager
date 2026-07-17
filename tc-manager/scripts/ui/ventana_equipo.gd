@@ -14,13 +14,18 @@ const ITEM_EVENTO = preload("uid://bw020ca4arlcy")
 const SEPARADOR_DIA = preload("uid://bkfgpdps85n61")
 var itemPilotoTienda = preload("res://scn/ventanas/elementos equipo/item_piloto_tienda.tscn")
 var itemPilotoPersonal = preload("res://scn/ventanas/elementos equipo/item_piloto_personal.tscn")
+const ITEM_MECANICO_TIENDA = preload("uid://dveh6dl5vl442")
+const ITEM_MECANICO = preload("uid://oy6qfcljq85r")
+
 var pilotosDisponibles: Array[Piloto]
+var mecanicos_disponibles: Array[Mecanico]
 
 func _ready() -> void:
 	actualizarUI()
 
-func stockearTienda(pilotos):
+func stockearTienda(pilotos,mecanicos):
 	pilotosDisponibles = pilotos
+	mecanicos_disponibles = mecanicos
 	for c in container_pilotos_tienda.get_children():
 		c.queue_free()
 	var labPilotos = Label.new()
@@ -33,8 +38,18 @@ func stockearTienda(pilotos):
 			container_pilotos_tienda.add_child(itemInstancia)
 			itemInstancia.ingresarPiloto(p)
 			itemInstancia.piloto_contratado.connect(_on_actualizar_ui)
-
-func cargarPersonal(pilotos):
+	var labMecanicos = Label.new()
+	labMecanicos.text = "Mecanicos disponibles:"
+	labMecanicos.custom_minimum_size.y = 32
+	labMecanicos.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	container_pilotos_tienda.add_child(labMecanicos)
+	for m in mecanicos:
+		var itemInstancia = ITEM_MECANICO_TIENDA.instantiate()
+		container_pilotos_tienda.add_child(itemInstancia)
+		itemInstancia.ingresar_mecanico(m)
+		itemInstancia.mecanico_contratado.connect(_on_actualizar_ui)
+			
+func cargarPersonal(pilotos, mecanicos):
 	for c in container_pilotos_personal.get_children():
 		c.queue_free()
 	for p in pilotos:
@@ -42,12 +57,18 @@ func cargarPersonal(pilotos):
 			container_pilotos_personal.add_child(itemInstancia)
 			itemInstancia.ingresarPiloto(p)
 			itemInstancia.piloto_a_entrenar.connect(_on_piloto_entrenar)
+	for m in mecanicos:
+			var itemInstancia = ITEM_MECANICO.instantiate()
+			container_pilotos_personal.add_child(itemInstancia)
+			itemInstancia.ingresar_mecanico(m)
+			
 
 func actualizarUI(): 
 	labelDias.text = "Dia " + str(Juego.diaActual)
 	lab_dinero.text = "$" + str(Juego.get_dinero())
 	pilotosDisponibles = Juego.pilotosDisponibles
-	cargarPersonal(Juego.get_contratados())
+	mecanicos_disponibles = Juego.mecanicos_disponibles
+	cargarPersonal(Juego.get_contratados(), Juego.get_mecanicos())
 	for c in container_pilotos_tienda.get_children():
 		if c is Panel:
 			c.actualizar_ui()

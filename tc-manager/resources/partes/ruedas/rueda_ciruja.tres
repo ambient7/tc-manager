@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_33srs")
 nombre = "cirujenaitor"
+desgaste_por_km = 5.0
 metadata/_custom_type_script = "uid://5s77pjwxqrgv"
