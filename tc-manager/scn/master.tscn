@@ -14,5 +14,9 @@ script = ExtResource("1_70kie")
 
 [node name="VentanaEquipo" parent="." unique_id=2053102584 instance=ExtResource("2_7d2s6")]
 layout_mode = 1
+offset_left = 4.0
+offset_top = -2.0
+offset_right = 4.0
+offset_bottom = -2.0
 
 [connection signal="dia_terminado" from="VentanaEquipo" to="." method="_on_ventana_equipo_dia_terminado"]
