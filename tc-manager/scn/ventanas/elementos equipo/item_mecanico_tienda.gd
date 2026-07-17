@@ -22,4 +22,4 @@ func actualizar_ui():
 func _on_button_pressed() -> void:
 	if Juego.contratar_mecanico(mecanico):
 		emit_signal("mecanico_contratado")
-	queue_free()
+		queue_free()
