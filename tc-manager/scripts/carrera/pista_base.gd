@@ -58,6 +58,14 @@ func _process(delta) -> void:
 					sprites_segmentos.add_child(sprite)
 			else:
 				sprite.texture = null
+			if metro == 0:
+				var totalfunc = func():
+					var total = 0.0
+					for s in segmentos: 
+						total += s.longitud
+					return total
+				var total = totalfunc.call()
+				print(total)
 			sprite.position = path.to_global(posicion_local)
 			metro += 1
 

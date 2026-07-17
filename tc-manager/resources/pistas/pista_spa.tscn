@@ -6,18 +6,18 @@
 
 [sub_resource type="Resource" id="Resource_c8cyj"]
 script = ExtResource("2_nyuxl")
-longitud = 700
+longitud = 371
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_wpfsv"]
 script = ExtResource("2_nyuxl")
 tipo = 1
-longitud = 415
+longitud = 223
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_l6wmm"]
 script = ExtResource("2_nyuxl")
-longitud = 650
+longitud = 520
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_pxm3p"]
@@ -28,7 +28,7 @@ metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_cf5c5"]
 script = ExtResource("2_nyuxl")
-longitud = 519
+longitud = 1046
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Resource" id="Resource_c0o48"]
@@ -40,7 +40,89 @@ metadata/_custom_type_script = "uid://d4hrjks6xc051"
 [sub_resource type="Resource" id="Resource_dwirt"]
 script = ExtResource("2_nyuxl")
 tipo = 1
-longitud = 200
+longitud = 244
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_nyuxl"]
+script = ExtResource("2_nyuxl")
+longitud = 233
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_btubl"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 263
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_mjeq4"]
+script = ExtResource("2_nyuxl")
+longitud = 619
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_eyfwe"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 302
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_2q6c2"]
+script = ExtResource("2_nyuxl")
+longitud = 236
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_x12i1"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 381
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_25ax6"]
+script = ExtResource("2_nyuxl")
+longitud = 126
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_p8pgw"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 113
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_bab0c"]
+script = ExtResource("2_nyuxl")
+longitud = 79
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_cbgce"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 216
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_3spde"]
+script = ExtResource("2_nyuxl")
+longitud = 699
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_7w2gi"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 355
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_d2wid"]
+script = ExtResource("2_nyuxl")
+longitud = 319
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_n07im"]
+script = ExtResource("2_nyuxl")
+tipo = 1
+longitud = 171
+metadata/_custom_type_script = "uid://d4hrjks6xc051"
+
+[sub_resource type="Resource" id="Resource_265g6"]
+script = ExtResource("2_nyuxl")
+longitud = 88
 metadata/_custom_type_script = "uid://d4hrjks6xc051"
 
 [sub_resource type="Curve2D" id="Curve2D_nyuxl"]
@@ -52,7 +134,7 @@ point_count = 59
 [node name="PistaSpa" unique_id=85885368 node_paths=PackedStringArray("path") instance=ExtResource("1_ktm44")]
 nombre_pista = "Spa Francorchamps"
 longitud_total = 7004
-segmentos = Array[ExtResource("2_nyuxl")]([SubResource("Resource_c8cyj"), SubResource("Resource_wpfsv"), SubResource("Resource_l6wmm"), SubResource("Resource_pxm3p"), SubResource("Resource_cf5c5"), SubResource("Resource_c0o48"), SubResource("Resource_dwirt")])
+segmentos = Array[ExtResource("2_nyuxl")]([SubResource("Resource_c8cyj"), SubResource("Resource_wpfsv"), SubResource("Resource_l6wmm"), SubResource("Resource_pxm3p"), SubResource("Resource_cf5c5"), SubResource("Resource_c0o48"), SubResource("Resource_dwirt"), SubResource("Resource_nyuxl"), SubResource("Resource_btubl"), SubResource("Resource_mjeq4"), SubResource("Resource_eyfwe"), SubResource("Resource_2q6c2"), SubResource("Resource_x12i1"), SubResource("Resource_25ax6"), SubResource("Resource_p8pgw"), SubResource("Resource_bab0c"), SubResource("Resource_cbgce"), SubResource("Resource_3spde"), SubResource("Resource_7w2gi"), SubResource("Resource_d2wid"), SubResource("Resource_n07im"), SubResource("Resource_265g6")])
 path = NodePath("Path2D")
 debug_segmentos = true
 
