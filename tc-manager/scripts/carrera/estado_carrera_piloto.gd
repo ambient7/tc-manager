@@ -5,6 +5,9 @@ class_name EstadoPilotoCarrera
 var piloto: Piloto
 var auto_data: Auto
 
+
+var jugador: bool = false
+
 # Posición en la carrera
 var progreso_metros: float = 0.0    # metros totales recorridos (incluye vueltas)
 var vuelta_actual: int = 1
@@ -21,6 +24,7 @@ var tiempo_total: float = 0.0       # segundos
 var entrar_a_boxes = false
 var en_boxes: bool = false
 var tiempo_restante_boxes: float = 0.0
+var mecanicos_asignados: Array[Mecanico] = []
 
 # Carrera terminada
 var termino: bool = false

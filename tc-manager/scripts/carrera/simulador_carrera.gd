@@ -24,6 +24,9 @@ var velocidad_sim: float = 1.0
 var corriendo: bool = false
 var index_jugador: int = -1  # índice en `estados` que controla el jugador
 
+
+var mecanicos: Array[Mecanico]
+
 signal vuelta_completada(estado: EstadoPilotoCarrera)
 signal pit_stop_realizado(estado: EstadoPilotoCarrera, es_jugador: bool)
 signal rebase_ocurrido(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarrera, exito: bool)
@@ -34,18 +37,27 @@ signal progreso_actualizado  # la UI escucha esto
 func carrera_ejemplo(p) -> void:
 	var cantidad_corredores = 15
 	var participantes: Array[Dictionary]
+	var auto_instancia = WHATSAPP_CAR.duplicate(true)
 	for c in cantidad_corredores:
 		#var autorand = randi_range(0,1)
-		var auto_instancia = WHATSAPP_CAR.duplicate(true)
 		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia})
 
-	iniciar(p,participantes,1)
+	if Juego.get_piloto_seleccionado() != null and Juego.get_auto_seleccionado() != null:
+		
+		participantes.append({"piloto":Juego.get_piloto_seleccionado(), "auto": Juego.get_auto_seleccionado()})
+		
+	else:
+		var pilotogen = Juego.get_piloto_seleccionado()
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia})
+
+	iniciar(p,participantes,len(participantes) - 1)
 
 func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
 	pista = p
 	estados.clear()
 	estrategia_ia = EstrategiaIA.new()
 	index_jugador = idx_jugador
+	
 
 	for i in participantes.size():
 		var e = EstadoPilotoCarrera.new()
@@ -53,6 +65,8 @@ func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
 		e.auto_data = participantes[i].auto
 		e.lugar = i + 1
 		e.progreso_metros += e.lugar * 16
+		if i == index_jugador:
+			e.jugador = true
 		estados.append(e)
 	
 	estados_ordenados = _actualizar_lugares()
@@ -108,6 +122,23 @@ func _evaluar_pit_ia(estado: EstadoPilotoCarrera, longitud_pista: float, longitu
 	var vueltas_restantes = pista.vueltas - estado.vuelta_actual
 	if estrategia_ia.debe_entrar_boxes(estado, vueltas_restantes):
 		estado.entrar_a_boxes = true
+
+func entrar_boxes_jugador() -> void:
+	var estado_jugador = get_estado_jugador()
+	if estado_jugador != null:
+		if estado_jugador.entrar_a_boxes == false and estado_jugador.en_boxes == false:
+			estado_jugador.entrar_a_boxes = true
+		elif estado_jugador.entrar_a_boxes:
+			estado_jugador.entrar_a_boxes = false
+
+func get_estado_boxes_jugador():
+	var estado_jugador = get_estado_jugador()
+	if estado_jugador.entrar_a_boxes == false and estado_jugador.en_boxes == false:
+		return 1
+	if estado_jugador.entrar_a_boxes:
+		return 2
+	if estado_jugador.en_boxes:
+		return 3
 
 func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
 	estado.en_boxes = true

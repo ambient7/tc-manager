@@ -137,3 +137,5 @@ func generar_mecanico():
 func get_dinero(): return equipo.dinero
 func get_contratados(): return equipo.pilotosContratados
 func get_mecanicos(): return equipo.mecanicos_contratados
+func get_piloto_seleccionado(): return equipo.piloto_seleccionado
+func get_auto_seleccionado(): return equipo.auto_seleccionado

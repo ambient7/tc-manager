@@ -11,7 +11,6 @@
 			"uuid": "01f41b11-79e4-467e-938a-64f4fa2b781a",
 			"title": "Todo",
 			"tasks": [
-				"4fb78b89-02ef-4921-9da0-e68133775711",
 				"5722f017-f9cf-4e8a-b0fe-4d7ba3d2582b",
 				"3f76ee7b-f76f-4936-9a65-8215f50ecc8b",
 				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2"
@@ -22,7 +21,8 @@
 			"title": "Doing",
 			"tasks": [
 				"ef19f99e-21cc-4493-ac03-91ceb6eb76df",
-				"123e8b45-1988-4aa6-8f51-36d3a8f84100"
+				"123e8b45-1988-4aa6-8f51-36d3a8f84100",
+				"4fb78b89-02ef-4921-9da0-e68133775711"
 			]
 		},
 		{
@@ -49,11 +49,15 @@
 			"steps": [
 				{
 					"details": "Entrar a boxes",
-					"done": false
+					"done": true
 				},
 				{
 					"details": "Elegir agresividad",
 					"done": false
+				},
+				{
+					"details": "Distincion de jugador entre corredores",
+					"done": true
 				}
 			]
 		},

@@ -7,3 +7,6 @@ class_name Equipo
 @export var calidad: int
 @export var pilotosContratados: Array[Piloto]
 @export var mecanicos_contratados: Array[Mecanico]
+@export var autos_comprados: Array[Auto]
+@export var auto_seleccionado: Auto
+@export var piloto_seleccionado: Piloto

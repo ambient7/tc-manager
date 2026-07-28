@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://byn2axian4av0" path="res://scripts/carrera/carrera.gd" id="1_dtn54"]
 [ext_resource type="PackedScene" uid="uid://cot5eqgor4siu" path="res://scn/ventanas/carrera/item_posicion.tscn" id="3_01c5b"]
 [ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
+[ext_resource type="Texture2D" uid="uid://do5yi0350y3v" path="res://addons/at-icons/node3d/wrench.svg" id="3_hq1yq"]
+[ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="4_jnlx3"]
 
 [node name="Carrera" type="Node2D" unique_id=1902980008]
 script = ExtResource("1_dtn54")
@@ -57,6 +59,34 @@ offset_top = -0.1600008
 offset_right = 0.06399536
 offset_bottom = 0.15999603
 text = "x2"
+
+[node name="ButBoxes" type="Button" parent="CanvasLayer/Controles" unique_id=290323777]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 64.0
+offset_right = 176.0
+offset_bottom = 128.0
+text = "Entrar a boxes
+"
+
+[node name="IcoPendiente" type="TextureRect" parent="CanvasLayer/Controles/ButBoxes" unique_id=79178838]
+visible = false
+layout_mode = 0
+offset_left = -32.0
+offset_right = -8.0
+offset_bottom = 24.0
+texture = ExtResource("3_hq1yq")
+expand_mode = 1
+
+[node name="IcoBoxes" type="TextureRect" parent="CanvasLayer/Controles/ButBoxes" unique_id=1674532497]
+visible = false
+layout_mode = 0
+offset_left = -32.0
+offset_top = 32.0
+offset_right = -8.0
+offset_bottom = 56.0
+texture = ExtResource("4_jnlx3")
+expand_mode = 1
 
 [node name="Posiciones" type="Panel" parent="CanvasLayer" unique_id=1320115093]
 anchors_preset = -1
@@ -165,3 +195,4 @@ offset_right = 160.0
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel2" to="." method="_on_but_vel_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Controles/ButBoxes" to="." method="_on_but_boxes_pressed"]
