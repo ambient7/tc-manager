@@ -57,6 +57,11 @@ func cargarPersonal(pilotos, mecanicos):
 			container_pilotos_personal.add_child(itemInstancia)
 			itemInstancia.ingresarPiloto(p)
 			itemInstancia.piloto_a_entrenar.connect(_on_piloto_entrenar)
+	var labMecanicos = Label.new()
+	labMecanicos.text = "Mecanicos disponibles:"
+	labMecanicos.custom_minimum_size.y = 32
+	labMecanicos.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	container_pilotos_personal.add_child(labMecanicos)
 	for m in mecanicos:
 			var itemInstancia = ITEM_MECANICO.instantiate()
 			container_pilotos_personal.add_child(itemInstancia)

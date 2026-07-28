@@ -11,7 +11,8 @@ func ingresar_mecanico(mecanico_ingresado:Mecanico):
 	label_nombre.text = str(mecanico.nombre + " " + mecanico.apellido)
 	label_habilidad.text = "Habilidad: " + str(mecanico.habilidad)
 	label_salario.text = "Salario: $" + str(mecanico.salario)
-
+	actualizar_ui()
+	
 func actualizar_ui():
 	if Juego.get_dinero() >= mecanico.salario:
 		button.disabled = false
