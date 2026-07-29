@@ -9,10 +9,24 @@ const CLIO = preload("uid://dn24e1vpgo35x")
 const WHATSAPP_CAR = preload("uid://h224g3v14mm2")
 
 
-const TIEMPO_PIT_STOP = 28.0           # segundos fijos
+const TIEMPO_PIT_STOP_BASE = 28.0           # segundos fijos
 const DISTANCIA_REBASE_METROS = 15.0   # qué tan cerca deben estar para intentar rebase
 const FACTOR_DESGASTE_CURVA = 2.5
 const FACTOR_DESGASTE_RECTA = 1.0
+
+const TAMAÑO_CREW_MAXIMO = 4
+
+const MODIFICADOR_MEJOR_MECANICO = 0.75
+const MODIFICADOR_PEOR_MECANICO = 1.3
+const MODIFICADOR_SIN_MECANICO = 1.5
+
+# Rendimientos decrecientes: cada mecánico extra ayuda, pero cada vez menos
+const FACTORES_TAMAÑO_CREW = {
+	1: 1.15,
+	2: 1.0,
+	3: 0.9,
+	4: 0.85,
+}
 
 @export var pista: PistaBase
 
@@ -40,15 +54,21 @@ func carrera_ejemplo(p) -> void:
 	var auto_instancia = WHATSAPP_CAR.duplicate(true)
 	for c in cantidad_corredores:
 		#var autorand = randi_range(0,1)
-		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia})
+		var mecanicosgen: Array[Mecanico] = []
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
 
 	if Juego.get_piloto_seleccionado() != null and Juego.get_auto_seleccionado() != null:
-		
-		participantes.append({"piloto":Juego.get_piloto_seleccionado(), "auto": Juego.get_auto_seleccionado()})
+		var mecanicosgen: Array[Mecanico] = []
+		participantes.append({"piloto":Juego.get_piloto_seleccionado(), "auto": Juego.get_auto_seleccionado(), "mecanicos":mecanicosgen})
 		
 	else:
 		var pilotogen = Juego.get_piloto_seleccionado()
-		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia})
+		var mecanicosgen: Array[Mecanico] = []
+		mecanicosgen.append(Juego.generar_mecanico())
+		mecanicosgen.append(Juego.generar_mecanico())
+		mecanicosgen.append(Juego.generar_mecanico())
+		mecanicosgen.append(Juego.generar_mecanico())
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
 
 	iniciar(p,participantes,len(participantes) - 1)
 
@@ -63,6 +83,7 @@ func iniciar(p: PistaBase, participantes: Array, idx_jugador: int) -> void:
 		var e = EstadoPilotoCarrera.new()
 		e.piloto = participantes[i].piloto
 		e.auto_data = participantes[i].auto
+		e.mecanicos_asignados = participantes[i].mecanicos
 		e.lugar = i + 1
 		e.progreso_metros += e.lugar * 16
 		if i == index_jugador:
@@ -110,6 +131,27 @@ func _process(delta: float) -> void:
 	estados_ordenados = _actualizar_lugares()
 	progreso_actualizado.emit(estados_ordenados)
 
+func _calcular_tiempo_pit_stop(estado: EstadoPilotoCarrera) -> float:
+	var crew = estado.mecanicos_asignados
+	if crew.is_empty():
+		print("BOXES TIEMPO BASE")
+		return TIEMPO_PIT_STOP_BASE * MODIFICADOR_SIN_MECANICO
+		
+	var suma_habilidad = 0
+	for m in crew:
+		suma_habilidad += m.habilidad
+	var promedio = float(suma_habilidad) / crew.size()
+
+	var t = clamp((promedio - 1.0) / 99.0, 0.0, 1.0)
+	var factor_habilidad = lerp(MODIFICADOR_PEOR_MECANICO, MODIFICADOR_MEJOR_MECANICO, t)
+
+	var tamaño = clamp(crew.size(), 1, TAMAÑO_CREW_MAXIMO)
+	var factor_tamaño = FACTORES_TAMAÑO_CREW.get(tamaño, 1.0)
+	
+	print("BOXES ", TIEMPO_PIT_STOP_BASE * factor_habilidad * factor_tamaño)
+	return TIEMPO_PIT_STOP_BASE * factor_habilidad * factor_tamaño
+
+
 func _procesar_boxes(estado: EstadoPilotoCarrera, dt: float) -> void:
 	estado.tiempo_restante_boxes -= dt
 	if estado.tiempo_restante_boxes <= 0.0:
@@ -143,7 +185,7 @@ func get_estado_boxes_jugador():
 func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
 	estado.en_boxes = true
 	estado.entrar_a_boxes = false 
-	estado.tiempo_restante_boxes = TIEMPO_PIT_STOP
+	estado.tiempo_restante_boxes = _calcular_tiempo_pit_stop(estado)
 	print("%s - vuelta %d - vida ruedas: %.1f%% EN BOXES" % [
 			estado.piloto.apellido, 
 			estado.vuelta_actual, 
