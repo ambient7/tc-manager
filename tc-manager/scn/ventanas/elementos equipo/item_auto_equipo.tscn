@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dfas7vddxo3qw"]
+
+[ext_resource type="PackedScene" uid="uid://b86lfqqgaqh70" path="res://scn/ventanas/elementos equipo/item_auto.tscn" id="1_ie7vh"]
+
+[node name="ItemAutoEquipo" unique_id=1525997414 instance=ExtResource("1_ie7vh")]
+
+[node name="ButVender" type="Button" parent="." index="2" unique_id=1245791138]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 144.0
+offset_right = 144.0
+offset_bottom = 176.0
+text = "Vender"
+
+[node name="ButModificar" type="Button" parent="." index="3" unique_id=1489377447]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 184.0
+offset_right = 144.0
+offset_bottom = 216.0
+text = "Modificar"

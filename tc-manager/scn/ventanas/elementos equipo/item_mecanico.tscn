@@ -7,3 +7,4 @@
 
 [node name="TextureRect" parent="." index="3" unique_id=649072123]
 texture = ExtResource("2_yyij8")
+expand_mode = 1

@@ -28,5 +28,6 @@ text = "CONTRATAR"
 offset_top = 8.0
 offset_bottom = 32.0
 texture = ExtResource("2_c64gg")
+expand_mode = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

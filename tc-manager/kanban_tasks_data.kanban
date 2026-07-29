@@ -14,14 +14,15 @@
 				"5722f017-f9cf-4e8a-b0fe-4d7ba3d2582b",
 				"3f76ee7b-f76f-4936-9a65-8215f50ecc8b",
 				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
-				"4fb78b89-02ef-4921-9da0-e68133775711"
+				"4fb78b89-02ef-4921-9da0-e68133775711",
+				"368c78ac-1bef-44d0-a6e3-e6a0f12cf5dc",
+				"ef19f99e-21cc-4493-ac03-91ceb6eb76df"
 			]
 		},
 		{
 			"uuid": "edd3ac38-c4cf-4eb6-b948-426196dd3bc6",
 			"title": "Doing",
 			"tasks": [
-				"ef19f99e-21cc-4493-ac03-91ceb6eb76df",
 				"123e8b45-1988-4aa6-8f51-36d3a8f84100"
 			]
 		},
@@ -114,6 +115,13 @@
 		{
 			"uuid": "cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
 			"title": "Compra de autos",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "368c78ac-1bef-44d0-a6e3-e6a0f12cf5dc",
+			"title": "Clasificacion y correcta posición de corredores en pista",
 			"description": "",
 			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
 			"steps": []

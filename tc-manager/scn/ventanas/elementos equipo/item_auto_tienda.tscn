@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b2ogtsvskoxsi"]
+
+[ext_resource type="PackedScene" uid="uid://b86lfqqgaqh70" path="res://scn/ventanas/elementos equipo/item_auto.tscn" id="1_k5yk2"]
+[ext_resource type="Script" uid="uid://rgcqb64f0r5i" path="res://scn/ventanas/elementos equipo/item_auto_tienda.gd" id="2_r5wjc"]
+
+[node name="ItemAuto" unique_id=1525997414 instance=ExtResource("1_k5yk2")]
+custom_minimum_size = Vector2(152, 224)
+script = ExtResource("2_r5wjc")
+
+[node name="LabPrecio" type="Label" parent="." index="2" unique_id=1655540833]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 144.0
+offset_right = 144.0
+offset_bottom = 167.0
+text = "$ 43434141"
+horizontal_alignment = 1
+
+[node name="ButComprar" type="Button" parent="." index="3" unique_id=1940098800]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 176.0
+offset_right = 144.0
+offset_bottom = 208.0
+text = "Comprar"
+
+[connection signal="pressed" from="ButComprar" to="." method="_on_but_comprar_pressed"]

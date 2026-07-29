@@ -51,6 +51,13 @@ func contratar_piloto(piloto: Piloto) -> bool:
 		return true
 	return false
 
+func comprar_auto(auto:Auto) -> bool:
+	if equipo.dinero >= auto.precio:
+		equipo.dinero -= auto.precio
+		equipo.autos_comprados.append(auto)
+		return true
+	return false
+
 func contratar_mecanico(mecanico: Mecanico) -> bool: 
 	if equipo.dinero >= mecanico.salario:
 		equipo.dinero -= mecanico.salario
@@ -139,3 +146,4 @@ func get_contratados(): return equipo.pilotosContratados
 func get_mecanicos(): return equipo.mecanicos_contratados
 func get_piloto_seleccionado(): return equipo.piloto_seleccionado
 func get_auto_seleccionado(): return equipo.auto_seleccionado
+func get_autos_comprados(): return equipo.autos_comprados

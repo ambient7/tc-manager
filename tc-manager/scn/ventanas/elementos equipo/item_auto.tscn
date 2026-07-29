@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b86lfqqgaqh70"]
+
+[ext_resource type="Texture2D" uid="uid://ct87hn3e3eofk" path="res://assets/autos/whatsappcar.jpg" id="1_0ehph"]
+[ext_resource type="Script" uid="uid://ek55nawbsck4" path="res://scn/ventanas/elementos equipo/item_auto.gd" id="1_7u7gg"]
+
+[node name="ItemAuto" type="Panel" unique_id=1525997414]
+custom_minimum_size = Vector2(152, 224)
+offset_right = 152.0
+offset_bottom = 224.0
+script = ExtResource("1_7u7gg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1706470672]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 144.0
+offset_bottom = 104.0
+texture = ExtResource("1_0ehph")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LabNombre" type="Label" parent="." unique_id=1078830125]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 112.0
+offset_right = 144.0
+offset_bottom = 136.0
+text = "Auto Whatsapp"
+horizontal_alignment = 1
