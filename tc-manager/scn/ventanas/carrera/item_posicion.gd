@@ -1,7 +1,7 @@
 extends PanelContainer
 
 @onready var label_posicion: Label = $HBoxContainer/Posición/LabelPosicion
-@onready var label_nombre: Label = $HBoxContainer/LabelNombre
+@onready var label_nombre: RichTextLabel = $HBoxContainer/LabelNombre
 @onready var texture_rect: TextureRect = $HBoxContainer/TextureRect
 
 
@@ -17,10 +17,15 @@ const WRENCH = preload("uid://csi6ucctnlhaf")
 var posicion
 var nombre
 
-func actualizar_datos(pos,nom,estado,lugar):
+func actualizar_datos(pos,nom,estado,lugar,jugador):
 	label_posicion.text = str(pos)
-	label_nombre.text = _formatear_apellido(nom)
 	
+	
+	if jugador:
+		label_nombre.text = "[color=green]" + _formatear_apellido(nom) + "[/color]"
+	else:
+		label_nombre.text = _formatear_apellido(nom)
+		
 	match estado:
 		0:
 			texture_rect.texture = null

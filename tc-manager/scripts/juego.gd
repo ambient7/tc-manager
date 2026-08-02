@@ -51,6 +51,12 @@ func contratar_piloto(piloto: Piloto) -> bool:
 		return true
 	return false
 
+func añadir_piloto(piloto: Piloto) -> void:
+	equipo.pilotosContratados.append(piloto)
+
+func añadir_auto(auto:Auto) -> void:
+	equipo.autos_comprados.append(auto)
+
 func comprar_auto(auto:Auto) -> bool:
 	if equipo.dinero >= auto.precio:
 		equipo.dinero -= auto.precio
@@ -67,6 +73,9 @@ func contratar_mecanico(mecanico: Mecanico) -> bool:
 		mecanicos_disponibles.erase(mecanico)
 		return true
 	return false
+
+func añadir_mecanico(mecanico: Mecanico) -> void:
+	equipo.mecanicos_contratados.append(mecanico)
 
 func generar_nombre() -> String:
 	var nomTemp = str( NOMBRES.get(randi_range( 0,len(NOMBRES)-1 )  )   )

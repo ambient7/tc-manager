@@ -13,24 +13,26 @@
 			"tasks": [
 				"5722f017-f9cf-4e8a-b0fe-4d7ba3d2582b",
 				"3f76ee7b-f76f-4936-9a65-8215f50ecc8b",
-				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
 				"4fb78b89-02ef-4921-9da0-e68133775711",
 				"368c78ac-1bef-44d0-a6e3-e6a0f12cf5dc",
-				"ef19f99e-21cc-4493-ac03-91ceb6eb76df"
+				"ef19f99e-21cc-4493-ac03-91ceb6eb76df",
+				"0d44e33b-5fc4-4acb-b923-40dfd79b88b4"
 			]
 		},
 		{
 			"uuid": "edd3ac38-c4cf-4eb6-b948-426196dd3bc6",
 			"title": "Doing",
 			"tasks": [
-				"123e8b45-1988-4aa6-8f51-36d3a8f84100"
+				"1df58a66-fd15-40b3-b99c-54d031ea5451"
 			]
 		},
 		{
 			"uuid": "1c590cf3-aaa4-4cf7-9328-9459224175f3",
 			"title": "Done",
 			"tasks": [
-				"6f5c4d62-3908-4fb1-8137-81d9b38d85dc"
+				"6f5c4d62-3908-4fb1-8137-81d9b38d85dc",
+				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
+				"123e8b45-1988-4aa6-8f51-36d3a8f84100"
 			]
 		}
 	],
@@ -90,7 +92,7 @@
 				},
 				{
 					"details": "Seleccion en carrera",
-					"done": false
+					"done": true
 				},
 				{
 					"details": "Relacion con tiempo de boxes en carrera",
@@ -122,6 +124,20 @@
 		{
 			"uuid": "368c78ac-1bef-44d0-a6e3-e6a0f12cf5dc",
 			"title": "Clasificacion y correcta posición de corredores en pista",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "0d44e33b-5fc4-4acb-b923-40dfd79b88b4",
+			"title": "Terminar pista Spa",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "1df58a66-fd15-40b3-b99c-54d031ea5451",
+			"title": "Pantalla de entrada de datos para carrera",
 			"description": "",
 			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
 			"steps": []

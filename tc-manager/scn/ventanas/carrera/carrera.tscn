@@ -5,6 +5,11 @@
 [ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
 [ext_resource type="Texture2D" uid="uid://do5yi0350y3v" path="res://addons/at-icons/node3d/wrench.svg" id="3_hq1yq"]
 [ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="4_jnlx3"]
+[ext_resource type="Texture2D" uid="uid://dk1xubitf0jf0" path="res://addons/at-icons/node/human.svg" id="6_4824c"]
+[ext_resource type="Texture2D" uid="uid://bfk75obdq66j6" path="res://addons/at-icons/node/car.svg" id="7_scjk4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq1yq"]
+bg_color = Color(0.07284262, 0.072842635, 0.072842576, 1)
 
 [node name="Carrera" type="Node2D" unique_id=1902980008]
 script = ExtResource("1_dtn54")
@@ -192,7 +197,150 @@ offset_left = -160.0
 offset_top = -72.0
 offset_right = 160.0
 
+[node name="CanvasIntro" type="CanvasLayer" parent="." unique_id=870277652]
+
+[node name="Panel" type="Panel" parent="CanvasIntro" unique_id=1153877818]
+offset_right = 800.0
+offset_bottom = 600.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hq1yq")
+
+[node name="RichPista" type="RichTextLabel" parent="CanvasIntro/Panel" unique_id=102502222]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 512.0
+offset_bottom = 112.0
+bbcode_enabled = true
+text = "[font_size=30][b]Nombre de pista[/b][/font_size]"
+
+[node name="RichVueltas" type="RichTextLabel" parent="CanvasIntro/Panel" unique_id=2115352833]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 112.0
+offset_right = 320.0
+offset_bottom = 176.0
+bbcode_enabled = true
+text = "[font_size=30]30 vueltas[/font_size]"
+
+[node name="ButComenzar" type="Button" parent="CanvasIntro/Panel" unique_id=2041302735]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -320.0
+offset_top = 64.0
+offset_right = -64.0
+offset_bottom = 160.0
+grow_horizontal = 0
+disabled = true
+text = "Comenzar"
+
+[node name="TabContainer" type="TabContainer" parent="CanvasIntro/Panel" unique_id=394233311]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 192.0
+offset_right = 800.0
+offset_bottom = 600.0
+current_tab = 0
+tab_0/icon = ExtResource("6_4824c")
+tab_1/icon = ExtResource("7_scjk4")
+
+[node name="Personal" type="Control" parent="CanvasIntro/Panel/TabContainer" unique_id=1414332594]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="LabelPilotoElegido" type="Label" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=717885459]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 17.0
+offset_right = 280.0
+offset_bottom = 49.0
+text = "Piloto:"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=478020071]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = -140.0
+offset_right = 384.0
+offset_bottom = 156.5
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainer" unique_id=264559355]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PilotosContainer" type="VBoxContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainer/PanelContainer" unique_id=1322760414]
+layout_mode = 2
+
+[node name="LabelMecanicoElegido" type="Label" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=1063536315]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 16.0
+offset_right = 784.0
+offset_bottom = 65.0
+text = "Mecanicos: 
+"
+
+[node name="ScrollContainerMecanicos" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=586344751]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 400.0
+offset_top = -36.0
+offset_right = 760.0
+offset_bottom = 156.0
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainerMecanicos" unique_id=1685182658]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MecanicosContainer" type="VBoxContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainerMecanicos/PanelContainer" unique_id=707509259]
+layout_mode = 2
+
+[node name="Auto" type="Control" parent="CanvasIntro/Panel/TabContainer" unique_id=120570396]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="LabelAutoElegido" type="Label" parent="CanvasIntro/Panel/TabContainer/Auto" unique_id=723154464]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 17.0
+offset_right = 280.0
+offset_bottom = 49.0
+text = "Auto:"
+
+[node name="ScrollContainerAutos" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Auto" unique_id=740266127]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -768.0
+offset_top = -131.5
+offset_right = -32.0
+offset_bottom = 156.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Auto/ScrollContainerAutos" unique_id=1053920201]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AutosContainer" type="HFlowContainer" parent="CanvasIntro/Panel/TabContainer/Auto/ScrollContainerAutos/PanelContainer" unique_id=103913322]
+layout_mode = 2
+
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel2" to="." method="_on_but_vel_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButBoxes" to="." method="_on_but_boxes_pressed"]
+[connection signal="pressed" from="CanvasIntro/Panel/ButComenzar" to="." method="_on_but_comenzar_pressed"]

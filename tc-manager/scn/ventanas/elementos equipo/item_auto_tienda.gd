@@ -8,9 +8,12 @@ signal auto_comprado
 
 func ingresar_auto(autoin:Auto):
 	auto = autoin
-	texture_rect.texture = auto.imagen
+	if autoin.imagen != null:
+		texture_rect.texture = auto.imagen
+	else:
+		texture_rect.texture = PlaceholderTexture2D.new()
 	lab_nombre.text = auto.nombre
-	lab_precio.text = str(auto.precio)
+	lab_precio.text = str("$" , auto.precio)
 	
 func actualizar_ui():
 	if Juego.get_dinero() >= auto.precio:

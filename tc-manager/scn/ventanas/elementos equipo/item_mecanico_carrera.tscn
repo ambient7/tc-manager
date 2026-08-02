@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cky3mh1wgo8xe"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_o2h36"]
+[ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="2_apwd8"]
+[ext_resource type="Script" uid="uid://dm5sbqw76grn" path="res://scn/ventanas/elementos equipo/item_mecanico_carrera.gd" id="2_ro3py"]
+[ext_resource type="Texture2D" uid="uid://bprhcoty4m42s" path="res://addons/at-icons/node3d/cross.svg" id="4_ro3py"]
+
+[node name="ItemMecanicoCarrera" unique_id=1667803817 instance=ExtResource("1_o2h36")]
+custom_minimum_size = Vector2(0, 32)
+offset_right = 384.0
+offset_bottom = 112.0
+script = ExtResource("2_ro3py")
+
+[node name="labelNombre" parent="." index="0" unique_id=1313045567]
+offset_right = 232.0
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="labelHabilidad" parent="." index="1" unique_id=1718555061]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -12.5
+offset_right = -72.0
+offset_bottom = 10.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "999"
+
+[node name="labelSalario" parent="." index="2" unique_id=2069484852]
+visible = false
+
+[node name="TextureRect" parent="." index="3" unique_id=649072123]
+texture = ExtResource("2_apwd8")
+expand_mode = 1
+
+[node name="ButElegir" type="Button" parent="." index="4" unique_id=1622547320]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_top = 7.0
+offset_right = -8.0
+offset_bottom = 31.0
+grow_horizontal = 0
+icon = ExtResource("4_ro3py")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="ButElegir" to="." method="_on_but_elegir_pressed"]

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://r75t0y5p4pmi"]
+
+[ext_resource type="PackedScene" uid="uid://b1u3krat6xuo5" path="res://scn/ventanas/elementos equipo/item_piloto.tscn" id="1_jmwks"]
+[ext_resource type="Script" uid="uid://dk1w5qnjd2y3y" path="res://scn/ventanas/elementos equipo/item_piloto_carrera.gd" id="2_tt08q"]
+[ext_resource type="Texture2D" uid="uid://0r246yt5xqo2" path="res://addons/at-icons/node/pointer.svg" id="3_aipjp"]
+
+[node name="ItemPilotoCarrera" unique_id=1667803817 instance=ExtResource("1_jmwks")]
+custom_minimum_size = Vector2(0, 32)
+offset_right = 384.0
+offset_bottom = 112.0
+script = ExtResource("2_tt08q")
+
+[node name="labelNombre" parent="." index="0" unique_id=1313045567]
+offset_right = 240.0
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="labelHabilidad" parent="." index="1" unique_id=1718555061]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -96.0
+offset_top = 7.0
+offset_right = -64.0
+offset_bottom = 30.0
+grow_horizontal = 0
+text = "999"
+
+[node name="labelSalario" parent="." index="2" unique_id=2069484852]
+visible = false
+
+[node name="ButElegir" type="Button" parent="." index="4" unique_id=81803571]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_top = 7.0
+offset_right = -8.0
+offset_bottom = 31.0
+grow_horizontal = 0
+icon = ExtResource("3_aipjp")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="ButElegir" to="." method="_on_but_elegir_pressed"]

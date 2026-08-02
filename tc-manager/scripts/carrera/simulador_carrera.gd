@@ -59,7 +59,7 @@ func carrera_ejemplo(p) -> void:
 
 	if Juego.get_piloto_seleccionado() != null and Juego.get_auto_seleccionado() != null:
 		var mecanicosgen: Array[Mecanico] = []
-		participantes.append({"piloto":Juego.get_piloto_seleccionado(), "auto": Juego.get_auto_seleccionado(), "mecanicos":mecanicosgen})
+		participantes.append({"piloto":Juego.get_piloto_seleccionado(), "auto": Juego.get_auto_seleccionado(), "mecanicos":Juego.get_mecanicos()})
 		
 	else:
 		var pilotogen = Juego.get_piloto_seleccionado()
@@ -69,6 +69,18 @@ func carrera_ejemplo(p) -> void:
 		mecanicosgen.append(Juego.generar_mecanico())
 		mecanicosgen.append(Juego.generar_mecanico())
 		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
+
+	iniciar(p,participantes,len(participantes) - 1)
+
+func carrera(p:PistaBase,mec:Array[Mecanico], pilotojug:Piloto, autojug:Auto) -> void:
+	var cantidad_corredores = 19
+	var participantes: Array[Dictionary]
+	var auto_instancia = WHATSAPP_CAR.duplicate(true)
+	for c in cantidad_corredores:
+		var mecanicosgen: Array[Mecanico] = []
+		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
+
+	participantes.append({"piloto":pilotojug, "auto": autojug, "mecanicos":mec})
 
 	iniciar(p,participantes,len(participantes) - 1)
 

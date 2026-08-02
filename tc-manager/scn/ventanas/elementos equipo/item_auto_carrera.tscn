@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cxfbghwrm4mmi"]
+
+[ext_resource type="PackedScene" uid="uid://b86lfqqgaqh70" path="res://scn/ventanas/elementos equipo/item_auto.tscn" id="1_8dy3n"]
+[ext_resource type="Script" uid="uid://b2anhmj2qss8p" path="res://scn/ventanas/elementos equipo/item_auto_carrera.gd" id="2_tf7av"]
+[ext_resource type="Texture2D" uid="uid://0r246yt5xqo2" path="res://addons/at-icons/node/pointer.svg" id="3_tf7av"]
+
+[node name="ItemAutoCarrera" unique_id=1525997414 instance=ExtResource("1_8dy3n")]
+custom_minimum_size = Vector2(136, 192)
+offset_right = 136.0
+offset_bottom = 192.0
+script = ExtResource("2_tf7av")
+
+[node name="TextureRect" parent="." index="0" unique_id=1706470672]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 120.0
+offset_bottom = 120.0
+
+[node name="LabNombre" parent="." index="1" unique_id=1078830125]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -68.0
+offset_top = -64.0
+offset_right = 68.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+vertical_alignment = 1
+
+[node name="Elegir" type="Button" parent="." index="2" unique_id=369871303]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 24.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+icon = ExtResource("3_tf7av")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Elegir" to="." method="_on_elegir_pressed"]
