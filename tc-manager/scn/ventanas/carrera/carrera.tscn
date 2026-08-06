@@ -7,11 +7,24 @@
 [ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="4_jnlx3"]
 [ext_resource type="Texture2D" uid="uid://dk1xubitf0jf0" path="res://addons/at-icons/node/human.svg" id="6_4824c"]
 [ext_resource type="Texture2D" uid="uid://bfk75obdq66j6" path="res://addons/at-icons/node/car.svg" id="7_scjk4"]
+[ext_resource type="Texture2D" uid="uid://dkcofp44rvygq" path="res://addons/at-icons/node/medal_3rd.svg" id="8_scjk4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hq1yq"]
 bg_color = Color(0.07284262, 0.072842635, 0.072842576, 1)
 
-[node name="Carrera" type="Node2D" unique_id=1902980008]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yhlxf"]
+bg_color = Color(0.07284262, 0.072842635, 0.072842576, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okpca"]
+bg_color = Color(0.07450981, 0.07450981, 0.07450981, 1)
+
+[node name="Carrera" type="Control" unique_id=388477330]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_dtn54")
 
 [node name="Simulador" type="Node" parent="." unique_id=1089032895]
@@ -21,10 +34,10 @@ script = ExtResource("3_dcy3v")
 
 [node name="Controles" type="Panel" parent="CanvasLayer" unique_id=1513898459]
 anchors_preset = -1
-anchor_left = 0.5
+anchor_left = 0.76000005
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 208.0
+offset_left = -6.1035156e-05
 grow_horizontal = 0
 grow_vertical = 2
 
@@ -66,11 +79,15 @@ offset_bottom = 0.15999603
 text = "x2"
 
 [node name="ButBoxes" type="Button" parent="CanvasLayer/Controles" unique_id=290323777]
-layout_mode = 0
-offset_left = 48.0
-offset_top = 64.0
-offset_right = 176.0
-offset_bottom = 128.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.10700001
+anchor_right = 0.91700006
+anchor_bottom = 0.21300001
+offset_top = -0.20000458
+offset_right = -0.06401062
+offset_bottom = 0.19998932
 text = "Entrar a boxes
 "
 
@@ -95,19 +112,20 @@ expand_mode = 1
 
 [node name="Posiciones" type="Panel" parent="CanvasLayer" unique_id=1320115093]
 anchors_preset = -1
-anchor_right = 0.5
+anchor_right = 0.24000001
 anchor_bottom = 1.0
-offset_right = -208.0
 grow_vertical = 2
 
 [node name="ContainerPosiciones" type="VBoxContainer" parent="CanvasLayer/Posiciones" unique_id=1688764303]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.083000004
-anchor_bottom = 0.083000004
+anchor_right = 1.0
+anchor_bottom = 0.97300005
 offset_top = -1.800003
-offset_right = 192.0
-offset_bottom = 534.2
+offset_bottom = 0.19995117
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 0
 
 [node name="ItemPosicion" parent="CanvasLayer/Posiciones/ContainerPosiciones" unique_id=348647315 instance=ExtResource("3_01c5b")]
@@ -198,10 +216,14 @@ offset_top = -72.0
 offset_right = 160.0
 
 [node name="CanvasIntro" type="CanvasLayer" parent="." unique_id=870277652]
+layer = 2
 
 [node name="Panel" type="Panel" parent="CanvasIntro" unique_id=1153877818]
-offset_right = 800.0
-offset_bottom = 600.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_hq1yq")
 
 [node name="RichPista" type="RichTextLabel" parent="CanvasIntro/Panel" unique_id=102502222]
@@ -236,11 +258,14 @@ disabled = true
 text = "Comenzar"
 
 [node name="TabContainer" type="TabContainer" parent="CanvasIntro/Panel" unique_id=394233311]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 192.0
-offset_right = 800.0
-offset_bottom = 600.0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.333
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -7.800003
+grow_horizontal = 2
+grow_vertical = 0
 current_tab = 0
 tab_0/icon = ExtResource("6_4824c")
 tab_1/icon = ExtResource("7_scjk4")
@@ -253,19 +278,33 @@ metadata/_tab_index = 0
 layout_mode = 0
 offset_left = 24.0
 offset_top = 17.0
-offset_right = 280.0
+offset_right = 376.0
 offset_bottom = 49.0
 text = "Piloto:"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Panel" type="Panel" parent="CanvasIntro/Panel/TabContainer/Personal/LabelPilotoElegido" unique_id=444254189]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15900001
+anchor_right = 1.0
+anchor_bottom = 0.71900004
+offset_left = 0.03199768
+offset_top = -1.0
+offset_bottom = -0.0080013275
+theme_override_styles/panel = SubResource("StyleBoxFlat_yhlxf")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=478020071]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 24.0
-offset_top = -140.0
-offset_right = 384.0
-offset_bottom = 156.5
+anchors_preset = -1
+anchor_left = 0.030000001
+anchor_top = 0.128
+anchor_right = 0.48000002
+anchor_bottom = 0.91600007
+offset_top = -0.12800217
+offset_bottom = 0.083984375
 grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainer" unique_id=264559355]
@@ -277,24 +316,41 @@ size_flags_vertical = 3
 layout_mode = 2
 
 [node name="LabelMecanicoElegido" type="Label" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=1063536315]
-layout_mode = 0
-offset_left = 400.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
 offset_top = 16.0
-offset_right = 784.0
-offset_bottom = 65.0
+offset_right = 360.0
+offset_bottom = 144.0
+grow_horizontal = 0
+grow_vertical = 2
 text = "Mecanicos: 
 "
 
+[node name="Panel" type="Panel" parent="CanvasIntro/Panel/TabContainer/Personal/LabelMecanicoElegido" unique_id=821951421]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yhlxf")
+
 [node name="ScrollContainerMecanicos" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Personal" unique_id=586344751]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 400.0
-offset_top = -36.0
-offset_right = 760.0
-offset_bottom = 156.0
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.42600003
+anchor_right = 0.95000005
+anchor_bottom = 0.93600005
+offset_top = -0.17601013
+offset_right = -6.1035156e-05
+offset_bottom = 0.06399536
+grow_horizontal = 0
+grow_vertical = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Personal/ScrollContainerMecanicos" unique_id=1685182658]
 layout_mode = 2
@@ -313,23 +369,31 @@ metadata/_tab_index = 1
 layout_mode = 0
 offset_left = 24.0
 offset_top = 17.0
-offset_right = 280.0
+offset_right = 376.0
 offset_bottom = 49.0
 text = "Auto:"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Panel" type="Panel" parent="CanvasIntro/Panel/TabContainer/Auto/LabelAutoElegido" unique_id=850407228]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 48.0
+offset_top = -1.0
+offset_right = 352.0
+offset_bottom = 23.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yhlxf")
 
 [node name="ScrollContainerAutos" type="ScrollContainer" parent="CanvasIntro/Panel/TabContainer/Auto" unique_id=740266127]
 layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -768.0
-offset_top = -131.5
-offset_right = -32.0
-offset_bottom = 156.5
-grow_horizontal = 0
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = 0.040000003
+anchor_top = 0.15
+anchor_right = 0.96000004
+anchor_bottom = 0.91600007
+offset_top = 0.099998474
+offset_bottom = 0.083984375
+grow_horizontal = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasIntro/Panel/TabContainer/Auto/ScrollContainerAutos" unique_id=1053920201]
 layout_mode = 2
@@ -339,8 +403,144 @@ size_flags_vertical = 3
 [node name="AutosContainer" type="HFlowContainer" parent="CanvasIntro/Panel/TabContainer/Auto/ScrollContainerAutos/PanelContainer" unique_id=103913322]
 layout_mode = 2
 
+[node name="CanvasResultados" type="CanvasLayer" parent="." unique_id=765102116]
+layer = 3
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasResultados" unique_id=1858860215]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_okpca")
+
+[node name="RichPosicion" type="RichTextLabel" parent="CanvasResultados/Panel" unique_id=654858633]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 576.0
+offset_bottom = 112.0
+bbcode_enabled = true
+text = "[font_size=30][b]Tercer puesto[/b][/font_size]"
+
+[node name="RichNombre" type="RichTextLabel" parent="CanvasResultados/Panel" unique_id=1860274659]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 112.0
+offset_right = 384.0
+offset_bottom = 176.0
+bbcode_enabled = true
+text = "[font_size=30]Ricardo Ricardin[/font_size]"
+
+[node name="TextureResultado" type="TextureRect" parent="CanvasResultados/Panel" unique_id=2065320145]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 112.0
+offset_bottom = 112.0
+texture = ExtResource("8_scjk4")
+
+[node name="LabelPiloto" type="Label" parent="CanvasResultados/Panel" unique_id=1191705054]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 192.0
+offset_right = 458.0
+offset_bottom = 215.0
+text = "Piloto:"
+
+[node name="LabelRecompensas" type="Label" parent="CanvasResultados/Panel" unique_id=396748594]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 114.0
+offset_bottom = 215.0
+text = "Recompensas:"
+
+[node name="ScrollRecompensas" type="ScrollContainer" parent="CanvasResultados/Panel" unique_id=1809572905]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 224.0
+offset_right = 392.0
+offset_bottom = 536.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasResultados/Panel/ScrollRecompensas" unique_id=1683438852]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasResultados/Panel/ScrollRecompensas/PanelContainer" unique_id=537179508]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RichRecompensas" type="RichTextLabel" parent="CanvasResultados/Panel/ScrollRecompensas/PanelContainer/MarginContainer" unique_id=1074427641]
+layout_mode = 2
+bbcode_enabled = true
+text = "[ul]
+$0
+- 8000 Reputación
+[/ul]"
+
+[node name="ScrollPiloto" type="ScrollContainer" parent="CanvasResultados/Panel" unique_id=1817232771]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 224.0
+offset_right = 736.0
+offset_bottom = 536.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasResultados/Panel/ScrollPiloto" unique_id=1686449683]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasResultados/Panel/ScrollPiloto/PanelContainer" unique_id=353581603]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="RichPiloto" type="RichTextLabel" parent="CanvasResultados/Panel/ScrollPiloto/PanelContainer/MarginContainer" unique_id=1778671228]
+layout_mode = 2
+bbcode_enabled = true
+text = "[ul]
++ 10 experiencia
++ 2 habilidad
+[/ul]
+"
+
+[node name="ButContinuar" type="Button" parent="CanvasResultados" unique_id=551725557]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -320.0
+offset_top = 64.0
+offset_right = -64.0
+offset_bottom = 128.0
+grow_horizontal = 0
+text = "Continuar"
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=706434006]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.33
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="AspectRatioContainer" unique_id=424841911]
+layout_mode = 2
+stretch = true
+
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel2" to="." method="_on_but_vel_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButBoxes" to="." method="_on_but_boxes_pressed"]
 [connection signal="pressed" from="CanvasIntro/Panel/ButComenzar" to="." method="_on_but_comenzar_pressed"]
+[connection signal="pressed" from="CanvasResultados/ButContinuar" to="." method="_on_but_continuar_pressed"]

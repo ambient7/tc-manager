@@ -15,7 +15,7 @@ const NOMBRES = [
 	"Jesus", "Joaquin", "Jorge", "Jose", "Juan", 
 	"Julian", "Leonardo", "Lorenzo", "Lucas", "Luis", 
 	"Manuel", "Marcelo", "Marco", "Mario", "Martin", 
-	"Mateo", "Miguel", "Nicolas", "Pablo", "Santiago", "Thiago" , "Vicente"
+	"Mateo", "Miguel", "Nicolas", "Pablo", "Pancracio", "Santiago", "Thiago" , "Vicente"
   ];
 
 const APELLIDOS = [
@@ -156,3 +156,5 @@ func get_mecanicos(): return equipo.mecanicos_contratados
 func get_piloto_seleccionado(): return equipo.piloto_seleccionado
 func get_auto_seleccionado(): return equipo.auto_seleccionado
 func get_autos_comprados(): return equipo.autos_comprados
+
+func add_dinero(valor:int): equipo.dinero = equipo.dinero + valor

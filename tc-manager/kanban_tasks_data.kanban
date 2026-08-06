@@ -23,7 +23,9 @@
 			"uuid": "edd3ac38-c4cf-4eb6-b948-426196dd3bc6",
 			"title": "Doing",
 			"tasks": [
-				"1df58a66-fd15-40b3-b99c-54d031ea5451"
+				"abe8c6ed-dd1b-4410-b009-36adf643c81c",
+				"4787fac4-d735-4d91-8caf-2a5e204a7fd0",
+				"a598c1ad-1187-4b77-8024-66ce888bba73"
 			]
 		},
 		{
@@ -32,7 +34,8 @@
 			"tasks": [
 				"6f5c4d62-3908-4fb1-8137-81d9b38d85dc",
 				"cf74a9f3-8f2d-4381-a98a-e3e8eecb5cd2",
-				"123e8b45-1988-4aa6-8f51-36d3a8f84100"
+				"123e8b45-1988-4aa6-8f51-36d3a8f84100",
+				"2ac98d6f-87f8-4f62-b068-67a9bc3ce114"
 			]
 		}
 	],
@@ -136,8 +139,29 @@
 			"steps": []
 		},
 		{
-			"uuid": "1df58a66-fd15-40b3-b99c-54d031ea5451",
-			"title": "Pantalla de entrada de datos para carrera",
+			"uuid": "abe8c6ed-dd1b-4410-b009-36adf643c81c",
+			"title": "Pantalla de pruebas para elegir una pista",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "4787fac4-d735-4d91-8caf-2a5e204a7fd0",
+			"title": "Pantalla de resultados y regreso al inicio",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "2ac98d6f-87f8-4f62-b068-67a9bc3ce114",
+			"title": "Hacer que la vista de pista se adapte a la ventana",
+			"description": "",
+			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
+			"steps": []
+		},
+		{
+			"uuid": "a598c1ad-1187-4b77-8024-66ce888bba73",
+			"title": "Arreglar comienzo de carrera",
 			"description": "",
 			"category": "ddf5c4d5-8639-49b1-95d5-e49da36efe52",
 			"steps": []

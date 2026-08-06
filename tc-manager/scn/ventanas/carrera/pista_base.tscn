@@ -101,3 +101,8 @@ grow_vertical = 2
 [node name="SpritesSegmentos" type="Node2D" parent="." unique_id=2052837564]
 
 [node name="SpritesPuntos" type="Node2D" parent="." unique_id=1266512010]
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=345137925]
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport" unique_id=465233679]
+anchor_mode = 0

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 const CAR = preload("uid://bfk75obdq66j6")
 
@@ -11,15 +11,28 @@ const WHATSAPP_CAR = preload("uid://h224g3v14mm2")
 const CLIO = preload("uid://dn24e1vpgo35x")
 const PISTA_OBLIGADO = preload("uid://bsit7ymvkqkwk")
 
+const VENTANA_EQUIPO = preload("uid://cq7phlle4mkm6")
+const MASTER = preload("uid://7r7id01wel28")
+
 
 const ITEM_PILOTO_CARRERA = preload("uid://r75t0y5p4pmi")
 const ITEM_AUTO_CARRERA = preload("uid://cxfbghwrm4mmi")
 const ITEM_MECANICO_CARRERA = preload("uid://cky3mh1wgo8xe")
 
+const MEDAL_1_ST = preload("uid://cqdp3qle8fxyb")
+const MEDAL_2_ND = preload("uid://bt8vcyd61xn5y")
+const MEDAL_3_RD = preload("uid://dkcofp44rvygq")
+const FLAG_CHECKERED = preload("uid://p5s3nsi4vfff")
+const BADGE = preload("uid://bjoi1nyx4euar")
+
 
 @onready var simulador = $Simulador
 @onready var label_vueltas: Label = $CanvasLayer/PanelSup/LabelVueltas
 @onready var container_posiciones: VBoxContainer = $CanvasLayer/Posiciones/ContainerPosiciones
+
+@onready var sub_viewport: SubViewport = $AspectRatioContainer/SubViewportContainer/SubViewport
+@onready var sub_viewport_container: SubViewportContainer = $AspectRatioContainer/SubViewportContainer
+
 
 @onready var but_boxes: Button = $CanvasLayer/Controles/ButBoxes
 @onready var ico_pendiente: TextureRect = $CanvasLayer/Controles/ButBoxes/IcoPendiente
@@ -36,33 +49,47 @@ const ITEM_MECANICO_CARRERA = preload("uid://cky3mh1wgo8xe")
 @onready var label_piloto_elegido: Label = $CanvasIntro/Panel/TabContainer/Personal/LabelPilotoElegido
 @onready var label_mecanico_elegido: Label = $CanvasIntro/Panel/TabContainer/Personal/LabelMecanicoElegido
 
+@onready var canvas_resultados: CanvasLayer = $CanvasResultados
+@onready var rich_posicion: RichTextLabel = $CanvasResultados/Panel/RichPosicion
+@onready var rich_nombre: RichTextLabel = $CanvasResultados/Panel/RichNombre
+@onready var texture_resultado: TextureRect = $CanvasResultados/Panel/TextureResultado
+@onready var rich_recompensas: RichTextLabel = $CanvasResultados/Panel/ScrollRecompensas/PanelContainer/MarginContainer/RichRecompensas
+@onready var rich_piloto: RichTextLabel = $CanvasResultados/Panel/ScrollPiloto/PanelContainer/MarginContainer/RichPiloto
+
 
 
 var pista: PistaBase
 var piloto_elegido: Piloto
 var auto_elegido: Auto
+var posicion_jugador: int
+var premio_total: int
+var premio_final: int
 var mecanicos_elegidos: Array[Mecanico]
 var sprites: Dictionary = {}  # piloto → Sprite2D
 
 
 func _ready() -> void:
-	setup(PISTA_OBLIGADO.instantiate())
+	if pista == null:
+		setup(PISTA_OBLIGADO.instantiate(),150000)
 
-func setup(pistain: PistaBase):
+func setup(pistain: PistaBase, premio:int):
 	
 	pista = pistain
+	premio_total = premio
 	
 	if pista != null:
 		rich_pista.text = "[font_size=30][b]" + pista.nombre_pista + "[/b][/font_size]"
 		rich_vueltas.text = "[font_size=30]" + str(pista.vueltas) + " vueltas[/font_size]"
 	
-	for x in range(10):
-		Juego.añadir_piloto(Juego.generar_piloto_simple())
-		Juego.añadir_mecanico(Juego.generar_mecanico())
+	if len(Juego.get_contratados()) == 0:
+		for x in range(10):
+			Juego.añadir_piloto(Juego.generar_piloto_simple())
+			Juego.añadir_mecanico(Juego.generar_mecanico())
 		
-	Juego.añadir_auto(WHATSAPP_CAR)
-	Juego.añadir_auto(CLIO)
-	
+	if len(Juego.get_autos_comprados()) == 0:
+		Juego.añadir_auto(WHATSAPP_CAR)
+		Juego.añadir_auto(CLIO)
+		
 	
 	var pilotos = Juego.get_contratados()
 	var autos = Juego.get_autos_comprados()
@@ -93,14 +120,14 @@ func setup(pistain: PistaBase):
 func elegir_piloto(piloto:Piloto):
 	
 	piloto_elegido = piloto
-	label_piloto_elegido.text = "Piloto: " + piloto_elegido.nombre + " " + piloto_elegido.apellido
+	label_piloto_elegido.text = "Piloto:    " + piloto_elegido.nombre + " " + piloto_elegido.apellido
 	
 	check_comenzar()
 
 func elegir_auto(auto:Auto):
 	
 	auto_elegido = auto
-	label_auto_elegido.text = "Auto: " + auto.nombre
+	label_auto_elegido.text = "Auto:    " + auto.nombre
 	
 	check_comenzar()
 
@@ -110,7 +137,7 @@ func elegir_mecanico(mecanico:Mecanico):
 	var texto = ""
 
 	for i in mecanicos_elegidos.size():
-		texto += "%d. %s\n" % [i + 1, mecanicos_elegidos[i].nombre + " " + mecanicos_elegidos[i].apellido]
+		texto += "   %d. %s\n" % [i + 1, mecanicos_elegidos[i].nombre + " " + mecanicos_elegidos[i].apellido]
 	
 	texto = "Mecanicos:\n" + texto
 	
@@ -133,7 +160,7 @@ func remover_mecanico(mecanico:Mecanico):
 	var texto = ""
 
 	for i in mecanicos_elegidos.size():
-		texto += "%d. %s\n" % [i + 1, mecanicos_elegidos[i].nombre + " " + mecanicos_elegidos[i].apellido]
+		texto += "   %d. %s\n" % [i + 1, mecanicos_elegidos[i].nombre + " " + mecanicos_elegidos[i].apellido]
 	
 	texto = "Mecanicos:\n" + texto
 	
@@ -150,7 +177,7 @@ func remover_mecanico(mecanico:Mecanico):
 	check_comenzar()
 
 func check_comenzar():
-	if piloto_elegido != null and auto_elegido != null and len(mecanicos_elegidos) > 0:
+	if piloto_elegido != null and auto_elegido != null:
 		but_comenzar.disabled = false
 	else:
 		but_comenzar.disabled = true
@@ -158,8 +185,9 @@ func check_comenzar():
 
 func preparaciones():
 	simulador.progreso_actualizado.connect(_on_progreso_actualizado)
+	simulador.carrera_terminada.connect(terminar)
 	
-	add_child(pista)
+	sub_viewport_container.add_child(pista)
 	# Crear un sprite por cada piloto
 	for estado in simulador.estados:
 		
@@ -215,6 +243,11 @@ func _lista_posiciones(posiciones):
 			estado = 2
 		else:
 			estado = 0
+		
+		if p.jugador:
+			posicion_jugador = p.lugar
+			
+		
 		container_posiciones.add_child(item_posicion)
 		item_posicion.actualizar_datos(p.lugar,p.piloto.apellido,estado,p.lugar,p.jugador)
 	
@@ -239,6 +272,44 @@ func en_boxes():
 	ico_pendiente.visible = false
 	ico_boxes.visible = true
 
+
+func terminar(ordenados,jugador):
+	canvas_resultados.visible = true
+	match posicion_jugador:
+		1:
+			premio_final = premio_total
+			texture_resultado.texture = MEDAL_1_ST
+			rich_posicion.text = "[font_size=30][b]Primer puesto[/b][/font_size]"
+		2:
+			premio_final = premio_total / 1.5
+			texture_resultado.texture = MEDAL_2_ND
+			rich_posicion.text = "[font_size=30][b]Segundo puesto[/b][/font_size]"
+		3:
+			premio_final = premio_total / 2
+			texture_resultado.texture = MEDAL_3_RD
+			rich_posicion.text = "[font_size=30][b]Tercer puesto[/b][/font_size]"
+		var r when r > 3 and r <= 10:
+			premio_final = premio_total / 4
+			texture_resultado.texture = BADGE
+			rich_posicion.text = "[font_size=30][b]Puesto " + str(posicion_jugador)  + "[/b][/font_size]"
+		var r when r > 10:
+			premio_final = 0
+			texture_resultado.texture = FLAG_CHECKERED
+			rich_posicion.text = "[font_size=30][b]Puesto " + str(posicion_jugador)  + "[/b][/font_size]"
+	
+	rich_nombre.text = jugador.piloto.nombre + " " + jugador.piloto.apellido
+	
+	var texto = "[ul]
+	$ " + str(premio_final) +"[/ul]"
+	
+	rich_recompensas.text = texto
+	
+	Juego.add_dinero(premio_final)
+	
+	print("premio total" + str(premio_total))
+	print("premio " + str(premio_final))
+	
+	
 func _on_but_vel_0_pressed() -> void:
 	simulador.velocidad_sim = 0
 
@@ -248,7 +319,7 @@ func _on_but_vel_1_pressed() -> void:
 
 
 func _on_but_vel_2_pressed() -> void:
-	simulador.velocidad_sim = 10
+	simulador.velocidad_sim = 100
 
 func _on_but_boxes_pressed() -> void:
 	simulador.entrar_boxes_jugador()
@@ -258,5 +329,9 @@ func _on_but_comenzar_pressed() -> void:
 	canvas_intro.queue_free()
 	carrera()
 	preparaciones()
-	
-	
+
+
+func _on_but_continuar_pressed() -> void:
+	self.get_parent().add_child(MASTER.instantiate())
+
+	queue_free()

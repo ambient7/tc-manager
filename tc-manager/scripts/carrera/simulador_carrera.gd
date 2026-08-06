@@ -113,6 +113,8 @@ func _process(delta: float) -> void:
 	if not corriendo: 
 		return
 	
+	
+	
 	var delta_time = delta * velocidad_sim
 	var longitud_pista = pista.longitud_total_metros()
 	var longitud_carrera = longitud_pista * pista.vueltas
@@ -142,6 +144,9 @@ func _process(delta: float) -> void:
 	_chequear_rebases()
 	estados_ordenados = _actualizar_lugares()
 	progreso_actualizado.emit(estados_ordenados)
+	if _todos_terminaron():
+		carrera_terminada.emit(estados_ordenados, get_estado_jugador())
+		corriendo = false
 
 func _calcular_tiempo_pit_stop(estado: EstadoPilotoCarrera) -> float:
 	var crew = estado.mecanicos_asignados
