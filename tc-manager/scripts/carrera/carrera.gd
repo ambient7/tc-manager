@@ -1,5 +1,7 @@
 extends Control
 
+#escena de carrera que contiene interfaz, la pista y el simulador
+
 const CAR = preload("uid://bfk75obdq66j6")
 
 const WRENCH = preload("uid://csi6ucctnlhaf")
@@ -37,6 +39,8 @@ const BADGE = preload("uid://bjoi1nyx4euar")
 @onready var but_boxes: Button = $CanvasLayer/Controles/ButBoxes
 @onready var ico_pendiente: TextureRect = $CanvasLayer/Controles/ButBoxes/IcoPendiente
 @onready var ico_boxes: TextureRect = $CanvasLayer/Controles/ButBoxes/IcoBoxes
+@onready var progress_ruedas: ProgressBar = $CanvasLayer/PanDesgaste/ProgressRuedas
+
 
 @onready var but_comenzar: Button = $CanvasIntro/Panel/ButComenzar
 @onready var canvas_intro: CanvasLayer = $CanvasIntro
@@ -48,6 +52,7 @@ const BADGE = preload("uid://bjoi1nyx4euar")
 @onready var label_auto_elegido: Label = $CanvasIntro/Panel/TabContainer/Auto/LabelAutoElegido
 @onready var label_piloto_elegido: Label = $CanvasIntro/Panel/TabContainer/Personal/LabelPilotoElegido
 @onready var label_mecanico_elegido: Label = $CanvasIntro/Panel/TabContainer/Personal/LabelMecanicoElegido
+
 
 @onready var canvas_resultados: CanvasLayer = $CanvasResultados
 @onready var rich_posicion: RichTextLabel = $CanvasResultados/Panel/RichPosicion
@@ -186,6 +191,7 @@ func check_comenzar():
 func preparaciones():
 	simulador.progreso_actualizado.connect(_on_progreso_actualizado)
 	simulador.carrera_terminada.connect(terminar)
+	simulador.ruedas_gastadas.connect(actualizar_vida_ruedas)
 	
 	sub_viewport_container.add_child(pista)
 	# Crear un sprite por cada piloto
@@ -309,6 +315,8 @@ func terminar(ordenados,jugador):
 	print("premio total" + str(premio_total))
 	print("premio " + str(premio_final))
 	
+func actualizar_vida_ruedas(vida):
+	progress_ruedas.value = vida
 	
 func _on_but_vel_0_pressed() -> void:
 	simulador.velocidad_sim = 0
@@ -319,7 +327,7 @@ func _on_but_vel_1_pressed() -> void:
 
 
 func _on_but_vel_2_pressed() -> void:
-	simulador.velocidad_sim = 100
+	simulador.velocidad_sim = 20
 
 func _on_but_boxes_pressed() -> void:
 	simulador.entrar_boxes_jugador()

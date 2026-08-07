@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://5s77pjwxqrgv" path="res://scripts/partes/ruedas.gd" id="1_gbelo"]
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource("1_gbelo")
 nombre = "promax"
 metadata/_custom_type_script = "uid://5s77pjwxqrgv"

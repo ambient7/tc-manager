@@ -45,16 +45,18 @@ signal vuelta_completada(estado: EstadoPilotoCarrera)
 signal pit_stop_realizado(estado: EstadoPilotoCarrera, es_jugador: bool)
 signal rebase_ocurrido(atacante: EstadoPilotoCarrera, defensor: EstadoPilotoCarrera, exito: bool)
 signal carrera_terminada(resultados: Array)
+signal ruedas_gastadas(vida)
 
 signal progreso_actualizado  # la UI escucha esto
 
 func carrera_ejemplo(p) -> void:
 	var cantidad_corredores = 15
 	var participantes: Array[Dictionary]
-	var auto_instancia = WHATSAPP_CAR.duplicate(true)
+	
 	for c in cantidad_corredores:
 		#var autorand = randi_range(0,1)
 		var mecanicosgen: Array[Mecanico] = []
+		var auto_instancia = WHATSAPP_CAR.duplicate(true)
 		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
 
 	if Juego.get_piloto_seleccionado() != null and Juego.get_auto_seleccionado() != null:
@@ -64,6 +66,7 @@ func carrera_ejemplo(p) -> void:
 	else:
 		var pilotogen = Juego.get_piloto_seleccionado()
 		var mecanicosgen: Array[Mecanico] = []
+		var auto_instancia = WHATSAPP_CAR.duplicate(true)
 		mecanicosgen.append(Juego.generar_mecanico())
 		mecanicosgen.append(Juego.generar_mecanico())
 		mecanicosgen.append(Juego.generar_mecanico())
@@ -75,11 +78,15 @@ func carrera_ejemplo(p) -> void:
 func carrera(p:PistaBase,mec:Array[Mecanico], pilotojug:Piloto, autojug:Auto) -> void:
 	var cantidad_corredores = 19
 	var participantes: Array[Dictionary]
-	var auto_instancia = WHATSAPP_CAR.duplicate(true)
 	for c in cantidad_corredores:
 		var mecanicosgen: Array[Mecanico] = []
+		var auto_instancia = WHATSAPP_CAR.duplicate(true)
+		auto_instancia.ruedas = auto_instancia.ruedas.duplicate(true)
+		auto_instancia.motor = auto_instancia.motor.duplicate(true)
+		
 		participantes.append({"piloto":Juego.generar_piloto_simple(), "auto": auto_instancia, "mecanicos":mecanicosgen})
-
+		print("ruedas id: ", auto_instancia.ruedas.get_instance_id())
+		
 	participantes.append({"piloto":pilotojug, "auto": autojug, "mecanicos":mec})
 
 	iniciar(p,participantes,len(participantes) - 1)
@@ -129,21 +136,28 @@ func _process(delta: float) -> void:
 			continue
 		
 		if estado.entrar_a_boxes:
-			var boxes_min: int = pista.boxes - 5
-			var boxes_max: int = pista.boxes + 10
 			var posicion = estado.progreso_en_vuelta_actual(longitud_pista)
-			if posicion >= boxes_min and posicion <= boxes_max:
+			var pos_antes = estado.progreso_en_vuelta_actual(longitud_pista)
+			_avanzar_estado(estado, delta_time, longitud_pista)
+			var pos_despues = estado.progreso_en_vuelta_actual(longitud_pista)
+			if pos_antes <= pista.boxes and pos_despues >= pista.boxes:
 				entrar_boxes(estado)
+		else:
+			_avanzar_estado(estado, delta_time, longitud_pista)
 		
-		if i != index_jugador:
+		
+		if i != index_jugador and not estado.en_boxes and not estado.entrar_a_boxes:
 			_evaluar_pit_ia(estado, longitud_pista, longitud_carrera)
 			
-		_avanzar_estado(estado, delta_time, longitud_pista)
+		
 		_verificar_llegada(estado,pista)
 		
 	_chequear_rebases()
 	estados_ordenados = _actualizar_lugares()
 	progreso_actualizado.emit(estados_ordenados)
+	ruedas_gastadas.emit(get_estado_jugador().auto_data.ruedas.porcentaje_vida() * 100)
+	
+
 	if _todos_terminaron():
 		carrera_terminada.emit(estados_ordenados, get_estado_jugador())
 		corriendo = false
@@ -165,7 +179,7 @@ func _calcular_tiempo_pit_stop(estado: EstadoPilotoCarrera) -> float:
 	var tamaño = clamp(crew.size(), 1, TAMAÑO_CREW_MAXIMO)
 	var factor_tamaño = FACTORES_TAMAÑO_CREW.get(tamaño, 1.0)
 	
-	print("BOXES ", TIEMPO_PIT_STOP_BASE * factor_habilidad * factor_tamaño)
+	print("BOXES " + str(TIEMPO_PIT_STOP_BASE * factor_habilidad * factor_tamaño))
 	return TIEMPO_PIT_STOP_BASE * factor_habilidad * factor_tamaño
 
 
@@ -206,7 +220,7 @@ func entrar_boxes(estado: EstadoPilotoCarrera) -> void:
 	print("%s - vuelta %d - vida ruedas: %.1f%% EN BOXES" % [
 			estado.piloto.apellido, 
 			estado.vuelta_actual, 
-			estado.auto_data.ruedas.porcentaje_vida()
+			estado.auto_data.ruedas.porcentaje_vida() * 100
 		])
 
 func _avanzar_estado(estado: EstadoPilotoCarrera, dt: float, longitud_pista: float) -> void:
@@ -263,7 +277,7 @@ func _aplicar_desgaste(estado: EstadoPilotoCarrera, segmento: SegmentoPista, met
 			2:
 				factor = FACTOR_DESGASTE_CURVA - 0.5
 			3:
-				factor = FACTOR_DESGASTE_CURVA - 0.10
+				factor = FACTOR_DESGASTE_CURVA - 0.1
 		
 	estado.auto_data.ruedas.aplicar_desgaste(km, factor)
 
@@ -275,7 +289,7 @@ func _chequear_nueva_vuelta(estado: EstadoPilotoCarrera, longitud_pista: float) 
 		print("%s - vuelta %d - vida ruedas: %.1f%%" % [
 				estado.piloto.apellido, 
 				estado.vuelta_actual, 
-				estado.auto_data.ruedas.porcentaje_vida()
+				estado.auto_data.ruedas.porcentaje_vida() * 100
 			])
 
 func _chequear_rebases() -> void:

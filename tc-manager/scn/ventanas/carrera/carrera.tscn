@@ -5,7 +5,10 @@
 [ext_resource type="Script" uid="uid://dv4aoc0kc8f3e" path="res://scripts/carrera/simulador_carrera.gd" id="3_dcy3v"]
 [ext_resource type="Texture2D" uid="uid://do5yi0350y3v" path="res://addons/at-icons/node3d/wrench.svg" id="3_hq1yq"]
 [ext_resource type="Texture2D" uid="uid://csi6ucctnlhaf" path="res://addons/at-icons/node/wrench.svg" id="4_jnlx3"]
+[ext_resource type="Texture2D" uid="uid://bq3348g7navry" path="res://addons/at-icons/control/smiley_face.svg" id="5_afgtr"]
 [ext_resource type="Texture2D" uid="uid://dk1xubitf0jf0" path="res://addons/at-icons/node/human.svg" id="6_4824c"]
+[ext_resource type="Texture2D" uid="uid://cdjyqw7e4yq82" path="res://addons/at-icons/mesh/neutral_face.svg" id="6_ako68"]
+[ext_resource type="Texture2D" uid="uid://bdkmvtkvcgvfk" path="res://addons/at-icons/node3d/angry_face.svg" id="7_34s4l"]
 [ext_resource type="Texture2D" uid="uid://bfk75obdq66j6" path="res://addons/at-icons/node/car.svg" id="7_scjk4"]
 [ext_resource type="Texture2D" uid="uid://dkcofp44rvygq" path="res://addons/at-icons/node/medal_3rd.svg" id="8_scjk4"]
 
@@ -29,6 +32,19 @@ script = ExtResource("1_dtn54")
 
 [node name="Simulador" type="Node" parent="." unique_id=1089032895]
 script = ExtResource("3_dcy3v")
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=706434006]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.33
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="AspectRatioContainer" unique_id=424841911]
+layout_mode = 2
+stretch = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2098692618]
 
@@ -109,6 +125,62 @@ offset_right = -8.0
 offset_bottom = 56.0
 texture = ExtResource("4_jnlx3")
 expand_mode = 1
+
+[node name="PanAgresion" type="Panel" parent="CanvasLayer/Controles" unique_id=1871259419]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.083000004
+anchor_top = 0.24000001
+anchor_right = 0.91700006
+anchor_bottom = 0.56
+offset_left = 0.063999176
+offset_right = -0.06401062
+
+[node name="ButRelajado" type="Button" parent="CanvasLayer/Controles/PanAgresion" unique_id=859916661]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.95000005
+anchor_bottom = 0.45800003
+offset_bottom = 0.06399536
+toggle_mode = true
+text = "Relajado"
+icon = ExtResource("5_afgtr")
+expand_icon = true
+
+[node name="ButTactico" type="Button" parent="CanvasLayer/Controles/PanAgresion" unique_id=1176850105]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.5
+anchor_right = 0.95000005
+anchor_bottom = 0.708
+offset_bottom = 0.06399536
+toggle_mode = true
+text = "Tactico"
+icon = ExtResource("6_ako68")
+
+[node name="ButAgresivo" type="Button" parent="CanvasLayer/Controles/PanAgresion" unique_id=443711744]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.75000006
+anchor_right = 0.95000005
+anchor_bottom = 0.95800006
+offset_top = -1.5258789e-05
+offset_bottom = 0.06399536
+toggle_mode = true
+text = "Agresivo"
+icon = ExtResource("7_34s4l")
+
+[node name="Label" type="Label" parent="CanvasLayer/Controles/PanAgresion" unique_id=1195690993]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 99.0
+offset_bottom = 31.0
+text = "Agresividad"
 
 [node name="Posiciones" type="Panel" parent="CanvasLayer" unique_id=1320115093]
 anchors_preset = -1
@@ -214,6 +286,32 @@ anchor_bottom = 1.0
 offset_left = -160.0
 offset_top = -72.0
 offset_right = 160.0
+
+[node name="PanDesgaste" type="Panel" parent="CanvasLayer" unique_id=752655328]
+anchors_preset = -1
+anchor_left = 0.78000003
+anchor_top = 0.573
+anchor_right = 0.98
+anchor_bottom = 0.707
+offset_top = 0.19998169
+offset_bottom = -0.2000122
+
+[node name="Label" type="Label" parent="CanvasLayer/PanDesgaste" unique_id=1934150774]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 146.0
+offset_bottom = 31.0
+text = "Estado de ruedas:"
+
+[node name="ProgressRuedas" type="ProgressBar" parent="CanvasLayer/PanDesgaste" unique_id=1901178471]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 152.0
+offset_bottom = 67.0
+step = 0.1
+show_percentage = false
 
 [node name="CanvasIntro" type="CanvasLayer" parent="." unique_id=870277652]
 layer = 2
@@ -524,19 +622,6 @@ offset_right = -64.0
 offset_bottom = 128.0
 grow_horizontal = 0
 text = "Continuar"
-
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=706434006]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-ratio = 1.33
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="AspectRatioContainer" unique_id=424841911]
-layout_mode = 2
-stretch = true
 
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel1" to="." method="_on_but_vel_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Controles/ButVel0" to="." method="_on_but_vel_0_pressed"]

@@ -156,7 +156,7 @@ point_count = 4
 
 [node name="PistaObligado" unique_id=85885368 node_paths=PackedStringArray("path", "path_boxes") instance=ExtResource("1_pdc0i")]
 nombre_pista = "Obligado"
-vueltas = 5
+vueltas = 20
 boxes = 75
 boxes_salida = 250
 segmentos = Array[ExtResource("2_661nm")]([SubResource("Resource_661nm"), SubResource("Resource_7jkxs"), SubResource("Resource_0mhj8"), SubResource("Resource_hqgwp"), SubResource("Resource_laasx"), SubResource("Resource_u0v5f"), SubResource("Resource_aq6li"), SubResource("Resource_ktpdl"), SubResource("Resource_458a0"), SubResource("Resource_yvj30"), SubResource("Resource_b44ep"), SubResource("Resource_w85cv"), SubResource("Resource_1pnxf"), SubResource("Resource_gtkdn"), SubResource("Resource_ta1e7"), SubResource("Resource_p3c2g"), SubResource("Resource_cx421")])

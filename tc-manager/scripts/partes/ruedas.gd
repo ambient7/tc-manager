@@ -9,6 +9,9 @@ class_name Ruedas
 @export var vida_actual: float = 100.0
 @export var desgaste_por_km: float = 2.0  # % por km — blandas ~4.0, duras ~1.5
 
+@export var variacion_dureza: float
+@export var factor_aceleracion:int
+
 func porcentaje_vida() -> float:
 	return vida_actual / vida_max
 
